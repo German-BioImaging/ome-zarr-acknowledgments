@@ -79,3 +79,6 @@ Use the optional `order_override` parameter inside [`affiliation_shortener.yaml`
 
 Direct pull requests that update [`people.yaml`](people.yaml), [`resources.yaml`](resources.yaml), or [`affiliation_shortener.yaml`](affiliation_shortener.yaml) are always welcome.
 
+## LLM usage note
+
+A good part of the code and text extraction was done with aid of GPT-5 and GPT-5 codex. Names were reviewed manually and the final page was tweaked manually. 
