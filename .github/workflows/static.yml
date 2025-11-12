@@ -1,58 +1,84 @@
-# .github/workflows/static.yml
-name: Deploy static content to Pages
+name: Deploy/Preview
 
 on:
   push:
-    branches: ["main"] # production
-  pull_request: # PR previews
-  workflow_dispatch:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+    types: [opened, synchronize, reopened, labeled]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
-  issues: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  pull-requests: write
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  deploy-production:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: "." # upload the whole repo (simple)
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+  preview:
+    if: |
+      github.event_name == 'pull_request' && 
+      contains(github.event.pull_request.labels.*.name, 'preview')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
 
-      - name: Comment PR with preview URL
-        if: ${{ github.event_name == 'pull_request' }}
-        uses: actions/github-script@v7
-        env:
-          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+      - name: Create PR Comment (Deployment Started)
+        uses: actions/github-script@v6
         with:
           script: |
-            const url = process.env.PAGE_URL || '';
-            const body = url
-              ? `🚀 GitHub Pages preview is live:\n\n${url}`
-              : 'Preview deployed. See the “Deployments” box on this PR.';
-            await github.rest.issues.createComment({
+            const previewUrl = `https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/pr_preview/${{ github.event.number }}/`;
+
+            const { data: comments } = await github.rest.issues.listComments({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: context.issue.number,
-              body
+              issue_number: ${{ github.event.number }},
             });
+
+            const botComment = comments.find(comment => 
+              comment.user.type === 'Bot' && 
+              comment.body.includes('Preview deployment')
+            );
+
+            const commentBody = `## 🌐 Preview Deployment Started\n\n**Preview URL**: [${previewUrl}](${previewUrl})\n\nDeployment is in progress and should be available shortly.\n\n⚠️ **Security Notice**: This preview is a snapshot and will not automatically update with new commits.`;
+
+            if (botComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: commentBody
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: ${{ github.event.number }},
+                body: commentBody
+              });
+            }
+
+      - name: Deploy PR Preview
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
+          destination_dir: pr_preview/${{ github.event.number }}
+          keep_files: true
