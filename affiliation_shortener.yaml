@@ -168,6 +168,10 @@ affiliations:
     short_name: "EMBL"
     country_code: "DE"
 
+  - full_name: "Data Science Centre, European Molecular Biology Laboratory (EMBL), Heidelberg, Germany"
+    short_name: "EMBL"
+    country_code: "DE"
+
   - full_name: "VIB"
     short_name: "VIB"
     country_code: BE

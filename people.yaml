@@ -369,9 +369,9 @@ people:
     affiliations:
       - Yikes
   - name: Erick Ratamero
-    orcid:
+    orcid: https://orcid.org/0000-0002-7545-3675
     affiliations:
-      - JAX
+      - Data Science Centre, European Molecular Biology Laboratory (EMBL), Heidelberg, Germany
   - name: Farzad
     orcid:
     affiliations: []
