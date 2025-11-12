@@ -1,0 +1,62 @@
+name: Deploy PR previews (fork-safe)
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, labeled, unlabeled, closed]
+
+concurrency: preview-${{ github.ref }}
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+env:
+  PREVIEW_LABEL: ok-to-preview
+  PREVIEW_BRANCH: gh-pages
+  PREVIEW_DIR: pr-preview
+
+jobs:
+  deploy-or-remove:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check label gate
+        id: gate
+        run: |
+          labels='${{ toJson(github.event.pull_request.labels.*.name) }}'
+          if [[ "${{ github.event.action }}" != "closed" && "$labels" == *"${{ env.PREVIEW_LABEL }}"* ]]; then
+            echo "run_build=true" >> $GITHUB_OUTPUT
+          else
+            echo "run_build=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Remove preview on close
+        if: ${{ github.event.action == 'closed' }}
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          preview-branch: ${{ env.PREVIEW_BRANCH }}
+          umbrella-dir: ${{ env.PREVIEW_DIR }}
+          action: remove
+
+      - name: Checkout PR HEAD (fork-safe)
+        if: ${{ steps.gate.outputs.run_build == 'true' }}
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+
+      - name: Prepare static site (label-gated)
+        if: ${{ steps.gate.outputs.run_build == 'true' }}
+        run: |
+          mkdir -p build
+          rsync -a --delete --exclude '.git' ./ build/
+          touch build/.nojekyll
+
+      - name: Deploy / comment preview
+        if: ${{ steps.gate.outputs.run_build == 'true' }}
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./build/
+          preview-branch: ${{ env.PREVIEW_BRANCH }}
+          umbrella-dir: ${{ env.PREVIEW_DIR }}
+          action: auto
