@@ -1,7 +1,7 @@
 # affiliation_shortener.yaml
 affiliations:
   - full_name: "German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany"
-    short_name: "German BioImaging"
+    short_name: "GerBI"
     country_code: "DE"
     order_override:
       - Josh Moore
