@@ -695,3 +695,8 @@ people:
     orcid:
     affiliations:
       - JAX
+
+  - name: Chris Barnes
+    orcid: https://orcid.org/0000-0002-1296-7310
+    affiliations:
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
