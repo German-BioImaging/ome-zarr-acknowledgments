@@ -62,6 +62,10 @@ affiliations:
     short_name: "SciLifeLab"
     country_code: "SE"
 
+  - full_name: "Science for Life Laboratory, Uppsala University, Uppsala, Sweden"
+    short_name: "SciLifeLab"
+    country_code: "SE"
+
   - full_name: "Friedrich Miescher Institute for Biomedical Imaging, Basel, Switzerland"
     short_name: "FMI"
     country_code: "CH"

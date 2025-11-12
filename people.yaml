@@ -435,12 +435,10 @@ people:
     orcid:
     affiliations:
       - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
-
   - name: Jonas Windhager
-    orcid:
+    orcid: https://orcid.org/0000-0002-2111-5291
     affiliations:
-      - Science for Life Laboratory, KTH Royal Institute of Technology, Stockholm, Sweden
-
+      - Science for Life Laboratory, Uppsala University, Uppsala, Sweden
   - name: Joost de Folter
     orcid:
     affiliations: []
