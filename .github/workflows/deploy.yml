@@ -1,0 +1,30 @@
+name: Deploy main site (branch-based)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # This copies everything in the repo as-is (your "build")
+      - name: Prepare static site
+        run: |
+          mkdir -p build
+          rsync -a --delete --exclude '.git' ./ build/
+          touch build/.nojekyll
+
+      - name: Deploy to gh-pages (non-destructive)
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: build
+          clean-exclude: pr-preview/   # keep PR previews
+          force: false                 # avoid wiping previews
