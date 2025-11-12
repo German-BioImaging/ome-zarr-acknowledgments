@@ -1,0 +1,328 @@
+resources:
+  - title: OME-Zarr 2021 paper
+    url: https://doi.org/10.1038/s41592-021-01326-w
+    people:
+      - Josh Moore
+      - Chris Allan
+      - Sébastien Besson
+      - Jean-Marie Burel
+      - Erin Diel
+      - David Gault
+      - Kevin Kozlowski
+      - Dominik Lindner
+      - Melissa Linkert
+      - Trevor Manz
+      - Will Moore
+      - Constantin Pape
+      - Christian Tischer
+      - Jason R. Swedlow
+
+  - title: OME-Zarr 2023 paper
+    url: https://doi.org/10.1007/s00418-023-02209-1
+    people:
+      - Josh Moore
+      - Daniela Basurto-Lozada
+      - Sébastien Besson
+      - John Bogovic
+      - Jordão Bragantini
+      - Eva M. Brown
+      - Jean-Marie Burel
+      - Xavier Casas Moreno
+      - Gustavo de Medeiros
+      - Erin Diel
+      - David Gault
+      - Satrajit S. Ghosh
+      - Ilan Gold
+      - Yaroslav O. Halchenko
+      - Matthew Hartley
+      - Dave Horsfall
+      - Mark S. Keller
+      - Mark Kittisopikul
+      - Gabor Kovacs
+      - Aybüke Küpcü Yoldaş
+      - Koji Kyoda
+      - Albane le Tournoulx de la Villegeorges
+      - Tong Li
+      - Prisca Liberali
+      - Dominik Lindner
+      - Melissa Linkert
+      - Joel Lüthi
+      - Jeremy Maitin-Shepard
+      - Trevor Manz
+      - Luca Marconato
+      - Matthew McCormick
+      - Merlin Lange
+      - Khaled Mohamed
+      - Will Moore
+      - Nils Norlin
+      - Wei Ouyang
+      - Bugra Özdemir
+      - Giovanni Palla
+      - Constantin Pape
+      - Lucas Pelkmans
+      - Tobias Pietzsch
+      - Stephan Preibisch
+      - Martin Prete
+      - Norman Rzepka
+      - Sameeul Samee
+      - Nicholas Schaub
+      - Hythem Sidky
+      - Ahmet Can Solak
+      - David R. Stirling
+      - Jonathan Striebel
+      - Christian Tischer
+      - Dan Toloudis
+      - Isaac Virshup
+      - Petr Walczysko
+      - Alan M. Watson
+      - Erin Weisbart
+      - Frances Wong
+      - Kevin A. Yamauchi
+      - Omer Bayraktar
+      - Beth A. Cimini
+      - Nils Gehlenborg
+      - Muzlifah Haniffa
+      - Nathan Hotaling
+      - Shuichi Onami
+      - Loic A. Royer
+      - Stephan Saalfeld
+      - Oliver Stegle
+      - Fabian J. Theis
+      - Jason R. Swedlow
+
+  - title: OME-NGFF channel (11/2025)
+    url: https://imagesc.zulipchat.com/#narrow/channel/328251-NGFF
+    people:
+      - Tiago Lubiana
+      - Aafke Gros
+      - Alan Liddell
+      - Andreas Eisenbarth
+      - Andrzej Oles
+      - Artür Manukyan
+      - Benedikt Best
+      - Bugra Özdemir
+      - Caleb Hulbert
+      - Cameron Lloyd
+      - Chris Barnes
+      - Chris Wood
+      - Christian Tischer
+      - Christophe Avenel
+      - Constantin Pape
+      - Curtis Rueden
+      - Dan Toloudis
+      - Daniela Basurto Lozada
+      - Dave Horsfall
+      - David Feng
+      - David Gault
+      - David Stansby
+      - Davis Bennett
+      - Doug Shepherd
+      - Eduardo Brito Freitez
+      - Elise Liu
+      - Elliott Magnuson
+      - Eric Leroy
+      - Eric Perlman
+      - Erick Ratamero
+      - Farzad
+      - Felix Meyenhofer
+      - Fernando Cervantes Sanchez
+      - Florian Levet
+      - Francois Sherwood
+      - giovanni
+      - Guillaume Gay
+      - Guillaume Witz
+      - Gustavo de Medeiros
+      - Haowen
+      - Hugo_Blanc
+      - Igor Tatarnikov
+      - Ilan Gold
+      - Isaac Virshup
+      - Jan Eglinger
+      - Jean-Karim Hériché
+      - Jens Wendt
+      - Jenu Chacko
+      - Jeremy Delahanty
+      - jni | Juan Nunez-Iglesias
+      - Joel Lüthi
+      - Johannes Elferich
+      - Johannes Soltwedel
+      - John Bogovic
+      - Jonas Windhager
+      - Joost de Folter
+      - Jordão Bragantini
+      - Josh Moore
+      - Jules Scholler
+      - Ken Ho
+      - Kevin Yamauchi
+      - Kimberly Meechan
+      - Ko Sugawara
+      - Kolawole Babalola
+      - Konrad Rokicki
+      - Kyle I S Harrington
+      - Lachlan Deakin
+      - Leonardo Schwarz
+      - Lorenzo Gaifas
+      - Luca Marconato
+      - Luis Kuhn Cuellar
+      - Marco Dalla Vecchia
+      - Mark Keller
+      - Mark Kittisopikul
+      - Mark Tsuchida
+      - Martin Jones
+      - Marvin Albert
+      - Matt McCormick
+      - Matt Smith
+      - Matthew Hartley
+
+  - title: OME Team (GerBi)
+    url: https://www.openmicroscopy.org/teams/
+    people:
+      - Janina Hanne
+      - Josh Moore
+      - Johannes Soltwedel
+      - Tiago Lubiana
+      - Stefanie Weidtkamp-Peters
+
+  - title: Josh's slide (full list)
+    url: https://example.org
+    people:
+      - Benjamin Pavie
+      - Ana Stojiljkovic
+      - Joel Lüthi
+      - Lorenzo Cerrone
+      - Virginie Uhlmann
+      - Rémy Dornier
+      - Kevin Yamauchi
+      - Leonardo Schwarz
+      - Franziska Moos
+      - Gustavo de Medeiros
+      - Jan Eglinger
+      - Prisca Liberali
+      - Fabio Steffen
+      - Flurin Sturzenegger
+      - Grégory Paul
+      - Reto Gerber
+      - Ruth Hornbachner
+      - Vladimír Ulman
+      - Luca Marconato
+      - Oane Gros
+      - Oliver Stegle
+      - Wouter-Michiel Vierdag
+      - Christian Tischer
+      - Bugra Özdemir
+      - Josh Moore
+      - Johannes Soltwedel
+      - Tom Boissonnet
+      - Constantin Pape
+      - Fabian J. Theis
+      - Giovanni Palla
+      - Isaac Virshup
+      - Stefan Hahmann
+      - Guillaume Gay
+      - Daniel Krentzel
+      - Marvin Albert
+      - Hiroya Itoga
+      - Koji Kyoda
+      - Shuichi Onami
+      - Nils Norlin
+      - Jonas Windhager
+      - Wei Ouyang
+      - Xavier Casas Moreno
+      - Joost de Folter
+      - Kenneth Ho
+      - Martin Jones
+      - David Gault
+      - Dominik Lindner
+      - Frances Wong
+      - Jason R. Swedlow
+      - Jean-Marie Burel
+      - Khaled Mohamed
+      - William Moore
+      - Aybüke Küpcü Yoldaş
+      - Francois Sherwood
+      - Kolawole Babalola
+      - Liviu Anita
+      - Matthew Hartley
+      - Omer Bayraktar
+      - Daniela Basurto-Lozada
+      - Dave Horsfall
+      - Muzlifah Haniffa
+      - Tong Li
+      - David Stansby
+      - Daniel Toloudis
+      - Eva M. Brown
+      - Gabor Kovacs
+      - Sean Meharry
+      - Beth A. Cimini
+      - Erin Weisbart
+      - Jordão Bragantini
+      - Loic A. Royer
+      - Ahmet Can Solak
+      - Merlin Lange
+      - Yaroslav O. Halchenko
+      - Ilan Gold
+      - Mark S. Keller
+      - Nils Gehlenborg
+      - Trevor Manz
+      - Matthew McCormick
+      - Kiya Govek
+      - Erick Ratamero
+      - Peter Sobolewski
+      - John Bogovic
+      - Konrad Rokicki
+      - Mark Kittisopikul
+      - Stephan Saalfeld
+      - Tobias Pietzsch
+      - Satrajit S. Ghosh
+      - Hythem Sidky
+      - Nathan Hotaling
+      - Nicholas Schaub
+      - Sameeul Samee
+      - Alan M. Watson
+      - Rachael Huxford
+      - Chris Allan
+      - Erin Diel
+      - Melissa Linkert
+      - Sébastien Besson
+      - Jeremy Maitin-Shepard
+      - Dominique Roux
+      - Maximilian Schulz
+      - Eric Perlman
+      - Albane le Tournoulx de la Villegeorges
+      - Hannes Spitz
+      - Norman Rzepka
+      - Jonathan Striebel
+      - Sebastian Rhode
+      - Stephan Wagner-Conrad
+      - Christoph Engwer
+      - Davis Bennett
+      - Dmytro Horyslavets
+      - Filip Mroz
+      - Igor Zubarev
+      - Szymon Stoma
+      - Vera Galinova
+
+  - title: others
+    url: https://example.org
+    people:
+
+  - title: 2025 International OME-NGFF Workshop
+    url: https://www.biovisioncenter.uzh.ch/en/events/Upcoming-Events/2025-OME-NGFF-workshop.html
+    people:
+      - Jason R. Swedlow
+      - Josh Moore
+      - Norman Rzepka
+      - Matthew Hartley
+      - Kiya Govek
+      - Dan Toloudis
+      - Christian Tischer
+      - Erick Ratamero
+      - Prisca Liberali
+      - John Bogovic
+      - Kedar Narayan
+      - Joel Lüthi
+      - Lorenzo Cerrone
+      - Valentina Marcelli
+      - Virginie Uhlmann
+      - Vladimir Ulman
+      - Eric Perlman
