@@ -52,6 +52,10 @@ people:
     orcid: https://orcid.org/0000-0003-4105-1990
     affiliations:
       - EMBL, Heidelberg, Germany
+  - name: Johannes Soltwedel
+    orcid: https://orcid.org/0000-0003-1273-2412
+    affiliations:
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
   - name: Jason R. Swedlow
     orcid: https://orcid.org/0000-0002-2198-1958
     affiliations:
