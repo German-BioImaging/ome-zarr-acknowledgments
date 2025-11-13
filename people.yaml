@@ -1,278 +1,484 @@
 people:
-  - name: Josh Moore
-    orcid: https://orcid.org/0000-0003-4028-811X
-    affiliations:
-      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
-      - University of Dundee
-  - name: Chris Allan
-    orcid:
-    affiliations:
-      - Glencoe Software Inc., Seattle, WA, USA
-  - name: Sébastien Besson
-    orcid: https://orcid.org/0000-0001-8783-1429
-    affiliations:
-      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
-  - name: Jean-Marie Burel
-    orcid: https://orcid.org/0000-0002-1789-1861
-    affiliations:
-      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
-  - name: Erin Diel
-    orcid: https://orcid.org/0000-0003-2526-3512
-    affiliations:
-      - Glencoe Software Inc., Seattle, WA, USA
-  - name: David Gault
-    orcid:
-    affiliations:
-      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
-  - name: Kevin Kozlowski
-    orcid:
-    affiliations:
-      - Glencoe Software Inc., Seattle, WA, USA
-  - name: Dominik Lindner
-    orcid: https://orcid.org/0000-0001-8038-1250
-    affiliations:
-      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
-  - name: Melissa Linkert
-    orcid:
-    affiliations:
-      - Glencoe Software Inc., Seattle, WA, USA
-  - name: Trevor Manz
-    orcid: https://orcid.org/0000-0001-7694-5164
-    affiliations:
-      - Harvard Medical School, Boston, MA, USA
-  - name: Will Moore
-    orcid: https://orcid.org/0000-0002-7264-8338
-    affiliations:
-      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
-  - name: Constantin Pape
-    orcid: https://orcid.org/0000-0001-6562-7187
-    affiliations:
-      - Georg-August-Universität Göttingen, Göttingen, Germany
-  - name: Christian Tischer
-    orcid: https://orcid.org/0000-0003-4105-1990
-    affiliations:
-      - EMBL, Heidelberg, Germany
-  - name: Jason R. Swedlow
-    orcid: https://orcid.org/0000-0002-2198-1958
-    affiliations:
-      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
-      - Glencoe Software Inc., Seattle, WA, USA
-      - Chan Zuckerberg Initiative (CZI)
-
-  - name: Daniela Basurto-Lozada
-    orcid: https://orcid.org/0000-0003-3943-8424
-    affiliations:
-      - Sanger
-  - name: John Bogovic
-    orcid: https://orcid.org/0000-0002-4829-9457
-    affiliations:
-      - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
-  - name: Jordão Bragantini
-    orcid: https://orcid.org/0000-0001-7652-2735
+  - name: Aafke Gros
+    orcid: null
+    affiliations: []
+  - name: Ahmet Can Solak
+    orcid: https://orcid.org/0000-0002-1381-8309
     affiliations:
       - Chan Zuckerberg Biohub, San Francisco, CA, USA
-  - name: Eva M. Brown
-    orcid: https://orcid.org/0000-0003-2564-0373
+  - name: Alan Liddell
+    orcid: null
+    affiliations: []
+  - name: Alan M. Watson
+    orcid: https://orcid.org/0000-0003-0632-8296
     affiliations:
-      - Allen Institute for Cell Science, Seattle, WA, USA
-  - name: Xavier Casas Moreno
-    orcid: https://orcid.org/0000-0002-9583-9022
-    affiliations:
-      - Science for Life Laboratory, KTH Royal Institute of Technology, Stockholm, Sweden
-  - name: Gustavo de Medeiros
-    orcid: https://orcid.org/0000-0001-5877-3012
-    affiliations:
-      - Friedrich Miescher Institute for Biomedical Imaging, Basel, Switzerland
-  - name: Satrajit S. Ghosh
-    orcid: https://orcid.org/0000-0002-5312-6729
-    affiliations:
-      - Massachusetts Institute of Technology, Cambridge, MA, USA
-  - name: Ilan Gold
-    orcid: https://orcid.org/0000-0002-5823-1026
-    affiliations:
-      - Harvard Medical School, Boston, MA, USA
-  - name: Yaroslav O. Halchenko
-    orcid: https://orcid.org/0000-0003-3456-2493
-    affiliations:
-      - Dartmouth College, Hanover, NH, USA
-  - name: Matthew Hartley
-    orcid: https://orcid.org/0000-0001-6178-2884
-    affiliations:
-      - European Molecular Biology Laboratory, European Bioinformatics Institute, EMBL-EBI, Cambridge, UK
-  - name: Dave Horsfall
-    orcid: https://orcid.org/0000-0002-8086-812X
-    affiliations:
-      - Sanger
-  - name: Mark S. Keller
-    orcid: https://orcid.org/0000-0003-3003-874X
-    affiliations:
-      - Harvard Medical School, Boston, MA, USA
-  - name: Mark Kittisopikul
-    orcid: https://orcid.org/0000-0002-9558-6248
-    affiliations:
-      - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
-  - name: Gabor Kovacs
-    orcid: https://orcid.org/0000-0003-1779-775X
-    affiliations:
-      - Allen Institute for Neural Dynamics, Seattle, WA, USA
-  - name: Aybüke Küpcü Yoldaş
-    orcid: https://orcid.org/0000-0001-6191-5069
-    affiliations:
-      - European Molecular Biology Laboratory, European Bioinformatics Institute, EMBL-EBI, Cambridge, UK
-  - name: Koji Kyoda
-    orcid: https://orcid.org/0000-0001-9455-2153
-    affiliations:
-      - RIKEN Center for Biosystems Dynamics Research, Kobe, Japan
+      - University of Pittsburgh, Pittsburgh, PA, USA
   - name: Albane le Tournoulx de la Villegeorges
     orcid: https://orcid.org/0000-0001-7394-8941
     affiliations:
       - scalable minds GmbH, Potsdam, Germany
-  - name: Tong Li
-    orcid: https://orcid.org/0000-0002-8240-4476
+  - name: Ana Stojiljkovic
+    orcid: null
     affiliations:
-      - Wellcome Sanger Institute, Hinxton, UK
-  - name: Prisca Liberali
-    orcid: https://orcid.org/0000-0003-0695-6081
+      - Bern
+  - name: Andreas Eisenbarth
+    orcid: null
+    affiliations: []
+  - name: Andrzej Oles
+    orcid: null
+    affiliations: []
+  - name: Artür Manukyan
+    orcid: null
+    affiliations: []
+  - name: Aybüke Küpcü Yoldaş
+    orcid: https://orcid.org/0000-0001-6191-5069
+    affiliations:
+      - European Molecular Biology Laboratory, European Bioinformatics Institute, EMBL-EBI,
+        Cambridge, UK
+  - name: Benedikt Best
+    orcid: https://orcid.org/0000-0001-6965-1117
+    affiliations:
+      - EMBL, Heidelberg, Germany
+  - name: Benjamin Pavie
+    orcid: null
+    affiliations:
+      - VIB
+  - name: Beth A. Cimini
+    orcid: https://orcid.org/0000-0001-9640-9318
+    affiliations:
+      - Imaging Platform, Broad Institute of MIT and Harvard, Cambridge, MA, USA
+  - name: Bugra Özdemir
+    orcid: https://orcid.org/0000-0001-9823-0581
+    affiliations:
+      - Euro-BioImaging Bio-Hub, EMBL, Heidelberg, Germany
+  - name: Caleb Hulbert
+    orcid: null
+    affiliations: []
+  - name: Cameron Lloyd
+    orcid: null
+    affiliations: []
+  - name: Chris Allan
+    orcid: null
+    affiliations:
+      - Glencoe Software Inc., Seattle, WA, USA
+  - name: Chris Barnes
+    orcid: https://orcid.org/0000-0002-1296-7310
+    affiliations:
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
+        Germany
+  - name: Chris Wood
+    orcid: null
+    affiliations: []
+  - name: Christian Tischer
+    orcid: https://orcid.org/0000-0003-4105-1990
+    affiliations:
+      - EMBL, Heidelberg, Germany
+  - name: Christoph Engwer
+    orcid: null
+    affiliations:
+      - Many more
+  - name: Christophe Avenel
+    orcid: null
+    affiliations: []
+  - name: Constantin Pape
+    orcid: https://orcid.org/0000-0001-6562-7187
+    affiliations:
+      - Georg-August-Universität Göttingen, Göttingen, Germany
+  - name: Curtis Rueden
+    orcid: null
+    affiliations: []
+  - name: Dan Toloudis
+    orcid: https://orcid.org/0000-0003-2620-1233
+    affiliations:
+      - Allen Institute for Cell Science, Seattle, WA, USA
+  - name: Daniel Krentzel
+    orcid: null
+    affiliations:
+      - Pasteur
+  - name: Daniela Basurto-Lozada
+    orcid: https://orcid.org/0000-0003-3943-8424
+    affiliations:
+      - Sanger
+  - name: Dave Horsfall
+    orcid: https://orcid.org/0000-0002-8086-812X
+    affiliations:
+      - Sanger
+  - name: David Feng
+    orcid: null
+    affiliations: []
+  - name: David Gault
+    orcid: null
+    affiliations:
+      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology,
+        University of Dundee, Dundee, Scotland, UK
+  - name: David R. Stirling
+    orcid: https://orcid.org/0000-0001-6802-4103
+    affiliations:
+      - Glencoe Software Inc., Seattle, WA, USA
+  - name: David Stansby
+    orcid: null
+    affiliations:
+      - UCL
+  - name: Davis Bennett
+    orcid: null
+    affiliations:
+      - Many more
+  - name: Dmytro Horyslavets
+    orcid: null
+    affiliations:
+      - Many more
+  - name: Dominik Lindner
+    orcid: https://orcid.org/0000-0001-8038-1250
+    affiliations:
+      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology,
+        University of Dundee, Dundee, Scotland, UK
+  - name: Dominique Roux
+    orcid: null
+    affiliations:
+      - Roche
+  - name: Doug Shepherd
+    orcid: null
+    affiliations: []
+  - name: Eduardo Brito Freitez
+    orcid: null
+    affiliations: []
+  - name: Elise Liu
+    orcid: null
+    affiliations: []
+  - name: Elliott Magnuson
+    orcid: null
+    affiliations: []
+  - name: Eric Leroy
+    orcid: null
+    affiliations: []
+  - name: Eric Perlman
+    orcid: null
+    affiliations:
+      - Yikes
+  - name: Erick Ratamero
+    orcid: https://orcid.org/0000-0002-7545-3675
+    affiliations:
+      - Data Science Centre, European Molecular Biology Laboratory (EMBL), Heidelberg,
+        Germany
+  - name: Erin Diel
+    orcid: https://orcid.org/0000-0003-2526-3512
+    affiliations:
+      - Glencoe Software Inc., Seattle, WA, USA
+  - name: Erin Weisbart
+    orcid: https://orcid.org/0000-0002-6437-2458
+    affiliations:
+      - Imaging Platform, Broad Institute of MIT and Harvard, Cambridge, MA, USA
+  - name: Eva M. Brown
+    orcid: https://orcid.org/0000-0003-2564-0373
+    affiliations:
+      - Allen Institute for Cell Science, Seattle, WA, USA
+  - name: Fabian J. Theis
+    orcid: https://orcid.org/0000-0002-2419-1943
+    affiliations:
+      - Institute of Computational Biology, Helmholtz Zentrum München, Neuherberg, Germany
+  - name: Fabio Steffen
+    orcid: null
+    affiliations:
+      - Zürich
+  - name: Farzad
+    orcid: null
+    affiliations: []
+  - name: Felix Meyenhofer
+    orcid: null
+    affiliations: []
+  - name: Fernando Cervantes Sanchez
+    orcid: null
+    affiliations: []
+  - name: Filip Mroz
+    orcid: null
+    affiliations:
+      - Many more
+  - name: Florian Levet
+    orcid: null
+    affiliations: []
+  - name: Flurin Sturzenegger
+    orcid: null
+    affiliations:
+      - Zürich
+  - name: Frances Wong
+    orcid: https://orcid.org/0000-0001-7397-8251
+    affiliations:
+      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology,
+        University of Dundee, Dundee, Scotland, UK
+  - name: Francois Sherwood
+    orcid: null
+    affiliations:
+      - EBI
+  - name: Franziska Moos
+    orcid: null
+    affiliations:
+      - FMI
+  - name: Gabor Kovacs
+    orcid: https://orcid.org/0000-0003-1779-775X
+    affiliations:
+      - Allen Institute for Neural Dynamics, Seattle, WA, USA
+  - name: Giovanni Palla
+    orcid: https://orcid.org/0000-0002-8004-4462
+    affiliations:
+      - Institute of Computational Biology, Helmholtz Zentrum München, Neuherberg, Germany
+  - name: Grégory Paul
+    orcid: null
+    affiliations:
+      - Zürich
+  - name: Guillaume Gay
+    orcid: null
+    affiliations:
+      - France BioImaging
+  - name: Guillaume Witz
+    orcid: null
+    affiliations: []
+  - name: Gustavo de Medeiros
+    orcid: https://orcid.org/0000-0001-5877-3012
     affiliations:
       - Friedrich Miescher Institute for Biomedical Imaging, Basel, Switzerland
+  - name: Hannes Spitz
+    orcid: https://orcid.org/0009-0003-0010-1995
+    affiliations:
+      - scalable minds GmbH, Potsdam, Germany
+  - name: Haowen
+    orcid: null
+    affiliations: []
+  - name: Hiroya Itoga
+    orcid: null
+    affiliations:
+      - RIKEN Center for Biosystems Dynamics Research, Kobe, Japan
+  - name: Hugo_Blanc
+    orcid: null
+    affiliations: []
+  - name: Hythem Sidky
+    orcid: https://orcid.org/0000-0003-3532-4809
+    affiliations:
+      - NIH
+  - name: Igor Tatarnikov
+    orcid: null
+    affiliations: []
+  - name: Igor Zubarev
+    orcid: null
+    affiliations:
+      - Many more
+  - name: Ilan Gold
+    orcid: https://orcid.org/0000-0002-5823-1026
+    affiliations:
+      - Harvard Medical School, Boston, MA, USA
+  - name: Isaac Virshup
+    orcid: https://orcid.org/0000-0002-1710-8945
+    affiliations:
+      - Institute of Computational Biology, Helmholtz Zentrum München, Neuherberg, Germany
+  - name: Jan Eglinger
+    orcid: null
+    affiliations:
+      - FMI
+  - name: Janina Hanne
+    orcid: null
+    affiliations:
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
+        Germany
+  - name: Jason R. Swedlow
+    orcid: https://orcid.org/0000-0002-2198-1958
+    affiliations:
+      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology,
+        University of Dundee, Dundee, Scotland, UK
+      - Glencoe Software Inc., Seattle, WA, USA
+      - Chan Zuckerberg Initiative (CZI)
+  - name: Jean-Karim Hériché
+    orcid: null
+    affiliations: []
+  - name: Jean-Marie Burel
+    orcid: https://orcid.org/0000-0002-1789-1861
+    affiliations:
+      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology,
+        University of Dundee, Dundee, Scotland, UK
+  - name: Jens Wendt
+    orcid: null
+    affiliations: []
+  - name: Jenu Chacko
+    orcid: null
+    affiliations: []
+  - name: Jeremy Delahanty
+    orcid: null
+    affiliations: []
+  - name: Jeremy Maitin-Shepard
+    orcid: https://orcid.org/0000-0001-8453-7961
+    affiliations:
+      - Google Research, Mountain View, CA, USA
   - name: Joel Lüthi
     orcid: https://orcid.org/0000-0003-3023-170X
     affiliations:
       - Friedrich Miescher Institute for Biomedical Imaging, Basel, Switzerland
       - BioVisionCenter of the University of Zurich
-  - name: Lorenzo Cerrone
-    orcid:
+  - name: Johannes Elferich
+    orcid: null
+    affiliations: []
+  - name: Johannes Soltwedel
+    orcid: https://orcid.org/0000-0003-1273-2412
     affiliations:
-      - BioVisionCenter of the University of Zurich
-  - name: Virginie Uhlmann
-    orcid:
-    affiliations:
-      - BioVisionCenter of the University of Zurich
-  - name: Jeremy Maitin-Shepard
-    orcid: https://orcid.org/0000-0001-8453-7961
-    affiliations:
-      - Google Research, Mountain View, CA, USA
-  - name: Luca Marconato
-    orcid: https://orcid.org/0000-0003-3198-1326
-    affiliations:
-      - Genome Biology Unit, European Molecular Biology Laboratory (EMBL), Heidelberg, Germany
-  - name: Matthew McCormick
-    orcid: https://orcid.org/0000-0001-9475-3756
-    affiliations:
-      - Fideus Labs, Research Triangle Park, NC, USA
-  - name: Merlin Lange
-    orcid: https://orcid.org/0000-0003-0534-4374
-    affiliations:
-      - Chan Zuckerberg Biohub, San Francisco, CA, USA
-  - name: Khaled Mohamed
-    orcid: https://orcid.org/0000-0003-1480-8695
-    affiliations:
-      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
-      - Dundee
-  - name: Nils Norlin
-    orcid: https://orcid.org/0000-0003-1970-3198
-    affiliations:
-      - Department of Experimental Medical Science & Lund Bioimaging Centre, Lund University, Lund, Sweden
-  - name: Wei Ouyang
-    orcid: https://orcid.org/0000-0002-0291-926X
-    affiliations:
-      - Science for Life Laboratory, KTH Royal Institute of Technology, Stockholm, Sweden
-  - name: Bugra Özdemir
-    orcid: https://orcid.org/0000-0001-9823-0581
-    affiliations:
-      - Euro-BioImaging Bio-Hub, EMBL, Heidelberg, Germany
-  - name: Giovanni Palla
-    orcid: https://orcid.org/0000-0002-8004-4462
-    affiliations:
-      - Institute of Computational Biology, Helmholtz Zentrum München, Neuherberg, Germany
-  - name: Lucas Pelkmans
-    orcid: https://orcid.org/0000-0002-6754-9730
-    affiliations:
-      - University of Zürich, Zürich, Switzerland
-  - name: Tobias Pietzsch
-    orcid: https://orcid.org/0000-0002-9477-3957
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
+        Germany
+  - name: John Bogovic
+    orcid: https://orcid.org/0000-0002-4829-9457
     affiliations:
       - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
-  - name: Stephan Preibisch
-    orcid: https://orcid.org/0000-0002-0276-494X
+  - name: Jonas Windhager
+    orcid: https://orcid.org/0000-0002-2111-5291
     affiliations:
-      - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
-  - name: Martin Prete
-    orcid: https://orcid.org/0000-0002-5946-821X
-    affiliations:
-      - Wellcome Sanger Institute, Hinxton, UK
-  - name: Norman Rzepka
-    orcid: https://orcid.org/0000-0002-8168-7929
-    affiliations:
-      - scalable minds GmbH, Potsdam, Germany
-  - name: Hannes Spitz
-    orcid: https://orcid.org/0009-0003-0010-1995
-    affiliations:
-      - scalable minds GmbH, Potsdam, Germany
-  - name: Sameeul Samee
-    orcid: https://orcid.org/0009-0006-9305-7146
-    affiliations:
-      - NIH
-  - name: Nicholas Schaub
-    orcid: https://orcid.org/0000-0001-6581-7191
-    affiliations:
-      - Information Technology Branch, National Center for Advancing Translational Science, National Institutes of Health, Bethesda, USA
-  - name: Hythem Sidky
-    orcid: https://orcid.org/0000-0003-3532-4809
-    affiliations:
-      - NIH
-  - name: Ahmet Can Solak
-    orcid: https://orcid.org/0000-0002-1381-8309
-    affiliations:
-      - Chan Zuckerberg Biohub, San Francisco, CA, USA
-  - name: David R. Stirling
-    orcid: https://orcid.org/0000-0001-6802-4103
-    affiliations:
-      - Glencoe Software Inc., Seattle, WA, USA
+      - Science for Life Laboratory, Uppsala University, Uppsala, Sweden
   - name: Jonathan Striebel
     orcid: https://orcid.org/0000-0002-5547-5973
     affiliations:
       - scalable minds GmbH, Potsdam, Germany
-  - name: Dan Toloudis
-    orcid: https://orcid.org/0000-0003-2620-1233
+  - name: Joost de Folter
+    orcid: null
     affiliations:
-      - Allen Institute for Cell Science, Seattle, WA, USA
-  - name: Isaac Virshup
-    orcid: https://orcid.org/0000-0002-1710-8945
+      - Crick
+  - name: Jordão Bragantini
+    orcid: https://orcid.org/0000-0001-7652-2735
     affiliations:
-      - Institute of Computational Biology, Helmholtz Zentrum München, Neuherberg, Germany
-  - name: Petr Walczysko
-    orcid: https://orcid.org/0000-0003-0302-8247
+      - Chan Zuckerberg Biohub, San Francisco, CA, USA
+  - name: Josh Moore
+    orcid: https://orcid.org/0000-0003-4028-811X
     affiliations:
-      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
-  - name: Alan M. Watson
-    orcid: https://orcid.org/0000-0003-0632-8296
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
+        Germany
+      - University of Dundee
+  - name: Jules Scholler
+    orcid: null
+    affiliations: []
+  - name: Kedar Narayan
+    orcid: null
     affiliations:
-      - University of Pittsburgh, Pittsburgh, PA, USA
-  - name: Erin Weisbart
-    orcid: https://orcid.org/0000-0002-6437-2458
+      - National Cancer Institute
+  - name: Kenneth Ho
+    orcid: null
     affiliations:
-      - Imaging Platform, Broad Institute of MIT and Harvard, Cambridge, MA, USA
-  - name: Frances Wong
-    orcid: https://orcid.org/0000-0001-7397-8251
+      - Crick
+  - name: Kevin Kozlowski
+    orcid: null
     affiliations:
-      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
+      - Glencoe Software Inc., Seattle, WA, USA
   - name: Kevin Yamauchi
     orcid: https://orcid.org/0000-0002-7818-1388
     affiliations:
       - Department of Biosystems Science and Engineering, ETH Zürich, Zürich, Switzerland
-  - name: Omer Bayraktar
-    orcid: https://orcid.org/0000-0001-6055-277X
+  - name: Khaled Mohamed
+    orcid: https://orcid.org/0000-0003-1480-8695
     affiliations:
-      - Wellcome Sanger Institute, Hinxton, UK
-  - name: Beth A. Cimini
-    orcid: https://orcid.org/0000-0001-9640-9318
+      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology,
+        University of Dundee, Dundee, Scotland, UK
+      - Dundee
+  - name: Kimberly Meechan
+    orcid: null
+    affiliations: []
+  - name: Kiya Govek
+    orcid: null
     affiliations:
-      - Imaging Platform, Broad Institute of MIT and Harvard, Cambridge, MA, USA
-  - name: Nils Gehlenborg
-    orcid: https://orcid.org/0000-0003-0327-8297
+      - The Jackson Laboratory (JAX)
+  - name: Ko Sugawara
+    orcid: null
+    affiliations: []
+  - name: Koji Kyoda
+    orcid: https://orcid.org/0000-0001-9455-2153
+    affiliations:
+      - RIKEN Center for Biosystems Dynamics Research, Kobe, Japan
+  - name: Kolawole Babalola
+    orcid: null
+    affiliations:
+      - EBI
+  - name: Konrad Rokicki
+    orcid: null
+    affiliations:
+      - Janelia
+  - name: Kyle I S Harrington
+    orcid: null
+    affiliations: []
+  - name: Lachlan Deakin
+    orcid: null
+    affiliations: []
+  - name: Leonardo Schwarz
+    orcid: null
+    affiliations:
+      - ETH
+  - name: Liviu Anita
+    orcid: null
+    affiliations:
+      - EBI
+  - name: Loic A. Royer
+    orcid: https://orcid.org/0000-0002-9991-9724
+    affiliations:
+      - Chan Zuckerberg Biohub, San Francisco, CA, USA
+  - name: Lorenzo Cerrone
+    orcid: null
+    affiliations:
+      - BioVisionCenter of the University of Zurich
+  - name: Lorenzo Gaifas
+    orcid: null
+    affiliations: []
+  - name: Luca Marconato
+    orcid: https://orcid.org/0000-0003-3198-1326
+    affiliations:
+      - Genome Biology Unit, European Molecular Biology Laboratory (EMBL), Heidelberg,
+        Germany
+  - name: Lucas Pelkmans
+    orcid: https://orcid.org/0000-0002-6754-9730
+    affiliations:
+      - University of Zürich, Zürich, Switzerland
+  - name: Luis Kuhn Cuellar
+    orcid: null
+    affiliations: []
+  - name: Marco Dalla Vecchia
+    orcid: null
+    affiliations: []
+  - name: Mark Kittisopikul
+    orcid: https://orcid.org/0000-0002-9558-6248
+    affiliations:
+      - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
+  - name: Mark S. Keller
+    orcid: https://orcid.org/0000-0003-3003-874X
     affiliations:
       - Harvard Medical School, Boston, MA, USA
+  - name: Mark Tsuchida
+    orcid: null
+    affiliations: []
+  - name: Martin Jones
+    orcid: null
+    affiliations:
+      - Crick
+  - name: Martin Prete
+    orcid: https://orcid.org/0000-0002-5946-821X
+    affiliations:
+      - Wellcome Sanger Institute, Hinxton, UK
+  - name: Marvin Albert
+    orcid: null
+    affiliations:
+      - Pasteur
+  - name: Matt Smith
+    orcid: null
+    affiliations: []
+  - name: Matthew Hartley
+    orcid: https://orcid.org/0000-0001-6178-2884
+    affiliations:
+      - European Molecular Biology Laboratory, European Bioinformatics Institute, EMBL-EBI,
+        Cambridge, UK
+  - name: Matthew McCormick
+    orcid: https://orcid.org/0000-0001-9475-3756
+    affiliations:
+      - Fideus Labs, Research Triangle Park, NC, USA
+  - name: Maximilian Schulz
+    orcid: null
+    affiliations:
+      - Roche
+  - name: Melissa Linkert
+    orcid: null
+    affiliations:
+      - Glencoe Software Inc., Seattle, WA, USA
+  - name: Merlin Lange
+    orcid: https://orcid.org/0000-0003-0534-4374
+    affiliations:
+      - Chan Zuckerberg Biohub, San Francisco, CA, USA
   - name: Muzlifah Haniffa
     orcid: https://orcid.org/0000-0002-3927-2084
     affiliations:
@@ -280,426 +486,180 @@ people:
   - name: Nathan Hotaling
     orcid: https://orcid.org/0000-0001-8423-6464
     affiliations:
-      - Information Technology Branch, National Center for Advancing Translational Science, National Institutes of Health, Bethesda, USA
+      - Information Technology Branch, National Center for Advancing Translational Science,
+        National Institutes of Health, Bethesda, USA
+  - name: Nicholas Schaub
+    orcid: https://orcid.org/0000-0001-6581-7191
+    affiliations:
+      - Information Technology Branch, National Center for Advancing Translational Science,
+        National Institutes of Health, Bethesda, USA
+  - name: Nils Gehlenborg
+    orcid: https://orcid.org/0000-0003-0327-8297
+    affiliations:
+      - Harvard Medical School, Boston, MA, USA
+  - name: Nils Norlin
+    orcid: https://orcid.org/0000-0003-1970-3198
+    affiliations:
+      - Department of Experimental Medical Science & Lund Bioimaging Centre, Lund University,
+        Lund, Sweden
+  - name: Norman Rzepka
+    orcid: https://orcid.org/0000-0002-8168-7929
+    affiliations:
+      - scalable minds GmbH, Potsdam, Germany
+  - name: Oane Gros
+    orcid: null
+    affiliations:
+      - EMBL
+  - name: Oliver Stegle
+    orcid: https://orcid.org/0000-0002-8818-7193
+    affiliations:
+      - Genome Biology Unit, European Molecular Biology Laboratory (EMBL), Heidelberg,
+        Germany
+  - name: Omer Bayraktar
+    orcid: https://orcid.org/0000-0001-6055-277X
+    affiliations:
+      - Wellcome Sanger Institute, Hinxton, UK
+  - name: Peter Sobolewski
+    orcid: null
+    affiliations:
+      - JAX
+  - name: Petr Walczysko
+    orcid: https://orcid.org/0000-0003-0302-8247
+    affiliations:
+      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology,
+        University of Dundee, Dundee, Scotland, UK
+  - name: Prisca Liberali
+    orcid: https://orcid.org/0000-0003-0695-6081
+    affiliations:
+      - Friedrich Miescher Institute for Biomedical Imaging, Basel, Switzerland
+  - name: Rachael Huxford
+    orcid: null
+    affiliations:
+      - UMN
+  - name: Reto Gerber
+    orcid: null
+    affiliations:
+      - Zürich
+  - name: Ruth Hornbachner
+    orcid: null
+    affiliations:
+      - Zürich
+  - name: Rémy Dornier
+    orcid: null
+    affiliations:
+      - EPFL
+  - name: Sameeul Samee
+    orcid: https://orcid.org/0009-0006-9305-7146
+    affiliations:
+      - NIH
+  - name: Satrajit S. Ghosh
+    orcid: https://orcid.org/0000-0002-5312-6729
+    affiliations:
+      - Massachusetts Institute of Technology, Cambridge, MA, USA
+  - name: Sean Meharry
+    orcid: null
+    affiliations:
+      - Allen Institute for Cell Science, Seattle, WA, USA
+  - name: Sebastian Rhode
+    orcid: null
+    affiliations:
+      - Zeiss
   - name: Shuichi Onami
     orcid: https://orcid.org/0000-0002-8255-1724
     affiliations:
       - RIKEN Center for Biosystems Dynamics Research, Kobe, Japan
-  - name: Loic A. Royer
-    orcid: https://orcid.org/0000-0002-9991-9724
+  - name: Stefan Hahmann
+    orcid: null
     affiliations:
-      - Chan Zuckerberg Biohub, San Francisco, CA, USA
+      - TU Dresden
+  - name: Stefanie Weidtkamp-Peters
+    orcid: null
+    affiliations:
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
+        Germany
+  - name: Stephan Preibisch
+    orcid: https://orcid.org/0000-0002-0276-494X
+    affiliations:
+      - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
   - name: Stephan Saalfeld
     orcid: https://orcid.org/0000-0002-4106-1761
     affiliations:
       - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
-  - name: Oliver Stegle
-    orcid: https://orcid.org/0000-0002-8818-7193
+  - name: Stephan Wagner-Conrad
+    orcid: null
     affiliations:
-      - Genome Biology Unit, European Molecular Biology Laboratory (EMBL), Heidelberg, Germany
-  - name: Fabian J. Theis
-    orcid: https://orcid.org/0000-0002-2419-1943
+      - Zeiss
+  - name: Szymon Stoma
+    orcid: null
     affiliations:
-      - Institute of Computational Biology, Helmholtz Zentrum München, Neuherberg, Germany
-  - name: Benedikt Best
-    orcid: https://orcid.org/0000-0001-6965-1117
+      - Many more
+  - name: Sébastien Besson
+    orcid: https://orcid.org/0000-0001-8783-1429
     affiliations:
-      - EMBL, Heidelberg, Germany
-
-  # NEW: OME-NGFF Zulip channel subscribers (ORCIDs unknown here)
+      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology,
+        University of Dundee, Dundee, Scotland, UK
   - name: Tiago Lubiana
-    orcid:
+    orcid: null
     affiliations:
-      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
-  - name: Aafke Gros
-    orcid:
-    affiliations: []
-  - name: Alan Liddell
-    orcid:
-    affiliations: []
-  - name: Andreas Eisenbarth
-    orcid:
-    affiliations: []
-  - name: Andrzej Oles
-    orcid:
-    affiliations: []
-  - name: Artür Manukyan
-    orcid:
-    affiliations: []
-  - name: Caleb Hulbert
-    orcid:
-    affiliations: []
-  - name: Cameron Lloyd
-    orcid:
-    affiliations: []
-  - name: Chris Barnes
-    orcid:
-    affiliations: []
-  - name: Chris Wood
-    orcid:
-    affiliations: []
-  - name: Christophe Avenel
-    orcid:
-    affiliations: []
-  - name: Curtis Rueden
-    orcid:
-    affiliations: []
-  - name: David Feng
-    orcid:
-    affiliations: []
-  - name: David Stansby
-    orcid:
-    affiliations: []
-  - name: Davis Bennett
-    orcid:
-    affiliations: []
-  - name: Doug Shepherd
-    orcid:
-    affiliations: []
-  - name: Eduardo Brito Freitez
-    orcid:
-    affiliations: []
-  - name: Elise Liu
-    orcid:
-    affiliations: []
-  - name: Elliott Magnuson
-    orcid:
-    affiliations: []
-  - name: Eric Leroy
-    orcid:
-    affiliations: []
-  - name: Eric Perlman
-    orcid:
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
+        Germany
+  - name: Tobias Pietzsch
+    orcid: https://orcid.org/0000-0002-9477-3957
     affiliations:
-      - Yikes
-  - name: Erick Ratamero
-    orcid: https://orcid.org/0000-0002-7545-3675
+      - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
+  - name: Tom Boissonnet
+    orcid: null
     affiliations:
-      - Data Science Centre, European Molecular Biology Laboratory (EMBL), Heidelberg, Germany
-  - name: Farzad
-    orcid:
-    affiliations: []
-  - name: Felix Meyenhofer
-    orcid:
-    affiliations: []
-  - name: Fernando Cervantes Sanchez
-    orcid:
-    affiliations: []
-  - name: Florian Levet
-    orcid:
-    affiliations: []
-  - name: Francois Sherwood
-    orcid:
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
+        Germany
+  - name: Tong Li
+    orcid: https://orcid.org/0000-0002-8240-4476
     affiliations:
-      - EBI
-  - name: giovanni
-    orcid:
-    affiliations: []
-  - name: Guillaume Gay
-    orcid:
-    affiliations: []
-  - name: Guillaume Witz
-    orcid:
-    affiliations: []
-  - name: Haowen
-    orcid:
-    affiliations: []
-  - name: Hugo_Blanc
-    orcid:
-    affiliations: []
-  - name: Igor Tatarnikov
-    orcid:
-    affiliations: []
-  - name: Jan Eglinger
-    orcid:
-    affiliations: []
-  - name: Jean-Karim Hériché
-    orcid:
-    affiliations: []
-  - name: Jens Wendt
-    orcid:
-    affiliations: []
-  - name: Jenu Chacko
-    orcid:
-    affiliations: []
-  - name: Jeremy Delahanty
-    orcid:
-    affiliations: []
-  - name: jni | Juan Nunez-Iglesias
-    orcid:
-    affiliations: []
-  - name: Johannes Elferich
-    orcid:
-    affiliations: []
-  - name: Johannes Soltwedel
-    orcid:
+      - Wellcome Sanger Institute, Hinxton, UK
+  - name: Trevor Manz
+    orcid: https://orcid.org/0000-0001-7694-5164
     affiliations:
-      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
-  - name: Jonas Windhager
-    orcid: https://orcid.org/0000-0002-2111-5291
-    affiliations:
-      - Science for Life Laboratory, Uppsala University, Uppsala, Sweden
-  - name: Joost de Folter
-    orcid:
-    affiliations: []
-  - name: Jules Scholler
-    orcid:
-    affiliations: []
-  - name: Ken Ho
-    orcid:
-    affiliations: []
-  - name: Kimberly Meechan
-    orcid:
-    affiliations: []
-  - name: Ko Sugawara
-    orcid:
-    affiliations: []
-  - name: Kolawole Babalola
-    orcid:
-    affiliations:
-      - EBI
-  - name: Liviu Anita
-    orcid:
-    affiliations:
-      - EBI
-  - name: Konrad Rokicki
-    orcid:
-    affiliations:
-      - Janelia
-  - name: Kyle I S Harrington
-    orcid:
-    affiliations: []
-  - name: Lachlan Deakin
-    orcid:
-    affiliations: []
-  - name: Leonardo Schwarz
-    orcid:
-    affiliations:
-      - ETH
-  - name: Lorenzo Gaifas
-    orcid:
-    affiliations: []
-  - name: Luis Kuhn Cuellar
-    orcid:
-    affiliations: []
-  - name: Marco Dalla Vecchia
-    orcid:
-    affiliations: []
-  - name: Mark Tsuchida
-    orcid:
-    affiliations: []
-  - name: Martin Jones
-    orcid:
-    affiliations: []
-  - name: Marvin Albert
-    orcid:
-    affiliations:
-      - Pasteur
-  - name: Matt Smith
-    orcid:
-    affiliations: []
-  - name: Stefanie Weidtkamp-Peters
-    orcid:
-    affiliations:
-      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
-  - name: Janina Hanne
-    orcid:
-    affiliations:
-      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
-  - name: Benjamin Pavie
-    orcid:
-    affiliations:
-      - VIB
-
-  - name: Ana Stojiljkovic
-    orcid:
-    affiliations:
-      - Bern
-  - name: Kiya Govek
-    orcid:
-    affiliations:
-      - The Jackson Laboratory (JAX)
-
-  - name: Kedar Narayan
-    orcid:
-    affiliations:
-      - National Cancer Institute
-
+      - Harvard Medical School, Boston, MA, USA
   - name: Valentina Marcelli
-    orcid:
+    orcid: null
     affiliations:
       - BioVisionCenter of the University of Zurich
-
-  - name: Vladimir Ulman
-    orcid:
+  - name: Vera Galinova
+    orcid: null
+    affiliations:
+      - Many more
+  - name: Virginie Uhlmann
+    orcid: null
+    affiliations:
+      - BioVisionCenter of the University of Zurich
+  - name: Vladimír Ulman
+    orcid: null
     affiliations:
       - Masaryk University Brno
-  - name: Rémy Dornier
-    orcid:
+  - name: Wei Ouyang
+    orcid: https://orcid.org/0000-0002-0291-926X
     affiliations:
-      - EPFL
-
-  - name: Franziska Moos
-    orcid:
+      - Science for Life Laboratory, KTH Royal Institute of Technology, Stockholm, Sweden
+  - name: Will Moore
+    orcid: https://orcid.org/0000-0002-7264-8338
     affiliations:
-      - FMI
-
-  - name: Jan Eglinger
-    orcid:
-    affiliations:
-      - FMI
-
-  - name: Fabio Steffen
-    orcid:
-    affiliations:
-      - Zürich
-
-  - name: Flurin Sturzenegger
-    orcid:
-    affiliations:
-      - Zürich
-
-  - name: Grégory Paul
-    orcid:
-    affiliations:
-      - Zürich
-
-  - name: Reto Gerber
-    orcid:
-    affiliations:
-      - Zürich
-
-  - name: Ruth Hornbachner
-    orcid:
-    affiliations:
-      - Zürich
-
-  - name: Oane Gros
-    orcid:
-    affiliations:
-      - EMBL
-
+      - Divisions of Molecular Cell and Developmental Biology, and Computational Biology,
+        University of Dundee, Dundee, Scotland, UK
   - name: Wouter-Michiel Vierdag
-    orcid:
+    orcid: null
     affiliations:
       - EMBL
-
-  - name: Tom Boissonnet
-    orcid:
+  - name: Xavier Casas Moreno
+    orcid: https://orcid.org/0000-0002-9583-9022
     affiliations:
-      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
-
-  - name: Stefan Hahmann
-    orcid:
+      - Science for Life Laboratory, KTH Royal Institute of Technology, Stockholm, Sweden
+  - name: Yaroslav O. Halchenko
+    orcid: https://orcid.org/0000-0003-3456-2493
     affiliations:
-      - TU Dresden
-
-  - name: Guillaume Gay
-    orcid:
-    affiliations:
-      - France BioImaging
-
-  - name: Daniel Krentzel
-    orcid:
-    affiliations:
-      - Pasteur
-
-  - name: Hiroya Itoga
-    orcid:
-    affiliations:
-      - RIKEN Center for Biosystems Dynamics Research, Kobe, Japan
-
-  - name: Joost de Folter
-    orcid:
-    affiliations:
-      - Crick
-
-  - name: Kenneth Ho
-    orcid:
-    affiliations:
-      - Crick
-
-  - name: Martin Jones
-    orcid:
-    affiliations:
-      - Crick
-
-  - name: David Stansby
-    orcid:
-    affiliations:
-      - UCL
-
-  - name: Sean Meharry
-    orcid:
-    affiliations:
-      - Allen Institute for Cell Science, Seattle, WA, USA
-
-  - name: Rachael Huxford
-    orcid:
-    affiliations:
-      - UMN
-
-  - name: Dominique Roux
-    orcid:
-    affiliations:
-      - Roche
-
-  - name: Maximilian Schulz
-    orcid:
-    affiliations:
-      - Roche
-
-  - name: Sebastian Rhode
-    orcid:
-    affiliations:
-      - Zeiss
-
-  - name: Stephan Wagner-Conrad
-    orcid:
-    affiliations:
-      - Zeiss
-
-  - name: Christoph Engwer
-    orcid:
-    affiliations:
-      - Many more
-
-  - name: Davis Bennett
-    orcid:
-    affiliations:
-      - Many more
-
-  - name: Dmytro Horyslavets
-    orcid:
-    affiliations:
-      - Many more
-
-  - name: Filip Mroz
-    orcid:
-    affiliations:
-      - Many more
-
-  - name: Igor Zubarev
-    orcid:
-    affiliations:
-      - Many more
-
-  - name: Szymon Stoma
-    orcid:
-    affiliations:
-      - Many more
-
-  - name: Vera Galinova
-    orcid:
-    affiliations:
-      - Many more
-
-  - name: Peter Sobolewski
-    orcid:
-    affiliations:
-      - JAX
-
-  - name: Chris Barnes
-    orcid: https://orcid.org/0000-0002-1296-7310
-    affiliations:
-      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance, Germany
+      - Dartmouth College, Hanover, NH, USA
+  - name: giovanni
+    orcid: null
+    affiliations: []
+  - name: jni | Juan Nunez-Iglesias
+    orcid: null
+    affiliations: []
