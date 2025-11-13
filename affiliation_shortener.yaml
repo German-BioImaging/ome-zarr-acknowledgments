@@ -93,8 +93,8 @@ affiliations:
     short_name: "Google"
     country_code: "company"
 
-  - full_name: "Kitware, Inc, Carrboro, NC, USA"
-    short_name: "ITK"
+  - full_name: "Fideus Labs, Research Triangle Park, NC, USA"
+    short_name: "Fideus"
     country_code: "company"
 
   - full_name: "Department of Experimental Medical Science & Lund Bioimaging Centre, Lund University, Lund, Sweden"
