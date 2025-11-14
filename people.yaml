@@ -57,6 +57,10 @@ people:
   - name: Cameron Lloyd
     orcid: null
     affiliations: []
+  - name: Caterina Fuster Barceló
+    orcid: https://orcid.org/0000-0002-4784-6957
+    affiliations:
+      - BioVisionCenter of the University of Zurich
   - name: Chris Allan
     orcid: null
     affiliations:
@@ -187,8 +191,9 @@ people:
     orcid: null
     affiliations: []
   - name: Fernando Cervantes Sanchez
-    orcid: null
-    affiliations: []
+    orcid: https://orcid.org/0000-0003-0652-2750
+    affiliations: 
+      - The Jackson Laboratory (JAX)
   - name: Filip Mroz
     orcid: null
     affiliations:
@@ -402,6 +407,10 @@ people:
     orcid: null
     affiliations:
       - ETH
+  - name: Lila Schweinfurth
+    orcid: https://orcid.org/0009-0003-4214-7633
+    affiliations:
+      - Janelia
   - name: Liviu Anita
     orcid: null
     affiliations:
