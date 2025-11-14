@@ -243,17 +243,18 @@
                     });
                 });
 
-                // “upper” people = all resources except NGFF channel
-                const paperPeopleSet = new Set();
-                resources
-                    .filter(r => r.title !== 'OME-NGFF channel (11/2025)')
-                    .forEach(r => (r.people || []).forEach(name => paperPeopleSet.add(name)));
+                // “upper” people = anyone with at least one affiliation
+                const hasAffiliation = person => Array.isArray(person.affiliations) && person.affiliations.length > 0;
+                const paperPeople = people.filter(hasAffiliation);
 
-                const paperPeople = people.filter(p => paperPeopleSet.has(p.name));
-                const imageScOnly = people.filter(p => {
-                    const hasAff = Array.isArray(p.affiliations) && p.affiliations.length > 0;
-                    return !paperPeopleSet.has(p.name) && !hasAff;
-                });
+                const ngffTitle = 'OME-NGFF channel (11/2025)';
+                const ngffResource = resources.find(r => r.title === ngffTitle);
+                if (!ngffResource) {
+                    console.warn('%c⚠️ Missing NGFF resource:', 'color: orange', ngffTitle);
+                }
+                const ngffPeople = new Set((ngffResource && ngffResource.people) || []);
+                // image.sc-only people = no affiliation but listed in the NGFF resource
+                const imageScOnly = people.filter(p => !hasAffiliation(p) && ngffPeople.has(p.name));
 
                 // build affiliation blocks
                 const blocksMap = new Map();
