@@ -11,7 +11,7 @@ This repository keeps a curated list of people, affiliations, and resources tied
 | [`affiliation_shortener.yaml`](affiliation_shortener.yaml) | Maps long-form affiliations to short labels, country codes, and optional ordering preferences.               |
 | [`index.html`](index.html)                                 | Loads the YAML files in the browser and renders the public acknowledgments view.                             |
 
-Anyone with at least one affiliation and a `resource` entry in [`resources.yaml`](resources.yaml) other than the image.sc forum appears in the highlighted contributors section near the top of the page.
+Anyone listed with at least one affiliation appears in the highlighted contributors section near the top of the page. The image.sc block is reserved for people without affiliations who still show up in the `OME-NGFF channel (11/2025)` resource entry.
 
 ## Add a missing name
 
