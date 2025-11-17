@@ -53,16 +53,17 @@
         #paper-people {
             font-size: 0.95rem;
             line-height: 1.6;
+            white-space: pre-wrap;
         }
 
         .country {
             font-weight: 700;
-            margin-right: 0.25rem;
+            margin-right: 0.2rem;
         }
 
         .aff {
             font-weight: 600;
-            margin: 0 0.25rem;
+            margin: 0 0.2rem;
         }
 
         .people-list {
@@ -184,6 +185,7 @@
         }
 
         // We'll store colors and re-render them if the theme changes
+        const DOUBLE_SPACE = '  ';
         let currentBlocks = [];
         function renderColors() {
             const paperContainer = document.getElementById('paper-people');
@@ -329,11 +331,13 @@
                         sep.className = 'sep';
                         sep.textContent = '//';
                         paperContainer.appendChild(sep);
+                        paperContainer.appendChild(document.createTextNode(DOUBLE_SPACE));
                     }
                     const countrySpan = document.createElement('span');
                     countrySpan.className = 'country';
                     countrySpan.textContent = country;
                     paperContainer.appendChild(countrySpan);
+                    paperContainer.appendChild(document.createTextNode(DOUBLE_SPACE));
 
                     countryBlocks.forEach(block => {
                         const affSpan = document.createElement('span');
@@ -345,8 +349,10 @@
 
                         const peopleSpan = document.createElement('span');
                         peopleSpan.className = 'people-list';
-                        peopleSpan.textContent = ' ' + block.people.join(', ');
+                        paperContainer.appendChild(document.createTextNode(DOUBLE_SPACE));
+                        peopleSpan.textContent = block.people.join(', ');
                         paperContainer.appendChild(peopleSpan);
+                        paperContainer.appendChild(document.createTextNode(DOUBLE_SPACE));
                     });
                 });
 
