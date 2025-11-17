@@ -58,12 +58,12 @@
 
         .country {
             font-weight: 700;
-            margin-right: 0.2rem;
+            margin-right: 0.17rem;
         }
 
         .aff {
             font-weight: 600;
-            margin: 0 0.2rem;
+            margin: 0 0.17rem;
         }
 
         .people-list {
@@ -71,7 +71,7 @@
         }
 
         .sep {
-            margin: 0 0.75rem;
+            margin: 0 0.5rem;
             opacity: 0.7;
             color: var(--soft-muted);
         }
@@ -185,7 +185,7 @@
         }
 
         // We'll store colors and re-render them if the theme changes
-        const DOUBLE_SPACE = '  ';
+        const GAP = '\u00a0'.repeat(1); // &nbsp;&nbsp;
         let currentBlocks = [];
         function renderColors() {
             const paperContainer = document.getElementById('paper-people');
@@ -322,6 +322,8 @@
                 const isLightMode = document.body.classList.contains('light');
                 const totalAffBlocks = blocks.length;
                 let affIndex = 0;
+                const computedStyles = getComputedStyle(document.body);
+                const softMutedColor = (computedStyles.getPropertyValue('--soft-muted') || '').trim() || '#888';
 
                 countryCodes.forEach((country, ci) => {
                     const countryBlocks = countryGroups.get(country);
@@ -330,14 +332,16 @@
                         const sep = document.createElement('span');
                         sep.className = 'sep';
                         sep.textContent = '//';
+                        if (softMutedColor) sep.style.color = softMutedColor;
                         paperContainer.appendChild(sep);
-                        paperContainer.appendChild(document.createTextNode(DOUBLE_SPACE));
+                        paperContainer.appendChild(document.createTextNode(GAP));
                     }
                     const countrySpan = document.createElement('span');
                     countrySpan.className = 'country';
                     countrySpan.textContent = country;
+                    countrySpan.style.fontWeight = '700';
                     paperContainer.appendChild(countrySpan);
-                    paperContainer.appendChild(document.createTextNode(DOUBLE_SPACE));
+                    paperContainer.appendChild(document.createTextNode(GAP));
 
                     countryBlocks.forEach(block => {
                         const affSpan = document.createElement('span');
@@ -349,10 +353,10 @@
 
                         const peopleSpan = document.createElement('span');
                         peopleSpan.className = 'people-list';
-                        paperContainer.appendChild(document.createTextNode(DOUBLE_SPACE));
+                        paperContainer.appendChild(document.createTextNode(GAP));
                         peopleSpan.textContent = block.people.join(', ');
                         paperContainer.appendChild(peopleSpan);
-                        paperContainer.appendChild(document.createTextNode(DOUBLE_SPACE));
+                        paperContainer.appendChild(document.createTextNode(GAP));
                     });
                 });
 
