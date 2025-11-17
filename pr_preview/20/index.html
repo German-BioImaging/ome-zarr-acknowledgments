@@ -79,12 +79,9 @@
         #others {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.4rem 1rem;
-        }
-
-        .others-name {
+            gap: 0.35rem 0.8rem;
             font-size: 0.8rem;
-            opacity: 0.85;
+            opacity: 0.9;
         }
 
         .error {
@@ -141,7 +138,7 @@
     <div id="paper-people"></div>
 
     <h2>along with 120+ members of the image.sc group:</h2>
-    <div id="others"></div>...
+    <div id="others" aria-label="image.sc contributors list"></div>...
 
     <div id="error" class="error"></div>
 
@@ -360,13 +357,17 @@
                     });
                 });
 
-                // image.sc-only people
+                // image.sc-only people; keep visual wrap while preserving spaces on copy
                 const othersContainer = document.getElementById('others');
-                imageScOnly.forEach(p => {
-                    const div = document.createElement('div');
-                    div.className = 'others-name';
-                    div.textContent = p.name;
-                    othersContainer.appendChild(div);
+                imageScOnly.forEach((p, idx) => {
+                    const nameSpan = document.createElement('span');
+                    nameSpan.className = 'others-name';
+                    nameSpan.textContent = p.name;
+                    othersContainer.appendChild(nameSpan);
+                    // trailing space helps copy/paste keep separation even if selection spans wraps
+                    if (idx < imageScOnly.length - 1) {
+                        othersContainer.appendChild(document.createTextNode(' '));
+                    }
                 });
 
                 console.info('%c✅ Load complete', 'color: lightgreen', paperPeople.length, 'upper contributors,', imageScOnly.length, 'image.sc-only.');
