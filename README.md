@@ -7,11 +7,10 @@ This repository keeps a curated list of people, affiliations, and resources tied
 | File                                                       | Purpose                                                                                                      |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | [`people.yaml`](people.yaml)                               | Holds the canonical list of people, their affiliations, and optional ORCIDs.                                 |
-| [`resources.yaml`](resources.yaml)                         | Lists the papers, datasets, tools, and events, and the people linked to each (including the `others` group). |
-| [`affiliation_shortener.yaml`](affiliation_shortener.yaml) | Maps long-form affiliations to short labels, country codes, and optional ordering preferences.               |
-| [`index.html`](index.html)                                 | Loads the YAML files in the browser and renders the public acknowledgments view.                             |
+| [`resources.yaml`](resources.yaml)                         | Lists papers, datasets, tools, and events, and the people linked to each                                     |
+| [`affiliation_shortener.yaml`](affiliation_shortener.yaml) | Maps long-form affiliations to short labels and country codes.                                               |
 
-Anyone listed with at least one affiliation appears in the highlighted contributors section near the top of the page. The image.sc block is reserved for people without affiliations who still show up in the `OME-NGFF channel (11/2025)` resource entry.
+Anyone listed with at least one affiliation appears in the highlighted contributors section near the top of the page.
 
 ## Add a missing name
 
@@ -31,7 +30,7 @@ Contact [Tiago](https://tiago.bio.br) or open an [issue](https://github.com/germ
           - Example Imaging Center, Example City, Country
     ```
 
-3. Link the person to at least one entry in [`resources.yaml`](resources.yaml). Either append them to an existing block or add a new resource:
+3. Link the person to some entry in [`resources.yaml`](resources.yaml). Either append them to an existing block or add a new resource:
 
     ```
       - title: Example workshop
@@ -46,10 +45,9 @@ Contact [Tiago](https://tiago.bio.br) or open an [issue](https://github.com/germ
 
 ## Modify existing information
 
-1. Edit the relevant entry in [`people.yaml`](people.yaml); every person listed there should keep at least one affiliation and, if possible, an ORCID.
-2. Adjust [`resources.yaml`](resources.yaml) whenever the set of contributors for a paper, dataset, tool, or event changes (including the `others` group).
-3. Update [`affiliation_shortener.yaml`](affiliation_shortener.yaml) whenever you rename, add, or remove affiliations so the short names and countries stay in sync.
-4. If you change data that affects how the site renders, preview [`index.html`](index.html) locally (for example via `python -m http.server`) to confirm everything looks right.
+1. Edit the relevant entry in [`people.yaml`](people.yaml) + at least one affiliation. If possible, + ORCID.
+2. Add the person name to some [`resources.yaml`](resources.yaml) (e.g. a NGFF-related a paper, dataset, tool, or `other`)
+3. Update [`affiliation_shortener.yaml`](affiliation_shortener.yaml) whenever you edit affiliations so the short names and countries stay in sync.
 
 ## Control the order within an affiliation
 
@@ -67,18 +65,10 @@ Use the optional `order_override` parameter inside [`affiliation_shortener.yaml`
         - Stefanie Weidtkamp-Peters
 ```
 
-## Seed new data
-
-- Use an LLM to extract affiliations and format YAML directly from PDF author lists.
-- Call the CrossRef API (for example https://api.crossref.org/works/10.1038/s41592-021-01326-w) to enrich the metadata.
-- Copy subscribers from https://imagesc.zulipchat.com/#narrow/channel/328251-NGFF into an LLM prompt for fast formatting.
-- Link contributors to the appropriate papers, datasets, or events in [`resources.yaml`](resources.yaml).
-- Shorten new affiliations by adding entries to [`affiliation_shortener.yaml`](affiliation_shortener.yaml).
-
 ## Updates
 
 Direct pull requests that update [`people.yaml`](people.yaml), [`resources.yaml`](resources.yaml), or [`affiliation_shortener.yaml`](affiliation_shortener.yaml) are always welcome.
 
 ## LLM usage note
 
-A good part of the code and text extraction was done with aid of GPT-5 and GPT-5 codex. Names were reviewed manually and the final page was tweaked manually. 
+A good part of the code and text extraction was done with aid of GPT-5 and GPT-5 codex. Names were reviewed and the final page was tweaked manually. If you find a bug, just let us know! 
