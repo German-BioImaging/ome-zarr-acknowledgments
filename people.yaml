@@ -91,6 +91,11 @@ people:
   - name: Curtis Rueden
     orcid: null
     affiliations: []
+  - name: Damien Goutte-Gattat
+    orcid: https://orcid.org/0000-0002-6095-8718
+    affiliations:
+      - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
+        Germany
   - name: Dan Toloudis
     orcid: https://orcid.org/0000-0003-2620-1233
     affiliations:
