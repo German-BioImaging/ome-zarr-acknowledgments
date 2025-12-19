@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>OME-Zarr Acknowledgments</title>
+    <link rel="icon"
+        href="https://gerbi-gmb.de/wp-content/uploads/2021/06/cropped-apple-icon-152x152-1-32x32.png.pagespeed.ce.n4C0i1mzdH.png"
+        sizes="32x32">
+    <style>
+        :root {
+            color-scheme: dark light;
+        }
+
+        body {
+            margin: 0;
+            padding: 2rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+            --bg-color: #111;
+            --text-color: #f5f5f5;
+            --muted-color: #ccc;
+            --soft-muted: #888;
+
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.25s ease, color 0.25s ease;
+        }
+
+        body.light {
+            --bg-color: #f5f5f5;
+            --text-color: #111;
+            --muted-color: #555;
+            --soft-muted: #777;
+        }
+
+        h1 {
+            margin: 0 0 1rem;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted-color);
+        }
+
+        #paper-people {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+
+        .country {
+            font-weight: 700;
+            margin-right: 0.17rem;
+        }
+
+        .aff {
+            font-weight: 600;
+            margin: 0 0.17rem;
+        }
+
+        .people-list {
+            margin-left: 0.15rem;
+        }
+
+        .sep {
+            margin: 0 0.5rem;
+            opacity: 0.7;
+            color: var(--soft-muted);
+        }
+
+        #others {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem 0.8rem;
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+
+        .error {
+            color: #ff6b6b;
+            margin-top: 1rem;
+        }
+
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .theme-toggle {
+            border: 1px solid var(--soft-muted);
+            background: transparent;
+            color: inherit;
+            border-radius: 999px;
+            padding: 0.3rem 0.9rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--muted-color);
+        }
+
+        .site-footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--soft-muted);
+            font-size: 0.85rem;
+            color: var(--muted-color);
+        }
+
+        .site-footer a {
+            color: inherit;
+            text-decoration: underline;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+</head>
+
+<body>
+    <div class="top-bar">
+        <h1>OME-Zarr Contributors</h1>
+        <button id="theme-toggle" class="theme-toggle" type="button">Switch to light mode</button>
+    </div>
+
+    <!-- <h2>Contributors</h2> -->
+    <div id="paper-people"></div>
+
+    <h2 id="additional-heading">Additional contributors</h2>
+    <div id="others" aria-label="additional contributors list"></div>
+
+    <div id="error" class="error"></div>
+
+    <footer class="site-footer">
+        Something to change? <a href="https://github.com/German-BioImaging/ome-zarr-acknowledgments">let us know</a>
+    </footer>
+
+    <script>
+        // 🌈 rainbow color mapping, with a darker tone in light mode
+        function getRainbowColor(index, total, isLightMode) {
+            const denom = Math.max(1, total - 1);
+            const hue = Math.round((index / denom) * 300);
+
+            // use slightly darker, lower-saturation colors in light mode for better contrast
+            if (isLightMode) {
+                return `hsl(${hue}, 65%, 45%)`; // softer tones
+            } else {
+                return `hsl(${hue}, 85%, 65%)`; // vivid tones
+            }
+        }
+
+        function initThemeToggle() {
+            const btn = document.getElementById('theme-toggle');
+            const body = document.body;
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                body.classList.add('light');
+            }
+
+            function updateLabel() {
+                const light = body.classList.contains('light');
+                btn.textContent = light ? 'Switch to dark mode' : 'Switch to light mode';
+            }
+
+            updateLabel();
+            btn.addEventListener('click', () => {
+                body.classList.toggle('light');
+                updateLabel();
+                // reapply rainbow colors for the new mode
+                renderColors();
+            });
+        }
+
+        // We'll store colors and re-render them if the theme changes
+        const GAP = '\u00a0'.repeat(1); // &nbsp;&nbsp;
+        let currentBlocks = [];
+        function renderColors() {
+            const paperContainer = document.getElementById('paper-people');
+            const isLightMode = document.body.classList.contains('light');
+            const totalAffBlocks = currentBlocks.length;
+            const affEls = paperContainer.querySelectorAll('.aff');
+            affEls.forEach((el, i) => {
+                el.style.color = getRainbowColor(i, totalAffBlocks, isLightMode);
+            });
+        }
+
+        async function loadData() {
+            const errorEl = document.getElementById('error');
+
+            try {
+                const [peopleResp, affResp] = await Promise.all([
+                    fetch('people.yaml'),
+                    fetch('affiliation_shortener.yaml'),
+                ]);
+
+                if (!peopleResp.ok) throw new Error('Cannot load people.yaml: ' + peopleResp.statusText);
+                if (!affResp.ok) throw new Error('Cannot load affiliation_shortener.yaml: ' + affResp.statusText);
+
+                const [peopleText, affText] = await Promise.all([peopleResp.text(), affResp.text()]);
+                const peopleData = jsyaml.load(peopleText);
+                const affData = jsyaml.load(affText);
+
+                const people = peopleData.people || [];
+                const affiliations = affData.affiliations || [];
+
+                const affMap = new Map();
+                affiliations.forEach(a => {
+                    if (a.full_name) affMap.set(a.full_name, a);
+                });
+
+                function getAffEntry(full) {
+                    const entry = affMap.get(full);
+                    if (!entry) {
+                        console.warn('%c⚠️ Missing shortening for affiliation:', 'color: orange', full);
+                        return { full_name: full, short_name: full, country_code: '--' };
+                    }
+                    return entry;
+                }
+
+                // People with at least one affiliation are grouped by affiliation
+                const hasAffiliation = person => Array.isArray(person.affiliations) && person.affiliations.length > 0;
+                const affiliatedPeople = people.filter(hasAffiliation);
+                const unaffiliatedPeople = people.filter(p => !hasAffiliation(p));
+
+                // build affiliation blocks
+                const blocksMap = new Map();
+                affiliatedPeople.forEach(person => {
+                    const affs = Array.isArray(person.affiliations) ? person.affiliations : [];
+                    if (affs.length === 0) console.warn('%c⚠️ Upper person without affiliation:', 'color: gold', person.name);
+                    affs.forEach(fullAff => {
+                        const entry = getAffEntry(fullAff);
+                        const shortName = entry.short_name || fullAff;
+                        const country = entry.country_code || '--';
+                        const key = country + '|' + shortName;
+                        if (!blocksMap.has(key))
+                            blocksMap.set(key, { country_code: country, aff_short: shortName, full_name: fullAff, people: [] });
+                        const block = blocksMap.get(key);
+                        if (!block.people.includes(person.name)) block.people.push(person.name);
+                    });
+                });
+
+                const blocks = Array.from(blocksMap.values());
+                currentBlocks = blocks; // store for re-rendering colors later
+
+                // apply order_override
+                blocks.forEach(block => {
+                    const affConfig = affMap.get(block.full_name);
+                    if (!affConfig || !Array.isArray(affConfig.order_override)) return;
+                    const override = affConfig.order_override;
+                    const peopleSet = new Set(block.people);
+
+                    override.forEach(name => {
+                        if (!peopleSet.has(name))
+                            console.warn('%c⚠️ order_override name not in people list:', 'color: magenta', `"${name}" → ${block.aff_short}`);
+                    });
+
+                    block.people.forEach(name => {
+                        if (!override.includes(name))
+                            console.warn('%c⚠️ Person missing from order_override:', 'color: cyan', `"${name}" → ${block.aff_short}`);
+                    });
+
+                    const ordered = [];
+                    override.forEach(name => {
+                        if (peopleSet.has(name)) ordered.push(name);
+                    });
+                    block.people.forEach(name => {
+                        if (!override.includes(name)) ordered.push(name);
+                    });
+                    block.people = ordered;
+                });
+
+                // group by country
+                const countryGroups = new Map();
+                blocks.forEach(b => {
+                    const c = b.country_code;
+                    if (!countryGroups.has(c)) countryGroups.set(c, []);
+                    countryGroups.get(c).push(b);
+                });
+
+                const countryCodes = Array.from(countryGroups.keys()).sort();
+                countryCodes.forEach(c => {
+                    countryGroups.get(c).sort((a, b) => a.aff_short.localeCompare(b.aff_short));
+                });
+
+                const paperContainer = document.getElementById('paper-people');
+                const isLightMode = document.body.classList.contains('light');
+                const totalAffBlocks = blocks.length;
+                let affIndex = 0;
+                const computedStyles = getComputedStyle(document.body);
+                const softMutedColor = (computedStyles.getPropertyValue('--soft-muted') || '').trim() || '#888';
+
+                countryCodes.forEach((country, ci) => {
+                    const countryBlocks = countryGroups.get(country);
+                    if (!countryBlocks.length) return;
+                    if (ci > 0) {
+                        const sep = document.createElement('span');
+                        sep.className = 'sep';
+                        sep.textContent = '//';
+                        if (softMutedColor) sep.style.color = softMutedColor;
+                        paperContainer.appendChild(sep);
+                        paperContainer.appendChild(document.createTextNode(GAP));
+                    }
+                    const countrySpan = document.createElement('span');
+                    countrySpan.className = 'country';
+                    countrySpan.textContent = country;
+                    countrySpan.style.fontWeight = '700';
+                    paperContainer.appendChild(countrySpan);
+                    paperContainer.appendChild(document.createTextNode(GAP));
+
+                    countryBlocks.forEach(block => {
+                        const affSpan = document.createElement('span');
+                        affSpan.className = 'aff';
+                        affSpan.textContent = block.aff_short;
+                        affSpan.style.color = getRainbowColor(affIndex, totalAffBlocks, isLightMode);
+                        affIndex++;
+                        paperContainer.appendChild(affSpan);
+
+                        const peopleSpan = document.createElement('span');
+                        peopleSpan.className = 'people-list';
+                        paperContainer.appendChild(document.createTextNode(GAP));
+                        peopleSpan.textContent = block.people.join(', ');
+                        paperContainer.appendChild(peopleSpan);
+                        paperContainer.appendChild(document.createTextNode(GAP));
+                    });
+                });
+
+                // Additional contributors (no listed affiliation); keep visual wrap while preserving spaces on copy
+                const othersHeading = document.getElementById('additional-heading');
+                const othersContainer = document.getElementById('others');
+                if (unaffiliatedPeople.length === 0) {
+                    if (othersHeading) othersHeading.remove();
+                    if (othersContainer) othersContainer.remove();
+                } else if (othersContainer) {
+                    unaffiliatedPeople.forEach((p, idx) => {
+                        const nameSpan = document.createElement('span');
+                        nameSpan.className = 'others-name';
+                        nameSpan.textContent = p.name;
+                        othersContainer.appendChild(nameSpan);
+                        // trailing space helps copy/paste keep separation even if selection spans wraps
+                        if (idx < unaffiliatedPeople.length - 1) {
+                            othersContainer.appendChild(document.createTextNode(' '));
+                        }
+                    });
+                }
+
+                console.info('%c✅ Load complete', 'color: lightgreen', affiliatedPeople.length, 'affiliated contributors,', unaffiliatedPeople.length, 'unaffiliated.');
+            } catch (err) {
+                console.error(err);
+                errorEl.textContent = err.message;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initThemeToggle();
+            loadData();
+        });
+    </script>
+</body>
+
+</html>
