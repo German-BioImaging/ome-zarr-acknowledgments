@@ -1,14 +1,16 @@
 people:
   - name: Aafke Gros
     orcid: null
-    affiliations: []
+    affiliations:
+      - EMBL
   - name: Ahmet Can Solak
     orcid: https://orcid.org/0000-0002-1381-8309
     affiliations:
       - Chan Zuckerberg Biohub, San Francisco, CA, USA
   - name: Alan Liddell
     orcid: null
-    affiliations: []
+    affiliations:
+      - Chan Zuckerberg Initiative (CZI)
   - name: Alan M. Watson
     orcid: https://orcid.org/0000-0003-0632-8296
     affiliations:
@@ -23,13 +25,12 @@ people:
       - Bern
   - name: Andreas Eisenbarth
     orcid: null
-    affiliations: []
-  - name: Andrzej Oles
-    orcid: null
-    affiliations: []
+    affiliations:
+      - EMBL
   - name: Artür Manukyan
     orcid: null
-    affiliations: []
+    affiliations:
+      - Max-Delbrück-Centrum für Molekulare Medizin
   - name: Aybüke Küpcü Yoldaş
     orcid: https://orcid.org/0000-0001-6191-5069
     affiliations:
@@ -53,10 +54,12 @@ people:
       - Euro-BioImaging Bio-Hub, EMBL, Heidelberg, Germany
   - name: Caleb Hulbert
     orcid: null
-    affiliations: []
+    affiliations:
+      - Howard Hughes Medical Institute
   - name: Cameron Lloyd
-    orcid: null
-    affiliations: []
+    orcid: https://orcid.org/0000-0003-1055-2282
+    affiliations:
+      - University of Cambridge
   - name: Caterina Fuster Barceló
     orcid: https://orcid.org/0000-0002-4784-6957
     affiliations:
@@ -70,9 +73,6 @@ people:
     affiliations:
       - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
         Germany
-  - name: Chris Wood
-    orcid: null
-    affiliations: []
   - name: Christian Tischer
     orcid: https://orcid.org/0000-0003-4105-1990
     affiliations:
@@ -83,15 +83,17 @@ people:
       - Many more
   - name: Christophe Avenel
     orcid: null
-    affiliations: []
+    affiliations:
+      - SciLifeLab
   - name: Constantin Pape
     orcid: https://orcid.org/0000-0001-6562-7187
     affiliations:
       - Georg-August-Universität Göttingen, Göttingen, Germany
   - name: Curtis Rueden
     orcid: null
-    affiliations: []
-  - name: Damien Goutte-Gattat
+    affiliations:
+      - University of Wisconsin, Madison
+  - name: Damien Goutte-Gattat#
     orcid: https://orcid.org/0000-0002-6095-8718
     affiliations:
       - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
@@ -114,7 +116,8 @@ people:
       - Sanger
   - name: David Feng
     orcid: null
-    affiliations: []
+    affiliations:
+      - Allen Institute for Neural Dynamics, Seattle, WA, USA
   - name: David Gault
     orcid: null
     affiliations:
@@ -147,19 +150,20 @@ people:
       - Roche
   - name: Doug Shepherd
     orcid: null
-    affiliations: []
-  - name: Eduardo Brito Freitez
-    orcid: null
-    affiliations: []
+    affiliations:
+      - Arizona State University
   - name: Elise Liu
     orcid: null
-    affiliations: []
+    affiliations:
+      - Paris Brain Institute
   - name: Elliott Magnuson
     orcid: null
-    affiliations: []
+    affiliations:
+      - University of Wisconsin, Madison
   - name: Eric Leroy
     orcid: null
-    affiliations: []
+    affiliations:
+      - CNRS
   - name: Eric Perlman
     orcid: null
     affiliations:
@@ -189,12 +193,10 @@ people:
     orcid: null
     affiliations:
       - Zürich
-  - name: Farzad
-    orcid: null
-    affiliations: []
   - name: Felix Meyenhofer
     orcid: null
-    affiliations: []
+    affiliations:
+      - Universität Freiburg (CH)
   - name: Fernando Cervantes Sanchez
     orcid: https://orcid.org/0000-0003-0652-2750
     affiliations:
@@ -205,7 +207,8 @@ people:
       - Many more
   - name: Florian Levet
     orcid: null
-    affiliations: []
+    affiliations:
+      - Université de Bordeaux
   - name: Flurin Sturzenegger
     orcid: null
     affiliations:
@@ -241,7 +244,8 @@ people:
       - France BioImaging
   - name: Guillaume Witz
     orcid: null
-    affiliations: []
+    affiliations:
+      - Bern
   - name: Gustavo de Medeiros
     orcid: https://orcid.org/0000-0001-5877-3012
     affiliations:
@@ -250,27 +254,30 @@ people:
     orcid: https://orcid.org/0009-0003-0010-1995
     affiliations:
       - scalable minds GmbH, Potsdam, Germany
-  - name: Haowen
+  - name: Haowen Zhou
     orcid: null
-    affiliations: []
+    affiliations:
+      - Caltech
   - name: Hiroya Itoga
     orcid: null
     affiliations:
       - RIKEN Center for Biosystems Dynamics Research, Kobe, Japan
-  - name: Hugo_Blanc
+  - name: Hugo Blanc
     orcid: null
-    affiliations: []
+    affiliations:
+      - Laboratoire d'Optique et Biosciences, Ecole Polytechnique, CNRS
   - name: Hythem Sidky
     orcid: https://orcid.org/0000-0003-3532-4809
     affiliations:
       - NIH
   - name: Igor Tatarnikov
     orcid: null
-    affiliations: []
+    affiliations:
+      - UCL
   - name: Igor Zubarev
     orcid: null
     affiliations:
-      - Many more
+      - Human Technopole, Milan, Italy
   - name: Ilan Gold
     orcid: https://orcid.org/0000-0002-5823-1026
     affiliations:
@@ -297,7 +304,8 @@ people:
       - Chan Zuckerberg Initiative (CZI)
   - name: Jean-Karim Hériché
     orcid: null
-    affiliations: []
+    affiliations:
+      - EMBL
   - name: Jean-Marie Burel
     orcid: https://orcid.org/0000-0002-1789-1861
     affiliations:
@@ -305,13 +313,16 @@ people:
         University of Dundee, Dundee, Scotland, UK
   - name: Jens Wendt
     orcid: null
-    affiliations: []
+    affiliations:
+      - University of Münster
   - name: Jenu Chacko
     orcid: null
-    affiliations: []
+    affiliations:
+      - University of Wisconsin, Madison
   - name: Jeremy Delahanty
     orcid: null
-    affiliations: []
+    affiliations:
+      - Johns Hopkins University
   - name: Jeremy Maitin-Shepard
     orcid: https://orcid.org/0000-0001-8453-7961
     affiliations:
@@ -323,7 +334,8 @@ people:
       - BioVisionCenter of the University of Zurich
   - name: Johannes Elferich
     orcid: null
-    affiliations: []
+    affiliations:
+      - UMass Chan Medical School
   - name: Johannes Soltwedel
     orcid: https://orcid.org/0000-0003-1273-2412
     affiliations:
@@ -357,7 +369,8 @@ people:
       - University of Dundee
   - name: Jules Scholler
     orcid: null
-    affiliations: []
+    affiliations:
+      - Many more
   - name: Kedar Narayan
     orcid: null
     affiliations:
@@ -382,14 +395,16 @@ people:
       - Dundee
   - name: Kimberly Meechan
     orcid: null
-    affiliations: []
+    affiliations:
+      - UCL
   - name: Kiya Govek
     orcid: null
     affiliations:
       - The Jackson Laboratory (JAX)
   - name: Ko Sugawara
-    orcid: null
-    affiliations: []
+    orcid: https://orcid.org/0000-0002-1392-9340
+    affiliations:
+      - RIKEN Center for Biosystems Dynamics Research, Kobe, Japan
   - name: Koji Kyoda
     orcid: https://orcid.org/0000-0001-9455-2153
     affiliations:
@@ -404,10 +419,12 @@ people:
       - Janelia
   - name: Kyle I S Harrington
     orcid: null
-    affiliations: []
+    affiliations:
+      - Chan Zuckerberg Biohub, San Francisco, CA, USA
   - name: Lachlan Deakin
     orcid: null
-    affiliations: []
+    affiliations:
+      - Australian National University
   - name: Leonardo Schwarz
     orcid: null
     affiliations:
@@ -430,7 +447,8 @@ people:
       - BioVisionCenter of the University of Zurich
   - name: Lorenzo Gaifas
     orcid: null
-    affiliations: []
+    affiliations:
+      - Many more
   - name: Luca Marconato
     orcid: https://orcid.org/0000-0003-3198-1326
     affiliations:
@@ -442,10 +460,12 @@ people:
       - University of Zürich, Zürich, Switzerland
   - name: Luis Kuhn Cuellar
     orcid: null
-    affiliations: []
+    affiliations:
+      - University of Tübingen
   - name: Marco Dalla Vecchia
     orcid: null
-    affiliations: []
+    affiliations:
+      - IST, Austria
   - name: Mark Kittisopikul
     orcid: https://orcid.org/0000-0002-9558-6248
     affiliations:
@@ -456,7 +476,8 @@ people:
       - Harvard Medical School, Boston, MA, USA
   - name: Mark Tsuchida
     orcid: null
-    affiliations: []
+    affiliations:
+      - University of Wisconsin, Madison
   - name: Martin Jones
     orcid: null
     affiliations:
@@ -469,9 +490,6 @@ people:
     orcid: null
     affiliations:
       - Pasteur
-  - name: Matt Smith
-    orcid: null
-    affiliations: []
   - name: Matthew Hartley
     orcid: https://orcid.org/0000-0001-6178-2884
     affiliations:
@@ -676,9 +694,7 @@ people:
     orcid: https://orcid.org/0000-0003-3456-2493
     affiliations:
       - Dartmouth College, Hanover, NH, USA
-  - name: giovanni
+  - name: Juan Nunez-Iglesias
     orcid: null
-    affiliations: []
-  - name: jni | Juan Nunez-Iglesias
-    orcid: null
-    affiliations: []
+    affiliations:
+      - Monash University

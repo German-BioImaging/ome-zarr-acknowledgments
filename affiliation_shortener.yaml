@@ -48,6 +48,12 @@ affiliations:
       EMBL-EBI, Cambridge, UK
     short_name: EBI
     country_code: UK
+  - full_name: University of Cambridge
+    short_name: Cambridge
+    country_code: UK
+  - full_name: Monash University
+    short_name: Monash
+    country_code: AU
   - full_name: EBI
     short_name: EBI
     country_code: UK
@@ -123,6 +129,54 @@ affiliations:
       Germany
     short_name: Helmholtz München
     country_code: DE
+  - full_name: Howard Hughes Medical Institute
+    short_name: HHMI
+    country_code: US
+  - full_name: University of Wisconsin, Madison
+    short_name: Madison
+    country_code: US
+  - full_name: Arizona State University
+    short_name: ASU
+    country_code: US
+  - full_name: Universität Freiburg (CH)
+    short_name: Freiburg (CH)
+    country_code: CH
+  - full_name: Institut Pasteur, Paris, France
+    short_name: Pasteur
+    country_code: FR
+  - full_name: Paris Brain Institute
+    short_name: ICM
+    country_code: FR
+  - full_name: Human Technopole, Milan, Italy
+    short_name: Technopole
+    country_code: IT
+  - full_name: Laboratoire d'Optique et Biosciences, Ecole Polytechnique, CNRS
+    short_name: CNRS
+    country_code: FR
+  - full_name: University of Münster
+    short_name: Münster
+    country_code: DE
+  - full_name: Australian National University
+    short_name: ANU
+    country_code: AU
+  - full_name: IST, Austria
+    short_name: IST
+    country_code: AT
+  - full_name: University of Tübingen
+    short_name: Tübingen
+    country_code: DE
+  - full_name: Université de Bordeaux
+    short_name: Bordeaux
+    country_code: FR
+  - full_name: Caltech
+    short_name: Caltech
+    country_code: US
+  - full_name: Max-Delbrück-Centrum für Molekulare Medizin
+    short_name: MDC
+    country_code: DE
+  - full_name: CNRS
+    short_name: CNRS
+    country_code: FR
   - full_name: The Jackson Laboratory (JAX)
     short_name: JAX
     country_code: US
@@ -188,7 +242,16 @@ affiliations:
       Sweden
     short_name: SciLifeLab
     country_code: SE
+  - full_name: Johns Hopkins University
+    short_name: JHU
+    country_code: US
   - full_name: Science for Life Laboratory, Uppsala University, Uppsala, Sweden
+    short_name: SciLifeLab
+    country_code: SE
+  - full_name: UMass Chan Medical School
+    short_name: UMass
+    country_code: US
+  - full_name: SciLifeLab
     short_name: SciLifeLab
     country_code: SE
   - full_name: TU Dresden
