@@ -305,6 +305,7 @@ resources:
   - title: others
     url: https://example.org
     people:
+      - Nicole Repina
 
   - title: 2025 International OME-NGFF Workshop
     url: https://www.biovisioncenter.uzh.ch/en/events/Upcoming-Events/2025-OME-NGFF-workshop.html
