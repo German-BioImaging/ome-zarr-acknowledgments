@@ -134,11 +134,11 @@
         <button id="theme-toggle" class="theme-toggle" type="button">Switch to light mode</button>
     </div>
 
-    <!-- <h2>Contributors (papers &amp; resources)</h2> -->
+    <!-- <h2>Contributors</h2> -->
     <div id="paper-people"></div>
 
-    <h2>along with 120+ members of the image.sc group:</h2>
-    <div id="others" aria-label="image.sc contributors list"></div>...
+    <h2 id="additional-heading">Additional contributors</h2>
+    <div id="others" aria-label="additional contributors list"></div>
 
     <div id="error" class="error"></div>
 
@@ -198,26 +198,20 @@
             const errorEl = document.getElementById('error');
 
             try {
-                const [peopleResp, resourcesResp, affResp] = await Promise.all([
+                const [peopleResp, affResp] = await Promise.all([
                     fetch('people.yaml'),
-                    fetch('resources.yaml'),
                     fetch('affiliation_shortener.yaml'),
                 ]);
 
                 if (!peopleResp.ok) throw new Error('Cannot load people.yaml: ' + peopleResp.statusText);
-                if (!resourcesResp.ok) throw new Error('Cannot load resources.yaml: ' + resourcesResp.statusText);
                 if (!affResp.ok) throw new Error('Cannot load affiliation_shortener.yaml: ' + affResp.statusText);
 
-                const [peopleText, resourcesText, affText] = await Promise.all([peopleResp.text(), resourcesResp.text(), affResp.text()]);
+                const [peopleText, affText] = await Promise.all([peopleResp.text(), affResp.text()]);
                 const peopleData = jsyaml.load(peopleText);
                 const affData = jsyaml.load(affText);
-                const resourcesData = jsyaml.load(resourcesText);
 
                 const people = peopleData.people || [];
-                const resources = resourcesData.resources || [];
                 const affiliations = affData.affiliations || [];
-
-                const knownPeople = new Set(people.map(p => p.name));
 
                 const affMap = new Map();
                 affiliations.forEach(a => {
@@ -233,31 +227,14 @@
                     return entry;
                 }
 
-                // unknown persons in resources
-                resources.forEach(r => {
-                    (r.people || []).forEach(name => {
-                        if (!knownPeople.has(name)) {
-                            console.warn('%c⚠️ Resource refers to unknown person:', 'color: red', `"${name}" in "${r.title}"`);
-                        }
-                    });
-                });
-
-                // “upper” people = anyone with at least one affiliation
+                // People with at least one affiliation are grouped by affiliation
                 const hasAffiliation = person => Array.isArray(person.affiliations) && person.affiliations.length > 0;
-                const paperPeople = people.filter(hasAffiliation);
-
-                const ngffTitle = 'OME-NGFF channel (11/2025)';
-                const ngffResource = resources.find(r => r.title === ngffTitle);
-                if (!ngffResource) {
-                    console.warn('%c⚠️ Missing NGFF resource:', 'color: orange', ngffTitle);
-                }
-                const ngffPeople = new Set((ngffResource && ngffResource.people) || []);
-                // image.sc-only people = no affiliation but listed in the NGFF resource
-                const imageScOnly = people.filter(p => !hasAffiliation(p) && ngffPeople.has(p.name));
+                const affiliatedPeople = people.filter(hasAffiliation);
+                const unaffiliatedPeople = people.filter(p => !hasAffiliation(p));
 
                 // build affiliation blocks
                 const blocksMap = new Map();
-                paperPeople.forEach(person => {
+                affiliatedPeople.forEach(person => {
                     const affs = Array.isArray(person.affiliations) ? person.affiliations : [];
                     if (affs.length === 0) console.warn('%c⚠️ Upper person without affiliation:', 'color: gold', person.name);
                     affs.forEach(fullAff => {
@@ -357,20 +334,26 @@
                     });
                 });
 
-                // image.sc-only people; keep visual wrap while preserving spaces on copy
+                // Additional contributors (no listed affiliation); keep visual wrap while preserving spaces on copy
+                const othersHeading = document.getElementById('additional-heading');
                 const othersContainer = document.getElementById('others');
-                imageScOnly.forEach((p, idx) => {
-                    const nameSpan = document.createElement('span');
-                    nameSpan.className = 'others-name';
-                    nameSpan.textContent = p.name;
-                    othersContainer.appendChild(nameSpan);
-                    // trailing space helps copy/paste keep separation even if selection spans wraps
-                    if (idx < imageScOnly.length - 1) {
-                        othersContainer.appendChild(document.createTextNode(' '));
-                    }
-                });
+                if (unaffiliatedPeople.length === 0) {
+                    if (othersHeading) othersHeading.remove();
+                    if (othersContainer) othersContainer.remove();
+                } else if (othersContainer) {
+                    unaffiliatedPeople.forEach((p, idx) => {
+                        const nameSpan = document.createElement('span');
+                        nameSpan.className = 'others-name';
+                        nameSpan.textContent = p.name;
+                        othersContainer.appendChild(nameSpan);
+                        // trailing space helps copy/paste keep separation even if selection spans wraps
+                        if (idx < unaffiliatedPeople.length - 1) {
+                            othersContainer.appendChild(document.createTextNode(' '));
+                        }
+                    });
+                }
 
-                console.info('%c✅ Load complete', 'color: lightgreen', paperPeople.length, 'upper contributors,', imageScOnly.length, 'image.sc-only.');
+                console.info('%c✅ Load complete', 'color: lightgreen', affiliatedPeople.length, 'affiliated contributors,', unaffiliatedPeople.length, 'unaffiliated.');
             } catch (err) {
                 console.error(err);
                 errorEl.textContent = err.message;
