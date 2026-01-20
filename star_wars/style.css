@@ -64,11 +64,12 @@ main.scene {
     transform: translate(-50%, -50%);
     color: #4bd5ee;
     /* Classic blue/cyan */
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: clamp(1.2rem, 3.5vw, 2.5rem);
     font-weight: 400;
     letter-spacing: 0.1em;
     opacity: 0;
-    width: max-content;
+    max-width: 90%;
+    text-align: center;
     animation: intro-fade 5s ease-out 1s forwards;
     z-index: 10;
 }
@@ -103,9 +104,10 @@ main.scene {
 
 .logo-sub {
     display: block;
-    font-size: clamp(1rem, 3vw, 2.5rem);
-    letter-spacing: 0.4em;
-    margin-top: 0.5em;
+    font-size: clamp(0.8rem, 2.5vw, 2.5rem);
+    letter-spacing: clamp(0.2em, 0.4em, 0.5em);
+    margin-top: 0.3em;
+    line-height: 1.2;
     color: var(--crawl-yellow);
 }
 
@@ -185,10 +187,10 @@ main.scene {
 /* Controls */
 .controls {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: max(10px, env(safe-area-inset-bottom));
+    right: 10px;
     display: flex;
-    gap: 10px;
+    gap: 8px;
     z-index: 100;
     opacity: 0.3;
     transition: opacity 0.3s;
@@ -202,9 +204,9 @@ main.scene {
     background: transparent;
     border: 1px solid var(--crawl-yellow);
     color: var(--crawl-yellow);
-    padding: 8px 16px;
+    padding: clamp(6px, 1.5vw, 8px) clamp(12px, 3vw, 16px);
     font-family: var(--font-heading);
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 4px;
@@ -219,12 +221,13 @@ main.scene {
 
 .status-msg {
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    bottom: max(10px, env(safe-area-inset-bottom));
+    left: 10px;
     color: rgba(255, 255, 255, 0.5);
-    font-size: 0.8rem;
+    font-size: clamp(0.7rem, 1.8vw, 0.8rem);
     font-family: sans-serif;
     z-index: 100;
+    max-width: 50vw;
 }
 
 .error-msg {
@@ -333,9 +336,10 @@ body.ended .end-screen {
 }
 
 .start-subtitle {
+    display: block;
     font-family: var(--font-body);
-    font-size: clamp(1rem, 3vw, 1.8rem);
-    letter-spacing: 0.3em;
+    font-size: clamp(0.8rem, 2.5vw, 1.8rem);
+    letter-spacing: clamp(0.15em, 0.3em, 0.4em);
     color: var(--crawl-yellow);
     opacity: 0.9;
     margin-top: 10px;
