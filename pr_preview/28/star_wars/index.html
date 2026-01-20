@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OME ZARR Contributors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Saira+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+</head>
+<body>
+
+  <div class="stars"></div>
+
+  <div class="start-screen" id="start-screen">
+    <div class="start-logo">
+      <span class="logo-line">OME ZARR</span>
+      <span class="start-subtitle">Acknowledgments Archive</span>
+    </div>
+    <div class="start-buttons">
+      <button class="start-btn" id="btn-start">Start</button>
+      <button class="start-btn" id="btn-silent">Start Silently</button>
+    </div>
+  </div>
+
+  <div class="end-screen" id="end-screen">
+    <div class="end-header">
+      <h1 class="end-title">OME-ZARR Contributors</h1>
+    </div>
+    <div class="end-content">
+      <div class="end-contributors" id="end-contributors"></div>
+      <div class="end-others-section" id="end-others-section">
+        <h2 class="end-others-title">Additional Contributors</h2>
+        <div class="end-others" id="end-others"></div>
+      </div>
+      <div class="end-actions">
+        <a href="https://ngff.openmicroscopy.org/" class="end-btn primary" target="_blank" rel="noopener">Join the Force</a>
+        <button class="end-btn" id="btn-restart">Restart Experience</button>
+      </div>
+      <footer class="end-footer">
+        Something to change? <a href="https://github.com/German-BioImaging/ome-zarr-acknowledgments" target="_blank" rel="noopener">Let us know</a>
+      </footer>
+    </div>
+  </div>
+
+  <main class="scene">
+    <div class="intro">A long time ago, in a core facility far far away...</div>
+    
+    <div class="logo">
+      <span class="logo-line">OME</span>
+      <span class="logo-line fill">ZARR</span>
+      <span class="logo-sub">ACKNOWLEDGMENTS ARCHIVE</span>
+    </div>
+
+    <div class="crawl-container">
+      <div class="crawl-content">
+        <div class="crawl-header">
+ <!--      <span class="episode-number">Data Log</span> -->
+          <h1 class="episode-title">OME-ZARR Contributors</h1>
+        </div>
+        
+        <div class="crawl-text">
+          <div id="paper-people"></div>
+          <div id="others"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="btn" id="btn-skip" title="Skip Intro">Skip</button>
+      <div id="status" class="status-msg"></div>
+    </div>
+  </main>
+
+  <audio id="theme-audio" preload="auto">
+    <source src="https://starwarsintrogenerator.com/media/star-wars-main-title.mp3" type="audio/mpeg" />
+    <source src="https://starwarsintrogenerator.com/media/star-wars-main-title.ogg" type="audio/ogg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
