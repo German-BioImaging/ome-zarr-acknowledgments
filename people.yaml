@@ -25,7 +25,8 @@ people:
   affiliations:
   - Bern
 - name: Andreas Eisenbarth
-  orcid: null
+  github: aeisenbarth
+  orcid: 0000-0002-1113-9556
   affiliations:
   - EMBL
 - name: Artür Manukyan
