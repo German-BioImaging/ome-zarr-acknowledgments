@@ -232,8 +232,9 @@ people:
   orcid: null
   affiliations:
   - Zürich
-- name: Forest Collmann
+- name: Forrest Collman
   github: fcollman
+  orcid: https://orcid.org/0000-0002-0280-7022
   affiliations:
   - Allen Institute for Brain Science
 - name: Frances Wong
