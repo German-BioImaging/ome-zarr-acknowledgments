@@ -38,6 +38,7 @@ people:
   - European Molecular Biology Laboratory, European Bioinformatics Institute, EMBL-EBI,
     Cambridge, UK
 - name: Benedikt Best
+  github: btbest
   orcid: https://orcid.org/0000-0001-6965-1117
   affiliations:
   - EMBL, Heidelberg, Germany
@@ -63,6 +64,7 @@ people:
   affiliations:
   - University of Cambridge
 - name: Caterina Fuster Barceló
+  github: cfusterbarcelo
   orcid: https://orcid.org/0000-0002-4784-6957
   affiliations:
   - BioVisionCenter of the University of Zurich
@@ -96,6 +98,7 @@ people:
   affiliations:
   - Georg-August-Universität Göttingen, Göttingen, Germany
 - name: Curtis Rueden
+  github: ctrueden
   orcid: null
   affiliations:
   - University of Wisconsin, Madison
@@ -184,6 +187,7 @@ people:
   affiliations:
   - Yikes
 - name: Erick Ratamero
+  github: erickmartins
   orcid: https://orcid.org/0000-0002-7545-3675
   affiliations:
   - Data Science Centre, European Molecular Biology Laboratory (EMBL), Heidelberg,
@@ -388,6 +392,7 @@ people:
   affiliations:
   - scalable minds GmbH, Potsdam, Germany
 - name: Joost de Folter
+  github: folterj
   orcid: null
   affiliations:
   - Crick
@@ -441,6 +446,7 @@ people:
   affiliations:
   - UCL
 - name: Kiya Govek
+  github: govekk
   orcid: null
   affiliations:
   - The Jackson Laboratory (JAX)
@@ -453,10 +459,12 @@ people:
   affiliations:
   - RIKEN Center for Biosystems Dynamics Research, Kobe, Japan
 - name: Kolawole Babalola
+  github: kbab
   orcid: null
   affiliations:
   - EBI
 - name: Konrad Rokicki
+  github: krokicki
   orcid: null
   affiliations:
   - Janelia
@@ -469,6 +477,11 @@ people:
   orcid: null
   affiliations:
   - Australian National University
+- name: Lenard Spiecker
+  github: l-spiecker
+  orcid: https://orcid.org/0009-0002-2205-0554
+  affiliations:
+  - Miltenyi Biotec
 - name: Leonardo Schwarz
   orcid: null
   affiliations:
@@ -650,7 +663,13 @@ people:
   orcid: https://orcid.org/0000-0002-5312-6729
   affiliations:
   - Massachusetts Institute of Technology, Cambridge, MA, USA
+- name: Pete Bankhead
+  github: petebankhead
+  orcid: https://orcid.org/0000-0003-4851-8813
+  affiliations:
+  - University of Edinburgh, Edinburgh, UK
 - name: Sean Meharry
+  github: SeanDuHare
   orcid: null
   affiliations:
   - Allen Institute for Cell Science, Seattle, WA, USA
@@ -663,6 +682,11 @@ people:
   orcid: https://orcid.org/0000-0002-8255-1724
   affiliations:
   - RIKEN Center for Biosystems Dynamics Research, Kobe, Japan
+- name: Sricharan Reddy Varra
+  github: srivarra
+  orcid: https://orcid.org/0009-0000-5757-6818
+  affiliations:
+  - Chan Zuckerberg Biohub, San Francisco, CA, USA
 - name: Stefan Hahmann
   orcid: null
   affiliations:
@@ -702,6 +726,7 @@ people:
   affiliations:
   - Harvard Medical School
 - name: Tiago Lubiana
+  github: lubianat
   orcid: null
   affiliations:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
@@ -711,6 +736,7 @@ people:
   affiliations:
   - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
 - name: Tom Boissonnet
+  github: Tom-TBT
   orcid: null
   affiliations:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
