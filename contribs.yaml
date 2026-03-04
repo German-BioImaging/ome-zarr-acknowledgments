@@ -108,8 +108,8 @@ rfcs:
     - Josh Moore
 repos:
   ome/ngff:
-    joshmoore: 485
-    jo-mueller: 192
+    joshmoore: 486
+    jo-mueller: 195
     sbesson: 130
     will-moore: 93
     jwindhager: 89
@@ -120,28 +120,28 @@ repos:
     thewtex: 31
     bogovicj: 28
     jni: 28
-    dstansby: 24
+    dstansby: 25
     cfusterbarcelo: 17
     yarikoptic: 15
     melissalinkert: 13
     erickmartins: 11
     mkitti: 10
+    lubianat: 9
     tlambert03: 8
-    lubianat: 8
+    jburel: 7
     virginiascarlett: 7
     giovp: 7
-    jburel: 7
-    clbarnes: 5
+    clbarnes: 6
     melonora: 4
-    tcompa: 3
+    btbest: 3
     indecisiveuser: 3
-    bugraoezdemir: 2
+    tcompa: 3
     petebankhead: 2
     kevinyamauchi: 2
     imagejan: 2
     glyg: 2
     d-v-b: 2
-    btbest: 2
+    bugraoezdemir: 2
     xgui3783: 1
     vuhlmann: 1
     Tom-TBT: 1
@@ -158,25 +158,26 @@ repos:
     ctrueden: 1
     AlanMWatson: 1
   ome/ngff-spec:
-    joshmoore: 405
+    joshmoore: 409
     sbesson: 130
     bogovicj: 120
-    jo-mueller: 107
-    will-moore: 93
+    jo-mueller: 118
+    will-moore: 96
     normanrz: 63
     constantinpape: 36
     jni: 28
     ivirshup: 20
     yarikoptic: 15
     melissalinkert: 13
+    jluethi: 12
     dstansby: 9
     virginiascarlett: 7
     giovp: 7
+    lubianat: 5
     clbarnes: 4
     thewtex: 4
     jburel: 4
     d-v-b: 3
-    lubianat: 3
     tcompa: 3
     glyg: 2
     imagejan: 2
@@ -184,9 +185,9 @@ repos:
     bugraoezdemir: 2
     AlanMWatson: 1
     dzenanz: 1
-    jluethi: 1
     jwindhager: 1
     JulianHn: 1
     matthewh-ebi: 1
     melonora: 1
     xgui3783: 1
+last_updated: '2026-03-04T19:01:50Z'

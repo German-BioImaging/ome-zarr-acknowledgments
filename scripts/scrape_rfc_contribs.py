@@ -4,6 +4,7 @@ import csv
 import logging
 import re
 from collections import defaultdict
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -101,7 +102,7 @@ def main() -> None:
             )
 
     data["rfcs"] = dict(sorted(parsed_rfcs.items(), key=lambda item: int(item[0][3:])))
-
+    data["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     CONTRIBS_PATH.write_text(yaml.dump(data, sort_keys=False, allow_unicode=True))
     logging.info("Updated %s with %d RFC entries", CONTRIBS_PATH, len(parsed_rfcs))
 

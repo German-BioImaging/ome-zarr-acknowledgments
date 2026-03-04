@@ -2,6 +2,7 @@ import requests
 from pathlib import Path
 import yaml
 import logging
+from datetime import datetime, timezone
 
 logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s", level=logging.INFO
@@ -46,4 +47,5 @@ for repo in REPOS:
     )
 
 # Write the updated data back to contribs.yaml
-contribs_path.write_text(yaml.dump(data, sort_keys=False))
+data["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+contribs_path.write_text(yaml.dump(data, sort_keys=False, allow_unicode=True))
