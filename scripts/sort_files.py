@@ -11,9 +11,11 @@ def sort_yaml(path, key, sort_field, prefix=""):
     )
 
 
-sort_yaml("people.yaml", "people", "name")
+SCRIPTS = Path(__file__).parent
+BASE = SCRIPTS.parent
+sort_yaml(BASE / "people.yaml", "people", "name")
 sort_yaml(
-    "affiliation_shortener.yaml",
+    BASE / "affiliation_shortener.yaml",
     "affiliations",
     "short_name",
     "# affiliation_shortener.yaml\n",
