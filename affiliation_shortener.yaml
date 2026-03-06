@@ -6,6 +6,12 @@ affiliations:
 - full_name: Arizona State University
   short_name: ASU
   country_code: US
+- full_name: Allen Institute for Brain Science
+  short_name: Allen
+  country_code: US
+- full_name: Allen Institute for Cell Science
+  short_name: Allen
+  country_code: US
 - full_name: Allen Institute for Cell Science, Seattle, WA, USA
   short_name: Allen
   country_code: US
@@ -93,6 +99,9 @@ affiliations:
 - full_name: ETH
   short_name: ETH
   country_code: CH
+- full_name: University of Edinburgh, Edinburgh, UK
+  short_name: Edinburgh
+  country_code: UK
 - full_name: Euro-BioImaging Bio-Hub, EMBL, Heidelberg, Germany
   short_name: Euro-BioImaging
   country_code: DE
@@ -135,6 +144,9 @@ affiliations:
 - full_name: Howard Hughes Medical Institute
   short_name: HHMI
   country_code: US
+- full_name: Harvard Medical School
+  short_name: HMS
+  country_code: US
 - full_name: Harvard Medical School, Boston, MA, USA
   short_name: HMS
   country_code: US
@@ -157,6 +169,9 @@ affiliations:
 - full_name: Johns Hopkins University
   short_name: JHU
   country_code: US
+- full_name: Howard Hughes Medical Institute, Janelia Research Campus
+  short_name: Janelia
+  country_code: US
 - full_name: Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA,
     USA
   short_name: Janelia
@@ -164,6 +179,15 @@ affiliations:
 - full_name: Janelia
   short_name: Janelia
   country_code: US
+- full_name: Forschungszentrum Jülich GmbH
+  short_name: Jülich
+  country_code: DE
+- full_name: Kitware
+  short_name: Kitware
+  country_code: company
+- full_name: Leibniz Institute of Photonic Technology (Leibniz IPHT), Jena, Germany
+  short_name: Leibniz IPHT
+  country_code: DE
 - full_name: Department of Experimental Medical Science & Lund Bioimaging Centre,
     Lund University, Lund, Sweden
   short_name: Lund University
@@ -183,6 +207,9 @@ affiliations:
 - full_name: Many more
   short_name: Many more
   country_code: plus
+- full_name: Miltenyi Biotec
+  short_name: Miltenyi Biotec
+  country_code: company
 - full_name: Monash University
   short_name: Monash
   country_code: AU
@@ -245,6 +272,9 @@ affiliations:
 - full_name: UCL
   short_name: UCL
   country_code: UK
+- full_name: University College London
+  short_name: UCL
+  country_code: UK
 - full_name: UMN
   short_name: UMN
   country_code: US
@@ -269,6 +299,9 @@ affiliations:
 - full_name: Zürich
   short_name: Zürich
   country_code: CH
+- full_name: eXact lab
+  short_name: eXact lab
+  country_code: company
 - full_name: scalable minds GmbH, Potsdam, Germany
   short_name: scalable minds
   country_code: company

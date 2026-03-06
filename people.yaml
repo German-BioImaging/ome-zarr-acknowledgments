@@ -180,6 +180,8 @@ people:
   - Arizona State University
 - name: Dženan Zukić
   github: dzenanz
+  affiliations:
+  - Kitware
 - name: Elise Liu
   orcid: null
   affiliations:
@@ -428,8 +430,10 @@ people:
   orcid: null
   affiliations:
   - Many more
-- name: Julian Hn
+- name: Julian Hniopek
   github: julianhn
+  affiliations:
+  - Leibniz Institute of Photonic Technology (Leibniz IPHT), Jena, Germany
 - name: Kedar Narayan
   orcid: null
   affiliations:
@@ -642,6 +646,11 @@ people:
   orcid: https://orcid.org/0000-0001-6055-277X
   affiliations:
   - Wellcome Sanger Institute, Hinxton, UK
+- name: Pete Bankhead
+  github: petebankhead
+  orcid: https://orcid.org/0000-0003-4851-8813
+  affiliations:
+  - University of Edinburgh, Edinburgh, UK
 - name: Peter Sobolewski
   orcid: null
   affiliations:
@@ -679,11 +688,6 @@ people:
   orcid: https://orcid.org/0000-0002-5312-6729
   affiliations:
   - Massachusetts Institute of Technology, Cambridge, MA, USA
-- name: Pete Bankhead
-  github: petebankhead
-  orcid: https://orcid.org/0000-0003-4851-8813
-  affiliations:
-  - University of Edinburgh, Edinburgh, UK
 - name: Sean Meharry
   github: SeanDuHare
   orcid: null
@@ -759,6 +763,8 @@ people:
     Germany
 - name: Tommaso Comparin
   github: tcompa
+  affiliations:
+  - eXact lab
 - name: Tong Li
   orcid: https://orcid.org/0000-0002-8240-4476
   affiliations:
@@ -778,6 +784,8 @@ people:
 - name: Virginia Scarlett
   github: virginiascarlett
   orcid: https://orcid.org/0000-0002-4156-2849
+  affiliations:
+  - Janelia
 - name: Virginie Uhlmann
   github: vuhlmann
   orcid: https://orcid.org/0000-0002-2859-9241
@@ -806,8 +814,10 @@ people:
   orcid: https://orcid.org/0000-0002-9583-9022
   affiliations:
   - Science for Life Laboratory, KTH Royal Institute of Technology, Stockholm, Sweden
-- name: Xiao Gui
+- name: Xiaoyun Gui
   github: xgui3783
+  affiliations:
+  - Forschungszentrum Jülich GmbH
 - name: Yaroslav O. Halchenko
   github: yarikoptic
   orcid: https://orcid.org/0000-0003-3456-2493
@@ -820,3 +830,5 @@ people:
 - name: Ziwen Liu
   github: ziw-liu
   orcid: https://orcid.org/0000-0001-7843-1992
+  affiliations:
+  - University College London
