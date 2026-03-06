@@ -29,6 +29,11 @@ people:
   orcid: 0000-0002-1113-9556
   affiliations:
   - EMBL
+- name: Anna Kreshuk
+  github: kreshuklab
+  orcid: https://orcid.org/0000-0003-1334-6388
+  affiliations:
+  - EMBL
 - name: Artür Manukyan
   orcid: null
   affiliations:
@@ -153,6 +158,11 @@ people:
   orcid: null
   affiliations:
   - Many more
+- name: Dominik Kutra
+  github: k-dominik
+  orcid: https://orcid.org/0000-0003-4202-3908
+  affiliations:
+  - EMBL
 - name: Dominik Lindner
   github: dominik-lindner
   orcid: https://orcid.org/0000-0001-8038-1250
@@ -562,6 +572,10 @@ people:
   orcid: https://orcid.org/0000-0001-9475-3756
   affiliations:
   - Fideus Labs, Research Triangle Park, NC, USA
+- name: Matthias Grunwald
+  orcid: null
+  affiliations:
+  - Miltenyi Biotec
 - name: Maximilian Schulz
   orcid: null
   affiliations:
