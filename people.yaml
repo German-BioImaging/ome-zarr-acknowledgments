@@ -178,6 +178,12 @@ people:
   orcid: null
   affiliations:
   - Arizona State University
+- name: Draga Doncila Pop
+  github: DragaDoncila
+  orcid: https://orcid.org/0000-0001-9116-5553
+  affiliations:
+  - Image Cooperative
+  - Monash University
 - name: Dženan Zukić
   github: dzenanz
   affiliations:
@@ -199,6 +205,7 @@ people:
   orcid: https://orcid.org/0000-0001-5542-1302
   affiliations:
   - Yikes
+  - Image Cooperative
 - name: Erick Ratamero
   github: erickmartins
   orcid: https://orcid.org/0000-0002-7545-3675
@@ -421,11 +428,13 @@ people:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
     Germany
   - University of Dundee
+  - Image Cooperative
 - name: Juan Nunez-Iglesias
   github: jni
   orcid: https://orcid.org/0000-0002-7239-5828
   affiliations:
   - Monash University
+  - Image Cooperative
 - name: Jules Scholler
   orcid: null
   affiliations:
@@ -451,6 +460,7 @@ people:
   orcid: https://orcid.org/0000-0002-7818-1388
   affiliations:
   - Department of Biosystems Science and Engineering, ETH Zürich, Zürich, Switzerland
+  - Image Cooperative
 - name: Khaled Mohamed
   orcid: https://orcid.org/0000-0003-1480-8695
   affiliations:

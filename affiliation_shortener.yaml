@@ -160,6 +160,9 @@ affiliations:
 - full_name: IST, Austria
   short_name: IST
   country_code: AT
+- full_name: Image Cooperative
+  short_name: Image Coop
+  country_code: company
 - full_name: The Jackson Laboratory (JAX)
   short_name: JAX
   country_code: US
