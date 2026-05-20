@@ -7,10 +7,6 @@ people:
   orcid: https://orcid.org/0000-0002-1381-8309
   affiliations:
   - Chan Zuckerberg Biohub, San Francisco, CA, USA
-- name: Alan Liddell
-  orcid: null
-  affiliations:
-  - Chan Zuckerberg Initiative (CZI)
 - name: Alan M. Watson
   github: alanmwatson
   orcid: https://orcid.org/0000-0003-0632-8296
@@ -354,7 +350,7 @@ people:
   - Divisions of Molecular Cell and Developmental Biology, and Computational Biology,
     University of Dundee, Dundee, Scotland, UK
   - Glencoe Software Inc., Seattle, WA, USA
-  - Chan Zuckerberg Initiative (CZI)
+  - Chan Zuckerberg Biohub, San Francisco, CA, USA
 - name: Jean-Karim Hériché
   orcid: null
   affiliations:
@@ -524,6 +520,7 @@ people:
   orcid: https://orcid.org/0000-0002-9991-9724
   affiliations:
   - Chan Zuckerberg Biohub, San Francisco, CA, USA
+- name: Chi
 - name: Lorenzo Cerrone
   orcid: null
   affiliations:
