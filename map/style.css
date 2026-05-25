@@ -17,7 +17,7 @@ body {
     --soft-muted: #555;
     --land-color: #d4d4d4;
     --border-color: #333;
-    --highlight-color: #a78bfa;
+    --highlight-color: #184878;
 
     background-color: var(--bg-color);
     color: var(--text-color);
