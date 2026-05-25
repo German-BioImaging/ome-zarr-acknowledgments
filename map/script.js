@@ -44,18 +44,28 @@ let svg = null;
 // Theme toggle
 function initThemeToggle() {
     const body = document.body;
-    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
+
+    // Check localStorage first, then system preference
+    const saved = localStorage.getItem('theme-mode');
+    if (saved === 'light') {
         body.classList.add("light");
+    } else if (saved !== 'dark') {
+        // No saved preference, use system preference
+        if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
+            body.classList.add("light");
+        }
     }
 
     function updateLabel() {
         const light = body.classList.contains("light");
-        dom.themeToggle.textContent = light ? "Switch to dark mode" : "Switch to light mode";
+        dom.themeToggle.textContent = light ? "🔆" : "🌙";
     }
 
     updateLabel();
     dom.themeToggle.addEventListener("click", () => {
         body.classList.toggle("light");
+        const isLight = body.classList.contains("light");
+        localStorage.setItem('theme-mode', isLight ? 'light' : 'dark');
         updateLabel();
     });
 }
