@@ -757,6 +757,8 @@ people:
   affiliations:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
     Germany
+  based_in:
+  - BR
 - name: Tobias Pietzsch
   orcid: https://orcid.org/0000-0002-9477-3957
   affiliations:

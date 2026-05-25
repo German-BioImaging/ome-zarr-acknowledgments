@@ -13,6 +13,10 @@ permissions:
   id-token: write
   pull-requests: write
 
+concurrency:
+  group: gh-pages-publish
+  cancel-in-progress: false
+
 jobs:
   deploy-production:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
