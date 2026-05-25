@@ -131,7 +131,10 @@
 <body>
     <div class="top-bar">
         <h1>OME-Zarr Contributors</h1>
-        <button id="theme-toggle" class="theme-toggle" type="button">Switch to light mode</button>
+        <div>        <button id="theme-toggle" class="theme-toggle" type="button">🔆/🌙</button>
+        <button onclick="window.location.href='./map'"  class="theme-toggle"  type="button">📍🗺️</button>
+    </div>
+
     </div>
 
     <!-- <h2>Contributors</h2> -->
@@ -141,6 +144,7 @@
     <div id="others" aria-label="additional contributors list"></div>
 
     <div id="error" class="error"></div>
+
 
     <footer class="site-footer">
         Something to change? <a href="https://github.com/German-BioImaging/ome-zarr-acknowledgments">let us know</a>
@@ -163,18 +167,28 @@
         function initThemeToggle() {
             const btn = document.getElementById('theme-toggle');
             const body = document.body;
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+
+            // Check localStorage first, then system preference
+            const saved = localStorage.getItem('theme-mode');
+            if (saved === 'light') {
                 body.classList.add('light');
+            } else if (saved !== 'dark') {
+                // No saved preference, use system preference
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                    body.classList.add('light');
+                }
             }
 
             function updateLabel() {
                 const light = body.classList.contains('light');
-                btn.textContent = light ? 'Switch to dark mode' : 'Switch to light mode';
+                btn.textContent = light ? '🔆' : '🌙';
             }
 
             updateLabel();
             btn.addEventListener('click', () => {
                 body.classList.toggle('light');
+                const isLight = body.classList.contains('light');
+                localStorage.setItem('theme-mode', isLight ? 'light' : 'dark');
                 updateLabel();
                 // reapply rainbow colors for the new mode
                 renderColors();
