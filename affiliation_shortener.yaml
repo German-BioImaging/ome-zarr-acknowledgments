@@ -141,6 +141,9 @@ affiliations:
 - full_name: Howard Hughes Medical Institute
   short_name: HHMI
   country_code: US
+- full_name: Heinrich Heine University Düsseldorf
+  short_name: HHU Düsseldorf
+  country_code: DE
 - full_name: Harvard Medical School
   short_name: HMS
   country_code: US

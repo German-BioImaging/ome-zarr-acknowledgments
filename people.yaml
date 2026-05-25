@@ -81,6 +81,8 @@ people:
   affiliations:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
     Germany
+  based_in:
+  - UK
 - name: Christian Tischer
   github: tischi
   orcid: https://orcid.org/0000-0003-4105-1990
@@ -109,6 +111,8 @@ people:
   affiliations:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
     Germany
+  based_in:
+  - UK
 - name: Dan Toloudis
   github: toloudis
   orcid: https://orcid.org/0000-0003-2620-1233
@@ -722,6 +726,7 @@ people:
   affiliations:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
     Germany
+  - Heinrich Heine University Düsseldorf
 - name: Stephan Preibisch
   orcid: https://orcid.org/0000-0002-0276-494X
   affiliations:
@@ -769,6 +774,7 @@ people:
   affiliations:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
     Germany
+  - Heinrich Heine University Düsseldorf
 - name: Tommaso Comparin
   github: tcompa
   affiliations:
