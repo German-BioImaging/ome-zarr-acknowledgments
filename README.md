@@ -6,7 +6,7 @@ This repository keeps a curated list of people and affiliations tied to the OME-
 
 | File                                                       | Purpose                                                                                                      |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| [`people.yaml`](people.yaml)                               | Holds the canonical list of people, their affiliations, and optional ORCIDs.                                 |
+| [`people.yaml`](people.yaml)                               | Holds the canonical list of people, their affiliations, and optional details.                                 |
 | [`affiliation_shortener.yaml`](affiliation_shortener.yaml) | Maps long-form affiliations to short labels and country codes.                                               |
 
 Everyone listed in `people.yaml` appears on the page. People with affiliations are grouped by affiliation; people without affiliations appear in the additional contributors list.
@@ -24,9 +24,15 @@ Contact [Tiago](https://tiago.bio.br) or open an [issue](https://github.com/germ
 
     ```
       - name: Jane Doe
-        orcid: https://orcid.org/0000-0000-0000-0000
         affiliations:
           - Example Imaging Center, Example City, Country
+        # OPTIONAL fields:
+        github: janedoegithubslug
+        orcid: https://orcid.org/0000-0000-0000-0000
+        alt_names: # helps when validating against other lists
+            - Janeth Doe
+        based_in: # helps when displaying remote workers on the map
+            - BR
     ```
 
 3. Confirm each affiliation listed in `people.yaml` has a matching entry with a `short_name` in [`affiliation_shortener.yaml`](affiliation_shortener.yaml); add one if necessary.
@@ -34,7 +40,7 @@ Contact [Tiago](https://tiago.bio.br) or open an [issue](https://github.com/germ
 
 ## Modify existing information
 
-1. Edit the relevant entry in [`people.yaml`](people.yaml) and keep affiliations up to date. If possible, add ORCID.
+1. Edit the relevant entry in [`people.yaml`](people.yaml) and keep details up to date.
 2. Update [`affiliation_shortener.yaml`](affiliation_shortener.yaml) whenever you edit affiliations so the short names and countries stay in sync.
 
 ## Control the order within an affiliation
@@ -59,4 +65,4 @@ Direct pull requests that update [`people.yaml`](people.yaml) or [`affiliation_s
 
 ## LLM usage note
 
-A good part of the code and text extraction was done with aid of GPT-5 and GPT-5 codex. Names were reviewed and the final page was tweaked manually. If you find a bug, just let us know! 
+A good part of the code and text extraction was done with aid of GPT-5 and GPT-5 codex. Names were reviewed and the final page was tweaked manually. If you find a bug, just let us know!
