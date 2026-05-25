@@ -75,8 +75,10 @@ function aggregateByCountry(people, affMap) {
 
     people.forEach(person => {
         const affiliations = person.affiliations || [];
+        const basedIn = person.based_in || [];
         const seenCountries = new Set();
 
+        // Process affiliations
         affiliations.forEach(fullAff => {
             const entry = affMap.get(fullAff);
             if (!entry || !entry.country_code) return;
@@ -100,6 +102,37 @@ function aggregateByCountry(people, affMap) {
             if (!affMap2.has(affKey)) affMap2.set(affKey, []);
             if (!affMap2.get(affKey).includes(person.name)) {
                 affMap2.get(affKey).push(person.name);
+            }
+        });
+
+        // Process based_in countries
+        basedIn.forEach(iso2Code => {
+            const iso3 = ISO2_TO_ISO3[iso2Code.toUpperCase()];
+            if (!iso3) return;
+
+            // Count contributor once per country (skip if already counted via affiliation)
+            if (!seenCountries.has(iso3)) {
+                seenCountries.add(iso3);
+                countryCounts.set(iso3, (countryCounts.get(iso3) || 0) + 1);
+                if (!countryPeople.has(iso3)) countryPeople.set(iso3, []);
+                countryPeople.get(iso3).push(person.name);
+            }
+
+            // Add to affiliations display using primary affiliation
+            if (!countryAffiliations.has(iso3)) countryAffiliations.set(iso3, new Map());
+            const affMap2 = countryAffiliations.get(iso3);
+
+            // Use first affiliation's short name, or fallback to full name
+            let primaryAffKey = "Independent";
+            if (affiliations.length > 0) {
+                const firstAff = affiliations[0];
+                const entry = affMap.get(firstAff);
+                primaryAffKey = entry?.short_name || firstAff;
+            }
+
+            if (!affMap2.has(primaryAffKey)) affMap2.set(primaryAffKey, []);
+            if (!affMap2.get(primaryAffKey).includes(person.name)) {
+                affMap2.get(primaryAffKey).push(person.name);
             }
         });
     });
