@@ -68,15 +68,30 @@ async function fetchYaml(path) {
     return jsyaml.load(text) || {};
 }
 
+// Icon URLs for profile links
+const ORCID_ICON = "https://orcid.org/assets/vectors/orcid.logo.icon.svg";
+const GITHUB_ICON = "../icons/invertocat.svg";
+
 function aggregateByCountry(people, affMap) {
     const countryCounts = new Map();
     const countryPeople = new Map();
-    const countryAffiliations = new Map(); // Store affiliations with their people
+    const countryAffiliations = new Map(); // Store affiliations with their people (as objects)
 
     people.forEach(person => {
         const affiliations = person.affiliations || [];
         const basedIn = person.based_in || [];
         const seenCountries = new Set();
+        const personData = { name: person.name, orcid: person.orcid, github: person.github };
+
+        // Helper to add person to affiliation map (avoids duplicates by name)
+        function addToAffMap(iso3, affKey) {
+            if (!countryAffiliations.has(iso3)) countryAffiliations.set(iso3, new Map());
+            const affMap2 = countryAffiliations.get(iso3);
+            if (!affMap2.has(affKey)) affMap2.set(affKey, []);
+            if (!affMap2.get(affKey).some(p => p.name === person.name)) {
+                affMap2.get(affKey).push(personData);
+            }
+        }
 
         // Process affiliations
         affiliations.forEach(fullAff => {
@@ -96,13 +111,8 @@ function aggregateByCountry(people, affMap) {
             }
 
             // Track affiliations per country
-            if (!countryAffiliations.has(iso3)) countryAffiliations.set(iso3, new Map());
-            const affMap2 = countryAffiliations.get(iso3);
             const affKey = entry.short_name || fullAff;
-            if (!affMap2.has(affKey)) affMap2.set(affKey, []);
-            if (!affMap2.get(affKey).includes(person.name)) {
-                affMap2.get(affKey).push(person.name);
-            }
+            addToAffMap(iso3, affKey);
         });
 
         // Process based_in countries
@@ -119,25 +129,31 @@ function aggregateByCountry(people, affMap) {
             }
 
             // Add to affiliations display using primary affiliation
-            if (!countryAffiliations.has(iso3)) countryAffiliations.set(iso3, new Map());
-            const affMap2 = countryAffiliations.get(iso3);
-
-            // Use first affiliation's short name, or fallback to full name
             let primaryAffKey = "Independent";
             if (affiliations.length > 0) {
                 const firstAff = affiliations[0];
                 const entry = affMap.get(firstAff);
                 primaryAffKey = entry?.short_name || firstAff;
             }
-
-            if (!affMap2.has(primaryAffKey)) affMap2.set(primaryAffKey, []);
-            if (!affMap2.get(primaryAffKey).includes(person.name)) {
-                affMap2.get(primaryAffKey).push(person.name);
-            }
+            addToAffMap(iso3, primaryAffKey);
         });
     });
 
     return { counts: countryCounts, people: countryPeople, affiliations: countryAffiliations };
+}
+
+// Render person name with optional ORCID/GitHub icons
+function renderPersonWithIcons(person) {
+    let html = `<span class="person-entry">${person.name}`;
+    if (person.orcid) {
+        const orcidUrl = person.orcid.startsWith("http") ? person.orcid : `https://orcid.org/${person.orcid}`;
+        html += ` <a href="${orcidUrl}" target="_blank" rel="noopener" class="profile-icon" title="ORCID"><img src="${ORCID_ICON}" alt="ORCID"></a>`;
+    }
+    if (person.github) {
+        html += ` <a href="https://github.com/${person.github}" target="_blank" rel="noopener" class="profile-icon" title="GitHub"><img src="${GITHUB_ICON}" alt="GitHub"></a>`;
+    }
+    html += `</span>`;
+    return html;
 }
 
 // Map rendering
@@ -266,7 +282,7 @@ function showTooltip(event, feature, countryData) {
             for (const [affName, people] of affiliations) {
                 html += `<div class="tooltip-aff">`;
                 html += `<span class="tooltip-aff-name">${affName}</span>`;
-                html += `<span class="tooltip-aff-people">${people.join(", ")}</span>`;
+                html += `<span class="tooltip-aff-people">${people.map(p => p.name).join(", ")}</span>`;
                 html += `</div>`;
             }
             html += `</div>`;
@@ -283,12 +299,12 @@ function showTooltip(event, feature, countryData) {
 function moveTooltip(event) {
     const x = event.clientX + 15;
     const y = event.clientY + 15;
-    
+
     // Keep tooltip in viewport
     const rect = dom.tooltip.getBoundingClientRect();
     const maxX = window.innerWidth - rect.width - 20;
     const maxY = window.innerHeight - rect.height - 20;
-    
+
     dom.tooltip.style.left = `${Math.min(x, maxX)}px`;
     dom.tooltip.style.top = `${Math.min(y, maxY)}px`;
 }
@@ -320,7 +336,7 @@ function handleCountryClick(event, feature, countryData) {
         for (const [affName, people] of sortedAffs) {
             content += `<div class="detail-aff">`;
             content += `<div class="detail-aff-name">${affName}</div>`;
-            content += `<div class="detail-aff-people">${people.join(", ")}</div>`;
+            content += `<div class="detail-aff-people">${people.map(renderPersonWithIcons).join(", ")}</div>`;
             content += `</div>`;
         }
     }
@@ -352,7 +368,7 @@ function renderLegend(maxCount, colorScale) {
     html += `<div class="legend-info">`;
     html += `Scroll or pinch to zoom · Double-click to reset · `;
     html += `<a href="https://en.wikipedia.org/wiki/Equal_Earth_projection" target="_blank" rel="noopener">Equal Earth projection</a>. `;
-    html += `Only contributors with listed affiliations are shown.`;
+    html += `Contributors are mapped by their affiliations and their remote work locations.`;
     html += `</div>`;
     dom.legend.innerHTML = html;
 }

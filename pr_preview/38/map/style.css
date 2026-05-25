@@ -279,6 +279,28 @@ h1 {
     line-height: 1.6;
 }
 
+.person-entry {
+    white-space: nowrap;
+}
+
+.profile-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.1rem;
+    opacity: 0.7;
+    transition: opacity 0.15s ease;
+}
+
+.profile-icon:hover {
+    opacity: 1;
+}
+
+.profile-icon img {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+}
+
 .legend {
     display: flex;
     flex-direction: column;
