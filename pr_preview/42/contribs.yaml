@@ -1,0 +1,372 @@
+rfcs:
+  rfc0:
+    author:
+    - Josh Moore
+  rfc1:
+    author:
+    - Josh Moore
+    reviewer:
+    - Davis Bennett
+    - John Bogovic
+    - Michael Innerberger
+    - Mark Kittisopikul
+    - Virginia Scarlett
+    - Yurii Zubov
+    - Kevin Yamauchi
+    - Virginie Uhlmann
+    - Matthew Hartley
+    - Joel Lüthi
+    endorser:
+    - Jean-Marie Burel
+    - Will Moore
+    - Juan Nunez-Iglesias
+    - Norman Rzepka
+    - Jan Eglinger
+    - Joel Lüthi
+    commenter:
+    - Wouter-Michiel Vierdag
+    - Luca Marconato
+    - Matt McCormick
+  rfc2:
+    author:
+    - Norman Rzepka
+    endorser:
+    - Davis Bennett
+    - Kevin Yamauchi
+    - John Bogovic
+    - Matthew Hartley
+    - Christian Tischer
+    - Joel Lüthi
+    - Constantin Pape
+    - Will Moore
+    - Juan Nunez-Iglesias
+    - Eric Perlman
+    - Ziwen Liu
+    - Lachlan Deakin
+    reviewer:
+    - Melissa Linkert
+    - Sébastien Besson
+    - Chris Allan
+    - Jason Swedlow
+    - Yaroslav O. Halchenko
+    - Jeremy Maitin-Shepard
+  rfc3:
+    author:
+    - Juan Nunez-Iglesias
+    endorser:
+    - Talley Lambert
+    - Norman Rzepka
+    - Davis Bennett
+    - Doug Shepherd
+    - John Bogovic
+    - Eric Perlman
+    - Lachlan Deakin
+    - Sebastian Rhode
+    commenter:
+    - Benedikt Best
+    - Chris Barnes
+  rfc4:
+    author:
+    - David Feng
+    - Matthew McCormick
+    - Wouter-Michiel Vierdag
+    commenter:
+    - David Stansby
+    - Chris Barnes
+  rfc5:
+    author:
+    - John Bogovic
+    - Davis Bennett
+    - Luca Marconato
+    - Matt McCormick
+    - Stephan Saalfeld
+    - Johannes Soltwedel
+    endorser:
+    - Will Moore
+    - David Stansby
+    - Norman Rzepka
+    reviewer:
+    - Dan Toloudis
+    - David Feng
+    - Forrest Collman
+    - Nathalie Gaudreault
+    - Gideon Dunster
+    - Will Moore
+    - Jean-Marie Burel
+    - Jason Swedlow
+    commenter:
+    - Ilan Gold
+    - Jeremy Maitin-Shephard
+    - David Stansby
+  rfc6:
+    author:
+    - Norman Rzepka
+    endorser:
+    - David Stansby
+    - Davis Bennett
+    - Will Moore
+    - Lachlan Deakin
+    - Joel Lüthi
+    - Eric Perlman
+    - Johannes Soltwedel
+    commenter:
+    - Chris Barnes
+    - Davis Bennett
+  rfc9:
+    author:
+    - Jonas Windhager
+    - Norman Rzepka
+    - Mark Kittisopikul
+    editor:
+    - Josh Moore
+    reviewer:
+    - Pete Bankhead
+    - Kola Babalola
+    - Matthew Hartley
+    - Curtis Rueden
+    commenter:
+    - Matt McCormick
+    - Joost de Folter
+    - Chris Barnes
+    - Anna Kreshuk
+    - Dominik Kutra
+    - Benedikt Best
+    - Lenard Spiecker
+    - Matthias Grunwald
+repos:
+  ome/ngff:
+    joshmoore: 486
+    jo-mueller: 195
+    sbesson: 130
+    will-moore: 93
+    jwindhager: 89
+    normanrz: 64
+    constantinpape: 36
+    SeanDuHare: 34
+    govekk: 31
+    thewtex: 31
+    bogovicj: 28
+    jni: 28
+    dstansby: 25
+    cfusterbarcelo: 17
+    yarikoptic: 15
+    melissalinkert: 13
+    erickmartins: 11
+    mkitti: 10
+    lubianat: 9
+    tlambert03: 8
+    jburel: 7
+    virginiascarlett: 7
+    giovp: 7
+    clbarnes: 6
+    melonora: 4
+    btbest: 3
+    indecisiveuser: 3
+    tcompa: 3
+    petebankhead: 2
+    kevinyamauchi: 2
+    imagejan: 2
+    glyg: 2
+    d-v-b: 2
+    bugraoezdemir: 2
+    xgui3783: 1
+    vuhlmann: 1
+    Tom-TBT: 1
+    srivarra: 1
+    matthewh-ebi: 1
+    l-spiecker: 1
+    krokicki: 1
+    kbab: 1
+    JulianHn: 1
+    folterj: 1
+    jluethi: 1
+    ivirshup: 1
+    dzenanz: 1
+    ctrueden: 1
+    AlanMWatson: 1
+  ome/ngff-spec:
+    joshmoore: 409
+    sbesson: 130
+    bogovicj: 120
+    jo-mueller: 118
+    will-moore: 96
+    normanrz: 63
+    constantinpape: 36
+    jni: 28
+    ivirshup: 20
+    yarikoptic: 15
+    melissalinkert: 13
+    jluethi: 12
+    dstansby: 9
+    virginiascarlett: 7
+    giovp: 7
+    lubianat: 5
+    clbarnes: 4
+    thewtex: 4
+    jburel: 4
+    d-v-b: 3
+    tcompa: 3
+    glyg: 2
+    imagejan: 2
+    kevinyamauchi: 2
+    bugraoezdemir: 2
+    AlanMWatson: 1
+    dzenanz: 1
+    jwindhager: 1
+    JulianHn: 1
+    matthewh-ebi: 1
+    melonora: 1
+    xgui3783: 1
+last_updated: '2026-03-06T08:37:36Z'
+ngff_spec_author:
+- name: Josh Moore
+  github: joshmoore
+  orcid: 0000-0003-4028-811X
+- name: John Bogovic
+  github: bogovicj
+  orcid: 0000-0002-4829-9457
+- name: Johannes Soltwedel
+  github: jo-mueller
+  orcid: 0000-0003-1273-2412
+- name: Luca Marconato
+  github: LucaMarconato
+  orcid: 0000-0003-3198-1326
+- name: Davis Bennett
+  github: d-v-b
+- name: William Moore
+  github: will-moore
+  orcid: 0000-0002-7264-8338
+- name: Matt McCormick
+  orcid: 0000-0001-9475-3756
+  github: thewtex
+- name: Daniel Toloudis
+  github: toloudis
+  orcid: 0000-0003-2620-1233
+- name: Forest Collmann
+  github: fcollman
+- name: Nathalie Gaudreault
+  orcid: 0000-0002-9220-5366
+- name: David Feng
+  github: dyf
+- name: Jean-Marie Burel
+  orcid: 0000-0002-1789-1861
+  github: jburel
+- name: Jason R. Swedlow
+  github: jrswedlow
+  orcid: 0000-0002-2198-1958
+- name: Ilan Gold
+  github: ilan-gold
+  orcid: 0000-0002-5823-1026
+- name: Jeremy Maitin-Shepard
+  github: jbms
+  orcid: 0000-0001-8453-7961
+- name: David Stansby
+  github: dstansby
+  orcid: 0000-0002-1365-1908
+- name: Sébastien Besson
+  orcid: 0000-0001-8783-1429
+  github: sbesson
+- name: Marvin Albert
+  github: m-albert
+  orcid: 0000-0003-2536-2545
+- name: Chris Allan
+  github: chris-allan
+  orcid: 0000-0002-8151-4059
+- name: Chris Barnes
+  github: clbarnes
+  orcid: 0000-0002-1296-7310
+- name: Tommaso Comparin
+  github: tcompa
+  orcid: 0000-0001-6853-5931
+- name: Lachlan Deakin
+  github: lDeakin
+  orcid: 0000-0003-2026-759X
+- name: Gideon Dunster
+  orcid: 0000-0001-9050-0225
+- name: Jan Eglinger
+  github: imagejan
+  orcid: 0000-0001-7234-1435
+- name: Guillaume Gay
+  github: glyg
+  orcid: 0000-0002-5444-5246
+- name: Xiao Gui
+  github: xgui3783
+- name: Yaroslav O. Halchenko
+  github: yarikoptic
+  orcid: 0000-0001-7482-1299
+- name: Matthew Hartley
+  github: matthewh-ebi
+  orcid: 0000-0001-6178-2884
+- name: Julian Hniopek
+  github: julianhn
+  orcid: 0000-0002-8652-8812
+- name: Michael Innerberger
+  github: minnerbe
+  orcid: 0000-0002-7001-8682
+- name: Mark Kittisopikul
+  github: mkitti
+  orcid: 0000-0002-9558-6248
+- name: Talley Lambert
+  github: tlambert03
+  orcid: 0000-0002-2409-0181
+- name: Melissa Linkert
+  github: melissalinkert
+- name: Ziwen Liu
+  github: ziw-liu
+  orcid: 0000-0001-7482-1299
+- name: Joel Lüthi
+  github: jluethi
+  orcid: 0000-0003-3023-170X
+- name: Juan Nunez-Iglesias
+  github: jni
+  orcid: 0000-0002-7239-5828
+- name: Bugra Özdemir
+  github: bugraoezdemir
+  orcid: 0000-0001-9823-0581
+- name: Giovanni Palla
+  github: giovp
+  orcid: 0000-0002-8004-4462
+- name: Constantin Pape
+  github: constantinpape
+  orcid: 0000-0001-6562-7187
+- name: Eric Perlman
+  github: perlman
+  orcid: 0000-0001-5542-1302
+- name: Sebastian Rhode
+  github: sebi06
+- name: Norman Rzepka
+  github: normanrz
+  orcid: 0000-0002-8168-7929
+- name: Virginia Scarlett
+  github: virginiascarlett
+  orcid: 0000-0002-4156-2849
+- name: Doug Shepherd
+  github: dpshepherd
+  orcid: 0000-0001-9087-0832
+- name: Christian Tischer
+  github: tischi
+  orcid: 0000-0003-4105-1990
+- name: Virginie Uhlmann
+  github: vuhlmann
+  orcid: 0000-0002-2859-9241
+- name: Wouter-Michiel Vierdag
+  github: melonora
+  orcid: 0000-0003-1666-5421
+- name: Isaac Virshup
+  github: ivirshup
+  orcid: 0000-0002-1710-8945
+- name: Alan Watson
+  github: alanmwatson
+  orcid: 0000-0003-0632-8296
+- name: Jonas Windhager
+  github: jwindhager
+  orcid: 0000-0002-2111-5291
+- name: Kevin Yamauchi
+  github: kevinyamauchi
+  orcid: 0000-0002-7818-1388
+- name: Yurii Zubov
+  github: yuriyzubov
+  orcid: 0000-0003-1988-8081
+- name: Dženan Zukić
+  github: dzenanz
+  orcid: 0000-0002-9546-9703
