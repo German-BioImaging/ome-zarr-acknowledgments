@@ -174,10 +174,15 @@ async function renderMap(countryData) {
 
     // Color scale - teal/green gradient for better contrast
     const maxCount = Math.max(...countryData.counts.values(), 1);
-    const colorScale = d3.scaleSequential()
-        .domain([0, maxCount])
-        .interpolator(t => d3.interpolateViridis(0.2 + t * 0.7));
 
+    // Widest brand sweep: light mint floor → teal → mid blue → deep navy.
+    // Most lively while staying perceptually monotonic.
+    const omeSpectrum = d3.interpolateRgbBasis(
+        ["#9ac7b7", "#76a78e", "#007860", "#1878c0", "#184878"]
+    );
+    const colorScale = d3.scaleSequentialSqrt()
+        .domain([0, maxCount])
+        .interpolator(t => omeSpectrum(0.1 + t * 0.85));
     // Create SVG with zoom support
     svg = d3.select(dom.map)
         .attr("viewBox", `0 0 ${width} ${height}`)
