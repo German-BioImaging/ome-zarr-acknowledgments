@@ -74,7 +74,7 @@ def main():
     alt_names_in_people_yaml = set()
     github_in_people_yaml = set()
     orcid_in_people_yaml = set()
-    
+
     if "people" in people_data and people_data["people"]:
         for person in people_data["people"]:
             if "name" in person:
@@ -92,7 +92,9 @@ def main():
 
     # Validate RFCs
     print_section("RFCs")
-    missing, alt_matched = check_names(people_in_contribs, people_in_people_yaml, alt_names_in_people_yaml)
+    missing, alt_matched = check_names(
+        people_in_contribs, people_in_people_yaml, alt_names_in_people_yaml
+    )
     print_missing(missing, alt_matched, "names")
 
     # Validate repos
@@ -120,10 +122,12 @@ def main():
             if "orcid" in author and author["orcid"]:
                 ngff_orcid[author["orcid"]] = name
 
-        missing, alt_matched = check_names(ngff_names, people_in_people_yaml, alt_names_in_people_yaml)
+        missing, alt_matched = check_names(
+            ngff_names, people_in_people_yaml, alt_names_in_people_yaml
+        )
         print_missing(missing, alt_matched, "names")
         print_missing(ngff_github - github_in_people_yaml, set(), "GitHub handles")
-        
+
         # ORCID with names
         missing_orcids = set(ngff_orcid.keys()) - orcid_in_people_yaml
         if missing_orcids:
@@ -132,8 +136,6 @@ def main():
                 print(f"      • {orcid} ({ngff_orcid[orcid]})")
         else:
             print_ok("All ORCIDs present")
-
-    print()
 
 
 if __name__ == "__main__":
