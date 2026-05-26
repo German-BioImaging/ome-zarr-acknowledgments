@@ -59,9 +59,26 @@ Use the optional `order_override` parameter inside [`affiliation_shortener.yaml`
         - Stefanie Weidtkamp-Peters
 ```
 
-## Updates
+## Check against other lists
 
-Direct pull requests that update [`people.yaml`](people.yaml) or [`affiliation_shortener.yaml`](affiliation_shortener.yaml) are always welcome.
+Acknowledgments in NGFF stem from contributions in a wide variety of place. The [xcheck-contribs.yml](.github/workflows/xcheck-contribs.yml) action runs a set of scripts to compare the list here with multiple sources.
+
+For example, it runs [fetch_ngff_spec_authors.py](scripts/fetch_ngff_spec_authors.py), which updates the [contribs.yaml](contribs.yaml) file. Then, it runs the [validate_contribs_vs_people.py](scripts/validate_contribs_vs_people.py) script, which contracts the manually maintained list at [people.yaml](people.yaml) with the updated files.
+
+You can run also clone the repository and run the scripts directly, e.g.:
+
+```
+gh repo clone German-BioImaging/ome-zarr-acknowledgments
+
+cd ome-zarr-acknowledgments
+
+uv venv
+source .venv/bin/activate
+uv pip install pyyaml requests
+
+python3 scripts/fetch_ngff_spec_authors.py
+python3 validate_contribs_vs_people.py
+```
 
 ## LLM usage note
 
