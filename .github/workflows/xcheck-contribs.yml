@@ -28,6 +28,9 @@ jobs:
       - name: Update RFC contributions
         run: python ./scripts/scrape_rfc_contribs.py
 
+      - name: Update spec authors
+        run: python ./scripts/fetch_ngff_spec_authors.py
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"

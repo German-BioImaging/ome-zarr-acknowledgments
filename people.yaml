@@ -12,6 +12,8 @@ people:
   affiliations:
   - Chan Zuckerberg Initiative (CZI)
 - name: Alan M. Watson
+  alt_names:
+    - Alan Watson
   github: alanmwatson
   orcid: https://orcid.org/0000-0003-0632-8296
   affiliations:
@@ -76,7 +78,7 @@ people:
   - BioVisionCenter of the University of Zurich
 - name: Chris Allan
   github: chris-allan
-  orcid: null
+  orcid: https://orcid.org/0000-0002-8151-4059
   affiliations:
   - Glencoe Software Inc., Seattle, WA, USA
 - name: Chris Barnes
@@ -114,6 +116,8 @@ people:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
     Germany
 - name: Dan Toloudis
+  alt_names:
+    - Daniel Toloudis
   github: toloudis
   orcid: https://orcid.org/0000-0003-2620-1233
   affiliations:
@@ -175,11 +179,12 @@ people:
   - Roche
 - name: Doug Shepherd
   github: dpshepherd
-  orcid: null
+  orcid: https://orcid.org/0000-0001-9087-0832
   affiliations:
   - Arizona State University
 - name: Dženan Zukić
   github: dzenanz
+  orcid: https://orcid.org/0000-0002-9546-9703
   affiliations:
   - Kitware
 - name: Elise Liu
@@ -268,6 +273,7 @@ people:
   affiliations:
   - Allen Institute for Neural Dynamics, Seattle, WA, USA
 - name: Gideon Dunster
+  orcid: https://orcid.org/0000-0001-9050-0225
   affiliations:
   - Allen Institute for Cell Science
 - name: Giovanni Palla
@@ -332,7 +338,7 @@ people:
   - Institute of Computational Biology, Helmholtz Zentrum München, Neuherberg, Germany
 - name: Jan Eglinger
   github: imagejan
-  orcid: null
+  orcid: https://orcid.org/0000-0001-7234-1435
   affiliations:
   - FMI
 - name: Janina Hanne
@@ -341,6 +347,8 @@ people:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
     Germany
 - name: Jason R. Swedlow
+  alt_names:
+    - Jason Swedlow
   github: jrswedlow
   orcid: https://orcid.org/0000-0002-2198-1958
   affiliations:
@@ -432,6 +440,7 @@ people:
   - Many more
 - name: Julian Hniopek
   github: julianhn
+  orcid: https://orcid.org/0000-0002-8652-8812
   affiliations:
   - Leibniz Institute of Photonic Technology (Leibniz IPHT), Jena, Germany
 - name: Kedar Narayan
@@ -475,6 +484,8 @@ people:
   affiliations:
   - RIKEN Center for Biosystems Dynamics Research, Kobe, Japan
 - name: Kolawole Babalola
+  alt_names:
+    - Kola Babalola
   github: kbab
   orcid: null
   affiliations:
@@ -490,7 +501,7 @@ people:
   - Chan Zuckerberg Biohub, San Francisco, CA, USA
 - name: Lachlan Deakin
   github: lDeakin
-  orcid: null
+  orcid: https://orcid.org/0000-0003-2026-759X
   affiliations:
   - Australian National University
 - name: Lenard Spiecker
@@ -562,7 +573,8 @@ people:
   affiliations:
   - Wellcome Sanger Institute, Hinxton, UK
 - name: Marvin Albert
-  orcid: null
+  orcid: https://orcid.org/0000-0003-2536-2545
+  github: m-albert
   affiliations:
   - Pasteur
 - name: Matthew Hartley
@@ -572,6 +584,8 @@ people:
   - European Molecular Biology Laboratory, European Bioinformatics Institute, EMBL-EBI,
     Cambridge, UK
 - name: Matthew McCormick
+  alt_names:
+    - Matt McCormick
   github: thewtex
   orcid: https://orcid.org/0000-0001-9475-3756
   affiliations:
@@ -603,6 +617,7 @@ people:
   affiliations:
   - Wellcome Sanger Institute, Hinxton, UK
 - name: Nathalie Gaudreault
+  orcid: https://orcid.org/0000-0002-9220-5366
   affiliations:
   - Allen Institute for Cell Science
 - name: Nathan Hotaling
@@ -747,7 +762,7 @@ people:
   - Harvard Medical School
 - name: Tiago Lubiana
   github: lubianat
-  orcid: null
+  orcid: https://orcid.org/0000-0003-2473-2313
   affiliations:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
     Germany
@@ -765,6 +780,7 @@ people:
     Germany
 - name: Tommaso Comparin
   github: tcompa
+  orcid: https://orcid.org/0000-0001-6853-5931
   affiliations:
   - eXact lab
 - name: Tong Li
@@ -802,6 +818,8 @@ people:
   affiliations:
   - Science for Life Laboratory, KTH Royal Institute of Technology, Stockholm, Sweden
 - name: Will Moore
+  alt_names:
+    - William Moore
   github: will-moore
   orcid: https://orcid.org/0000-0002-7264-8338
   affiliations:
@@ -817,6 +835,8 @@ people:
   affiliations:
   - Science for Life Laboratory, KTH Royal Institute of Technology, Stockholm, Sweden
 - name: Xiaoyun Gui
+  alt_names:
+    - Xiao Gui
   github: xgui3783
   affiliations:
   - Forschungszentrum Jülich GmbH
@@ -827,10 +847,11 @@ people:
   - Dartmouth College, Hanover, NH, USA
 - name: Yurii Zubov
   github: yuriyzubov
+  orcid: https://orcid.org/0000-0003-1988-8081
   affiliations:
   - Howard Hughes Medical Institute, Janelia Research Campus
 - name: Ziwen Liu
   github: ziw-liu
-  orcid: https://orcid.org/0000-0001-7843-1992
+  orcid: https://orcid.org/0000-0001-7482-1299
   affiliations:
   - University College London
