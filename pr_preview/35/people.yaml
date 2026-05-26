@@ -12,6 +12,10 @@ people:
   orcid: https://orcid.org/0000-0003-0632-8296
   affiliations:
   - University of Pittsburgh, Pittsburgh, PA, USA
+- name: Alan Liddell
+  orcid: null
+  affiliations:
+  -   - Chan Zuckerberg Biohub
 - name: Albane le Tournoulx de la Villegeorges
   orcid: https://orcid.org/0000-0001-7394-8941
   affiliations:
