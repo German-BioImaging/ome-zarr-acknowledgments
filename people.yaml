@@ -10,7 +10,7 @@ people:
 - name: Alan Liddell
   orcid: null
   affiliations:
-  - Chan Zuckerberg Initiative (CZI)
+  - - Chan Zuckerberg Biohub
 - name: Alan M. Watson
   alt_names:
     - Alan Watson
@@ -64,9 +64,9 @@ people:
   affiliations:
   - Euro-BioImaging Bio-Hub, EMBL, Heidelberg, Germany
 - name: Caleb Hulbert
-  orcid: null
+  orcid: cmhulbert
   affiliations:
-  - Howard Hughes Medical Institute
+  - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
 - name: Cameron Lloyd
   orcid: https://orcid.org/0000-0003-1055-2282
   affiliations:
@@ -87,6 +87,8 @@ people:
   affiliations:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
     Germany
+  based_in:
+  - UK
 - name: Christian Tischer
   github: tischi
   orcid: https://orcid.org/0000-0003-4105-1990
@@ -115,6 +117,8 @@ people:
   affiliations:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
     Germany
+  based_in:
+  - UK
 - name: Dan Toloudis
   alt_names:
     - Daniel Toloudis
@@ -182,6 +186,12 @@ people:
   orcid: https://orcid.org/0000-0001-9087-0832
   affiliations:
   - Arizona State University
+- name: Draga Doncila Pop
+  github: DragaDoncila
+  orcid: https://orcid.org/0000-0001-9116-5553
+  affiliations:
+  - Image Cooperative
+  - Monash University
 - name: Dženan Zukić
   github: dzenanz
   orcid: https://orcid.org/0000-0002-9546-9703
@@ -204,6 +214,7 @@ people:
   orcid: https://orcid.org/0000-0001-5542-1302
   affiliations:
   - Yikes
+  - Image Cooperative
 - name: Erick Ratamero
   github: erickmartins
   orcid: https://orcid.org/0000-0002-7545-3675
@@ -355,7 +366,7 @@ people:
   - Divisions of Molecular Cell and Developmental Biology, and Computational Biology,
     University of Dundee, Dundee, Scotland, UK
   - Glencoe Software Inc., Seattle, WA, USA
-  - Chan Zuckerberg Initiative (CZI)
+  - Chan Zuckerberg Biohub, San Francisco, CA, USA
 - name: Jean-Karim Hériché
   orcid: null
   affiliations:
@@ -429,11 +440,13 @@ people:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
     Germany
   - University of Dundee
+  - Image Cooperative
 - name: Juan Nunez-Iglesias
   github: jni
   orcid: https://orcid.org/0000-0002-7239-5828
   affiliations:
   - Monash University
+  - Image Cooperative
 - name: Jules Scholler
   orcid: null
   affiliations:
@@ -460,6 +473,7 @@ people:
   orcid: https://orcid.org/0000-0002-7818-1388
   affiliations:
   - Department of Biosystems Science and Engineering, ETH Zürich, Zürich, Switzerland
+  - Image Cooperative
 - name: Khaled Mohamed
   orcid: https://orcid.org/0000-0003-1480-8695
   affiliations:
@@ -611,7 +625,7 @@ people:
   github: minnerbe
   orcid: https://orcid.org/0000-0002-7001-8682
   affiliations:
-  - Howard Hughes Medical Institute, Janelia Research Campus
+  - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
 - name: Muzlifah Haniffa
   orcid: https://orcid.org/0000-0002-3927-2084
   affiliations:
@@ -731,6 +745,7 @@ people:
   affiliations:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
     Germany
+  - Heinrich Heine University Düsseldorf
 - name: Stephan Preibisch
   orcid: https://orcid.org/0000-0002-0276-494X
   affiliations:
@@ -778,6 +793,7 @@ people:
   affiliations:
   - German BioImaging-Gesellschaft für Mikroskopie und Bildanalyse e.V., Constance,
     Germany
+  - Heinrich Heine University Düsseldorf
 - name: Tommaso Comparin
   github: tcompa
   orcid: https://orcid.org/0000-0001-6853-5931

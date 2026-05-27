@@ -41,10 +41,7 @@ affiliations:
   short_name: CNRS
   country_code: FR
 - full_name: Chan Zuckerberg Biohub, San Francisco, CA, USA
-  short_name: CZ Biohub SF
-  country_code: US
-- full_name: Chan Zuckerberg Initiative (CZI)
-  short_name: CZI
+  short_name: CZ Biohub
   country_code: US
 - full_name: Caltech
   short_name: Caltech
@@ -144,6 +141,9 @@ affiliations:
 - full_name: Howard Hughes Medical Institute
   short_name: HHMI
   country_code: US
+- full_name: Heinrich Heine University Düsseldorf
+  short_name: HHU Düsseldorf
+  country_code: DE
 - full_name: Harvard Medical School
   short_name: HMS
   country_code: US
@@ -160,6 +160,9 @@ affiliations:
 - full_name: IST, Austria
   short_name: IST
   country_code: AT
+- full_name: Image Cooperative
+  short_name: Image Coop
+  country_code: company
 - full_name: The Jackson Laboratory (JAX)
   short_name: JAX
   country_code: US
