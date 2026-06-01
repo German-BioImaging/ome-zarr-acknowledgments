@@ -1,0 +1,220 @@
+rfcs:
+  rfc0:
+    author:
+    - Josh Moore
+  rfc1:
+    author:
+    - Josh Moore
+    reviewer:
+    - Davis Bennett
+    - John Bogovic
+    - Michael Innerberger
+    - Mark Kittisopikul
+    - Virginia Scarlett
+    - Yurii Zubov
+    - Kevin Yamauchi
+    - Virginie Uhlmann
+    - Matthew Hartley
+    - Joel Lüthi
+    endorser:
+    - Jean-Marie Burel
+    - Will Moore
+    - Juan Nunez-Iglesias
+    - Norman Rzepka
+    - Jan Eglinger
+    - Joel Lüthi
+    commenter:
+    - Wouter-Michiel Vierdag
+    - Luca Marconato
+    - Matt McCormick
+  rfc2:
+    author:
+    - Norman Rzepka
+    endorser:
+    - Davis Bennett
+    - Kevin Yamauchi
+    - John Bogovic
+    - Matthew Hartley
+    - Christian Tischer
+    - Joel Lüthi
+    - Constantin Pape
+    - Will Moore
+    - Juan Nunez-Iglesias
+    - Eric Perlman
+    - Ziwen Liu
+    - Lachlan Deakin
+    reviewer:
+    - Melissa Linkert
+    - Sébastien Besson
+    - Chris Allan
+    - Jason Swedlow
+    - Yaroslav O. Halchenko
+    - Jeremy Maitin-Shepard
+  rfc3:
+    author:
+    - Juan Nunez-Iglesias
+    endorser:
+    - Talley Lambert
+    - Norman Rzepka
+    - Davis Bennett
+    - Doug Shepherd
+    - John Bogovic
+    - Eric Perlman
+    - Lachlan Deakin
+    - Sebastian Rhode
+    commenter:
+    - Benedikt Best
+    - Chris Barnes
+  rfc4:
+    author:
+    - David Feng
+    - Matthew McCormick
+    - Wouter-Michiel Vierdag
+    commenter:
+    - David Stansby
+    - Chris Barnes
+  rfc5:
+    author:
+    - John Bogovic
+    - Davis Bennett
+    - Luca Marconato
+    - Matt McCormick
+    - Stephan Saalfeld
+    - Johannes Soltwedel
+    endorser:
+    - Will Moore
+    - David Stansby
+    - Norman Rzepka
+    reviewer:
+    - Dan Toloudis
+    - David Feng
+    - Forrest Collman
+    - Nathalie Gaudreault
+    - Gideon Dunster
+    - Will Moore
+    - Jean-Marie Burel
+    - Jason Swedlow
+    commenter:
+    - Ilan Gold
+    - Jeremy Maitin-Shephard
+    - David Stansby
+  rfc6:
+    author:
+    - Norman Rzepka
+    endorser:
+    - David Stansby
+    - Davis Bennett
+    - Will Moore
+    - Lachlan Deakin
+    - Joel Lüthi
+    - Eric Perlman
+    - Johannes Soltwedel
+    commenter:
+    - Chris Barnes
+    - Davis Bennett
+  rfc9:
+    author:
+    - Jonas Windhager
+    - Norman Rzepka
+    - Mark Kittisopikul
+    editor:
+    - Josh Moore
+    reviewer:
+    - Pete Bankhead
+    - Kola Babalola
+    - Matthew Hartley
+    - Curtis Rueden
+    commenter:
+    - Matt McCormick
+    - Joost de Folter
+    - Chris Barnes
+    - Anna Kreshuk
+    - Dominik Kutra
+    - Benedikt Best
+    - Lenard Spiecker
+    - Matthias Grunwald
+repos:
+  ome/ngff:
+    joshmoore: 486
+    jo-mueller: 195
+    sbesson: 130
+    will-moore: 93
+    jwindhager: 89
+    normanrz: 64
+    constantinpape: 36
+    SeanDuHare: 34
+    govekk: 31
+    thewtex: 31
+    bogovicj: 28
+    jni: 28
+    dstansby: 25
+    cfusterbarcelo: 17
+    yarikoptic: 15
+    melissalinkert: 13
+    erickmartins: 11
+    mkitti: 10
+    lubianat: 9
+    tlambert03: 8
+    jburel: 7
+    virginiascarlett: 7
+    giovp: 7
+    clbarnes: 6
+    melonora: 4
+    btbest: 3
+    indecisiveuser: 3
+    tcompa: 3
+    petebankhead: 2
+    kevinyamauchi: 2
+    imagejan: 2
+    glyg: 2
+    d-v-b: 2
+    bugraoezdemir: 2
+    xgui3783: 1
+    vuhlmann: 1
+    Tom-TBT: 1
+    srivarra: 1
+    matthewh-ebi: 1
+    l-spiecker: 1
+    krokicki: 1
+    kbab: 1
+    JulianHn: 1
+    folterj: 1
+    jluethi: 1
+    ivirshup: 1
+    dzenanz: 1
+    ctrueden: 1
+    AlanMWatson: 1
+  ome/ngff-spec:
+    joshmoore: 409
+    sbesson: 130
+    bogovicj: 120
+    jo-mueller: 118
+    will-moore: 96
+    normanrz: 63
+    constantinpape: 36
+    jni: 28
+    ivirshup: 20
+    yarikoptic: 15
+    melissalinkert: 13
+    jluethi: 12
+    dstansby: 9
+    virginiascarlett: 7
+    giovp: 7
+    lubianat: 5
+    clbarnes: 4
+    thewtex: 4
+    jburel: 4
+    d-v-b: 3
+    tcompa: 3
+    glyg: 2
+    imagejan: 2
+    kevinyamauchi: 2
+    bugraoezdemir: 2
+    AlanMWatson: 1
+    dzenanz: 1
+    jwindhager: 1
+    JulianHn: 1
+    matthewh-ebi: 1
+    melonora: 1
+    xgui3783: 1
+last_updated: '2026-03-06T08:37:36Z'

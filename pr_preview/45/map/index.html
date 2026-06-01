@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OME-Zarr Contributors Map</title>
+    <link rel="icon"
+        href="https://gerbi-gmb.de/wp-content/uploads/2021/06/cropped-apple-icon-152x152-1-32x32.png.pagespeed.ce.n4C0i1mzdH.png"
+        sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+</head>
+<body>
+    <div class="top-bar">
+        <h1>OME-Zarr Contributors</h1>
+        <div>        <button id="theme-toggle" class="theme-toggle" type="button">🔆/🌙</button>
+        <button onclick="window.location.href='../'"  class="theme-toggle"  type="button">🏠</button>
+            </div>
+
+    </div>
+
+
+    <div id="map-container">
+        <svg id="world-map"></svg>
+        <div class="zoom-controls">
+            <button id="zoom-in" class="zoom-btn" title="Zoom in">+</button>
+            <button id="zoom-out" class="zoom-btn" title="Zoom out">−</button>
+            <button id="zoom-reset" class="zoom-btn" title="Reset zoom">⟲</button>
+        </div>
+    </div>
+
+    <div id="tooltip" class="tooltip"></div>
+
+    <div id="legend" class="legend"></div>
+
+    <div id="error" class="error"></div>
+
+    <div class="detail-overlay" id="detail-overlay"></div>
+    <div class="detail-panel" id="detail-panel">
+        <div class="detail-header">
+            <div>
+                <h2 class="detail-title" id="detail-title"></h2>
+                <div class="detail-count" id="detail-count"></div>
+            </div>
+            <button class="detail-close" id="detail-close">×</button>
+        </div>
+        <div id="detail-content"></div>
+    </div>
+
+    <footer class="site-footer">
+        <a href="../">Back to main page</a> ·
+        Something to change? <a href="https://github.com/German-BioImaging/ome-zarr-acknowledgments">let us know</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
