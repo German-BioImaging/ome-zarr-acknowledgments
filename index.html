@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>OME-Zarr Acknowledgments</title>
     <link rel="icon"
         href="https://gerbi-gmb.de/wp-content/uploads/2021/06/cropped-apple-icon-152x152-1-32x32.png.pagespeed.ce.n4C0i1mzdH.png"
@@ -68,6 +69,94 @@
 
         .people-list {
             margin-left: 0.15rem;
+        }
+
+        .person-name {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .person-hint {
+            display: none;
+            position: absolute;
+            bottom: calc(100% + 2px);
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-color);
+            border: 1px solid var(--soft-muted);
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-size: 0.7rem;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        .person-name:hover .person-hint {
+            display: block;
+        }
+
+        .person-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+            display: none;
+        }
+
+        .person-overlay.visible { display: block; }
+
+        .person-modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--bg-color);
+            border: 1px solid var(--soft-muted);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            z-index: 1000;
+            display: none;
+            min-width: 180px;
+        }
+
+        .person-modal.visible { display: block; }
+
+        .person-modal-name {
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            text-align: center;
+        }
+
+        .person-modal-row {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin: 0.4rem 0;
+            font-size: 0.85rem;
+        }
+
+        .person-modal-row img {
+            width: 14px;
+            height: 14px;
+        }
+
+        .person-modal-row a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-family: ui-monospace, monospace;
+            font-size: 0.8rem;
+        }
+
+        .person-modal-row a:hover { text-decoration: underline; }
+
+        .person-modal-row .gh-icon { filter: invert(1); }
+        body.light .person-modal-row .gh-icon { filter: invert(0); }
+
+        .person-modal-empty {
+            color: var(--muted-color);
+            font-size: 0.85rem;
+            font-style: italic;
+            text-align: center;
         }
 
         .sep {
@@ -145,12 +234,22 @@
 
     <div id="error" class="error"></div>
 
+    <div class="person-overlay" id="person-overlay"></div>
+    <div class="person-modal" id="person-modal">
+        <div class="person-modal-name" id="modal-name"></div>
+        <div id="modal-content"></div>
+    </div>
+
 
     <footer class="site-footer">
         Something to change? <a href="https://github.com/German-BioImaging/ome-zarr-acknowledgments">let us know</a>
     </footer>
 
     <script>
+        // Icon URLs for profile links
+        const ORCID_ICON = "https://orcid.org/assets/vectors/orcid.logo.icon.svg";
+        const GITHUB_ICON = "./icons/invertocat.svg";
+
         // 🌈 rainbow color mapping, with a darker tone in light mode
         function getRainbowColor(index, total, isLightMode) {
             const denom = Math.max(1, total - 1);
@@ -196,8 +295,64 @@
         }
 
         // We'll store colors and re-render them if the theme changes
-        const GAP = '\u00a0'.repeat(1); // &nbsp;&nbsp;
+        const GAP = '\u00a0'.repeat(1);
         let currentBlocks = [];
+        let peopleMap = new Map();
+
+        const overlay = document.getElementById('person-overlay');
+        const modal = document.getElementById('person-modal');
+        const modalName = document.getElementById('modal-name');
+        const modalContent = document.getElementById('modal-content');
+
+        function closeModal() {
+            overlay.classList.remove('visible');
+            modal.classList.remove('visible');
+        }
+
+        function getOrcidId(orcid) {
+            const m = orcid?.match(/(\d{4}-\d{4}-\d{4}-\d{3}[\dX])/);
+            return m ? m[1] : orcid;
+        }
+
+        function openModal(name) {
+            const p = peopleMap.get(name);
+            modalName.textContent = name;
+            
+            if (!p?.orcid && !p?.github) {
+                modalContent.innerHTML = '<div class="person-modal-empty">No public profiles linked</div>';
+            } else {
+                let html = '';
+                if (p.orcid) {
+                    const id = getOrcidId(p.orcid);
+                    html += `<div class="person-modal-row"><img src="${ORCID_ICON}" alt="ORCID"><a href="https://orcid.org/${id}" target="_blank">${id}</a></div>`;
+                }
+                if (p.github) {
+                    html += `<div class="person-modal-row"><img src="${GITHUB_ICON}" alt="GitHub" class="gh-icon"><a href="https://github.com/${p.github}" target="_blank">${p.github}</a></div>`;
+                }
+                modalContent.innerHTML = html;
+            }
+            
+            overlay.classList.add('visible');
+            modal.classList.add('visible');
+        }
+
+        function createPersonElement(name) {
+            const p = peopleMap.get(name);
+            const span = document.createElement('span');
+            span.className = 'person-name';
+            span.textContent = name;
+
+            if (p?.orcid || p?.github) {
+                const hint = document.createElement('span');
+                hint.className = 'person-hint';
+                hint.textContent = [p.orcid && 'ORCID', p.github && 'GitHub'].filter(Boolean).join(' · ');
+                span.appendChild(hint);
+            }
+
+            span.onclick = (e) => { e.stopPropagation(); openModal(name); };
+            return span;
+        }
+
         function renderColors() {
             const paperContainer = document.getElementById('paper-people');
             const isLightMode = document.body.classList.contains('light');
@@ -226,6 +381,11 @@
 
                 const people = peopleData.people || [];
                 const affiliations = affData.affiliations || [];
+
+                // Build a map of person name -> person data for icon rendering
+                people.forEach(p => {
+                    peopleMap.set(p.name, { orcid: p.orcid, github: p.github });
+                });
 
                 const affMap = new Map();
                 affiliations.forEach(a => {
@@ -342,7 +502,16 @@
                         const peopleSpan = document.createElement('span');
                         peopleSpan.className = 'people-list';
                         paperContainer.appendChild(document.createTextNode(GAP));
-                        peopleSpan.textContent = block.people.join(', ');
+                        
+                        // Render each person with potential icon popup
+                        block.people.forEach((name, idx) => {
+                            const personEl = createPersonElement(name);
+                            peopleSpan.appendChild(personEl);
+                            if (idx < block.people.length - 1) {
+                                peopleSpan.appendChild(document.createTextNode(', '));
+                            }
+                        });
+                        
                         paperContainer.appendChild(peopleSpan);
                         paperContainer.appendChild(document.createTextNode(GAP));
                     });
@@ -356,10 +525,9 @@
                     if (othersContainer) othersContainer.remove();
                 } else if (othersContainer) {
                     unaffiliatedPeople.forEach((p, idx) => {
-                        const nameSpan = document.createElement('span');
-                        nameSpan.className = 'others-name';
-                        nameSpan.textContent = p.name;
-                        othersContainer.appendChild(nameSpan);
+                        const personEl = createPersonElement(p.name);
+                        personEl.classList.add('others-name');
+                        othersContainer.appendChild(personEl);
                         // trailing space helps copy/paste keep separation even if selection spans wraps
                         if (idx < unaffiliatedPeople.length - 1) {
                             othersContainer.appendChild(document.createTextNode(' '));
@@ -377,6 +545,8 @@
         document.addEventListener('DOMContentLoaded', () => {
             initThemeToggle();
             loadData();
+            overlay.onclick = closeModal;
+            document.onkeydown = (e) => { if (e.key === 'Escape') closeModal(); };
         });
     </script>
 </body>
