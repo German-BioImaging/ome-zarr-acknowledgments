@@ -1,5 +1,8 @@
 # affiliation_shortener.yaml
 affiliations:
+- full_name: Universidad Nacional Autónoma de México
+  short_name: UNAM
+  country_code: MX
 - full_name: Australian National University
   short_name: ANU
   country_code: AU

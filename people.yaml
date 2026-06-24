@@ -1,4 +1,9 @@
 people:
+- name: Adán Guerrero
+  orcid: https://orcid.org/0000-0002-4389-5516
+  github: adanog
+  affiliations:
+    - Universidad Nacional Autónoma de México
 - name: Aafke Gros
   orcid: null
   affiliations:
