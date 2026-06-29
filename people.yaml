@@ -50,6 +50,10 @@ people:
   affiliations:
   - European Molecular Biology Laboratory, European Bioinformatics Institute, EMBL-EBI,
     Cambridge, UK
+- name: Austin Epiphane Yann Tung-Shan Lefebvre
+  github: aelefebv
+  affiliations:
+  - Calico Life Sciences
 - name: Benedikt Best
   github: btbest
   orcid: https://orcid.org/0000-0001-6965-1117

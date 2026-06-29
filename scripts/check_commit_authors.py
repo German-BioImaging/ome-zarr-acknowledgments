@@ -51,7 +51,7 @@ for person in people_data["people"]:
     if gh_handle:
         gh_handles_in_people.add(gh_handle)
 
-# Print missing authors sorted by number of commits
+# Print top 10 missing authors sorted by number of commits
 
 missing_authors = []
 for author, count in all_authors.items():
@@ -59,5 +59,5 @@ for author, count in all_authors.items():
         missing_authors.append((author, count))
 
 missing_authors.sort(key=lambda x: x[1], reverse=True)
-for author, count in missing_authors:
+for author, count in missing_authors[:10]:
     print(f"{author}: {count} commits")

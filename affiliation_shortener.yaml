@@ -37,6 +37,9 @@ affiliations:
     USA
   short_name: Broad
   country_code: US
+- full_name: Calico Life Sciences
+  short_name: Calico
+  country_code: US
 - full_name: Laboratoire d'Optique et Biosciences, Ecole Polytechnique, CNRS
   short_name: CNRS
   country_code: FR
