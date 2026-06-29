@@ -30,6 +30,9 @@ affiliations:
 - full_name: Axle Research and Technology, Rockville, USA
   short_name: Axle
   country_code: companys
+- full_name: Institute of Cell Biology University of Bern
+  short_name: Bern
+  country_code: CH
 - full_name: Bern
   short_name: Bern
   country_code: CH

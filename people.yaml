@@ -314,6 +314,10 @@ people:
   github: gcharvin
   affiliations:
   - Université de Strasbourg
+- name: Lucien Hinderling
+  github: hinderling
+  affiliations:
+  - Institute of Cell Biology University of Bern
 - name: Grégory Paul
   orcid: null
   affiliations:
