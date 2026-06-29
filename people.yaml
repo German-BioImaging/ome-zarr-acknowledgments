@@ -377,6 +377,10 @@ people:
   orcid: https://orcid.org/0000-0002-1710-8945
   affiliations:
   - Institute of Computational Biology, Helmholtz Zentrum München, Neuherberg, Germany
+- name: Ji Yu
+  github: jiyuuchc
+  affiliations:
+  -  UConn Health
 - name: Jan Eglinger
   github: imagejan
   orcid: https://orcid.org/0000-0001-7234-1435

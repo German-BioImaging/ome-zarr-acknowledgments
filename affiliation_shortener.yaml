@@ -42,6 +42,9 @@ affiliations:
 - full_name: i3S - Institute for Research and Innovation in Health, Porto, Portugal
   short_name: i3S
   country_code: PT
+- full_name: UConn Health
+  short_name: UConn
+  country_code: US
 - full_name: Université de Bordeaux
   short_name: Bordeaux
   country_code: FR
