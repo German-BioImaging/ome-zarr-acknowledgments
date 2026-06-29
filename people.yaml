@@ -490,6 +490,10 @@ people:
   github: kevinjohncutler
   affiliations:
     - University of Washington, Seattle, WA, USA
+- name: Matthieu Chourrout
+  github: chourroutm
+  affiliations:
+  - Athinoula A. Martinos Center for Biomedical Imaging
 - name: Kevin Kozlowski
   orcid: null
   affiliations:

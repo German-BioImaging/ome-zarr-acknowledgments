@@ -24,6 +24,9 @@ affiliations:
 - full_name: University of Washington, Seattle, WA, USA
   short_name: UW
   country_code: US
+- full_name: Athinoula A. Martinos Center for Biomedical Imaging
+  short_name: Martinos
+  country_code: US
 - full_name: Axle Research and Technology, Rockville, USA
   short_name: Axle
   country_code: companys
