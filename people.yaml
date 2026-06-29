@@ -31,6 +31,11 @@ people:
   orcid: null
   affiliations:
   - Bern
+- name: Ali R. Khan
+  github: akhanf
+  orcid: https://orcid.org/0000-0002-0760-8647
+  affiliations:
+  - Robarts Research Institute, University of Western Ontario
 - name: Andreas Eisenbarth
   github: aeisenbarth
   orcid: 0000-0002-1113-9556
@@ -558,7 +563,6 @@ people:
   affiliations:
   - Chan Zuckerberg Biohub, San Francisco, CA, USA
 - name: Lorenzo Cerrone
-  orcid: null
   github: lorenzocerrone
   orcid: https://orcid.org/0000-0001-7337-2313
   affiliations:
