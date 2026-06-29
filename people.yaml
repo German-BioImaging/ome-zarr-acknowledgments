@@ -359,6 +359,10 @@ people:
   orcid: null
   affiliations:
   - UCL
+- name: Simão Seixas
+  github: simaopseixas
+  affiliations:
+  - i3S - Institute for Research and Innovation in Health, Porto, Portugal
 - name: Igor Zubarev
   orcid: null
   affiliations:

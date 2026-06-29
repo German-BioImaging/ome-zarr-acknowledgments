@@ -39,6 +39,9 @@ affiliations:
 - full_name: BioVisionCenter of the University of Zurich
   short_name: BioVisionCenter
   country_code: CH
+- full_name: i3S - Institute for Research and Innovation in Health, Porto, Portugal
+  short_name: i3S
+  country_code: PT
 - full_name: Université de Bordeaux
   short_name: Bordeaux
   country_code: FR
