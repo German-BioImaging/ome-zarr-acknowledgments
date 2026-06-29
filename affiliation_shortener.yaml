@@ -21,6 +21,9 @@ affiliations:
 - full_name: Allen Institute for Neural Dynamics, Seattle, WA, USA
   short_name: Allen
   country_code: US
+- full_name: University of Washington, Seattle, WA, USA
+  short_name: UW
+  country_code: US
 - full_name: Axle Research and Technology, Rockville, USA
   short_name: Axle
   country_code: companys
