@@ -631,6 +631,10 @@ people:
   orcid: https://orcid.org/0000-0002-7001-8682
   affiliations:
   - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
+- name: Michael S. Nelson
+  github: MichaelSNelson
+  affiliations:
+  - University of Wisconsin, Madison
 - name: Muzlifah Haniffa
   orcid: https://orcid.org/0000-0002-3927-2084
   affiliations:
@@ -743,6 +747,7 @@ people:
   - Chan Zuckerberg Biohub, San Francisco, CA, USA
 - name: Stefan Hahmann
   orcid: null
+  github: stefanhahmann
   affiliations:
   - TU Dresden
 - name: Stefanie Weidtkamp-Peters
