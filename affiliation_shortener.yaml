@@ -64,6 +64,9 @@ affiliations:
 - full_name: CNRS
   short_name: CNRS
   country_code: FR
+- full_name: University of Pennsylvania
+  short_name: Penn
+  country_code: US
 - full_name: Chan Zuckerberg Biohub, San Francisco, CA, USA
   short_name: CZ Biohub
   country_code: US
