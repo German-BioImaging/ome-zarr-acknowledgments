@@ -526,6 +526,11 @@ people:
   orcid: null
   affiliations:
   - Chan Zuckerberg Biohub, San Francisco, CA, USA
+- name: Laurent Guerard
+  github: lguerard
+  orcid: https://orcid.org/0000-0002-5166-8524
+  affiliations:
+  -  Imaging Core Facility Biozentrum Basel
 - name: Lachlan Deakin
   github: lDeakin
   orcid: https://orcid.org/0000-0003-2026-759X

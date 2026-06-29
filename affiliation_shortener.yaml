@@ -163,6 +163,9 @@ affiliations:
 - full_name: Paris Brain Institute
   short_name: ICM
   country_code: FR
+- full_name: Imaging Core Facility Biozentrum Basel
+  short_name: IMCF
+  country_code: CH
 - full_name: IST, Austria
   short_name: IST
   country_code: AT
