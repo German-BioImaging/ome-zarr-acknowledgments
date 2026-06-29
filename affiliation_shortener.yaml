@@ -39,6 +39,9 @@ affiliations:
 - full_name: Université de Bordeaux
   short_name: Bordeaux
   country_code: FR
+- full_name: Université de Strasbourg
+  short_name: Strasbourg
+  country_code: FR
 - full_name: Imaging Platform, Broad Institute of MIT and Harvard, Cambridge, MA,
     USA
   short_name: Broad
