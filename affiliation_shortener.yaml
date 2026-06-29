@@ -163,6 +163,9 @@ affiliations:
 - full_name: Paris Brain Institute
   short_name: ICM
   country_code: FR
+- full_name: University of Texas Southwestern Medical Center
+  short_name: UTSW
+  country_code: US
 - full_name: Robarts Research Institute, University of Western Ontario
   short_name: Robarts
   country_code: CA

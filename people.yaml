@@ -482,6 +482,10 @@ people:
   orcid: null
   affiliations:
   - Crick
+- name: Kevin Dean
+  github: AdvancedImagingUTSW
+  affiliations:
+   - University of Texas Southwestern Medical Center
 - name: Kevin Kozlowski
   orcid: null
   affiliations:
