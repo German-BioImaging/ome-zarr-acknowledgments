@@ -86,9 +86,11 @@ people:
   affiliations:
   - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
 - name: Cameron Lloyd
+  github: camlloyd
   orcid: https://orcid.org/0000-0003-1055-2282
   affiliations:
   - University of Cambridge
+  - University of Debrecen
 - name: Caterina Fuster Barceló
   github: cfusterbarcelo
   orcid: https://orcid.org/0000-0002-4784-6957

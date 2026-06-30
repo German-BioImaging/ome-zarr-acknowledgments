@@ -61,6 +61,9 @@ affiliations:
 - full_name: Dartmouth College, Hanover, NH, USA
   short_name: Dartmouth
   country_code: US
+- full_name: University of Debrecen
+  short_name: Debrecen
+  country_code: HU
 - full_name: University of Dundee
   short_name: Dundee
   country_code: UK
