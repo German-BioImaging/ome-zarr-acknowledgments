@@ -21,6 +21,9 @@ affiliations:
 - full_name: Axle Research and Technology, Rockville, USA
   short_name: Axle
   country_code: companys
+- full_name: Institute of Cell Biology University of Bern
+  short_name: Bern
+  country_code: CH
 - full_name: Bern
   short_name: Bern
   country_code: CH
@@ -43,6 +46,9 @@ affiliations:
 - full_name: Chan Zuckerberg Biohub, San Francisco, CA, USA
   short_name: CZ Biohub
   country_code: US
+- full_name: Calico Life Sciences
+  short_name: Calico
+  country_code: company
 - full_name: Caltech
   short_name: Caltech
   country_code: US
@@ -55,6 +61,9 @@ affiliations:
 - full_name: Dartmouth College, Hanover, NH, USA
   short_name: Dartmouth
   country_code: US
+- full_name: University of Debrecen
+  short_name: Debrecen
+  country_code: HU
 - full_name: University of Dundee
   short_name: Dundee
   country_code: UK
@@ -157,6 +166,9 @@ affiliations:
 - full_name: Paris Brain Institute
   short_name: ICM
   country_code: FR
+- full_name: Imaging Core Facility Biozentrum Basel
+  short_name: IMCF
+  country_code: CH
 - full_name: IST, Austria
   short_name: IST
   country_code: AT
@@ -210,6 +222,9 @@ affiliations:
 - full_name: Many more
   short_name: Many more
   country_code: plus
+- full_name: Athinoula A. Martinos Center for Biomedical Imaging
+  short_name: Martinos
+  country_code: US
 - full_name: Miltenyi Biotec
   short_name: Miltenyi Biotec
   country_code: company
@@ -238,12 +253,18 @@ affiliations:
 - full_name: Pasteur
   short_name: Pasteur
   country_code: FR
+- full_name: University of Pennsylvania
+  short_name: Penn
+  country_code: US
 - full_name: University of Pittsburgh, Pittsburgh, PA, USA
   short_name: Pittsburgh
   country_code: US
 - full_name: RIKEN Center for Biosystems Dynamics Research, Kobe, Japan
   short_name: RIKEN
   country_code: JP
+- full_name: Robarts Research Institute, University of Western Ontario
+  short_name: Robarts
+  country_code: CA
 - full_name: Roche
   short_name: Roche
   country_code: company
@@ -263,6 +284,9 @@ affiliations:
 - full_name: SciLifeLab
   short_name: SciLifeLab
   country_code: SE
+- full_name: Université de Strasbourg
+  short_name: Strasbourg
+  country_code: FR
 - full_name: TU Dresden
   short_name: TU Dresden
   country_code: DE
@@ -278,11 +302,23 @@ affiliations:
 - full_name: University College London
   short_name: UCL
   country_code: UK
+- full_name: UConn Health
+  short_name: UConn
+  country_code: US
 - full_name: UMN
   short_name: UMN
   country_code: US
 - full_name: UMass Chan Medical School
   short_name: UMass
+  country_code: US
+- full_name: Universidad Nacional Autónoma de México
+  short_name: UNAM
+  country_code: MX
+- full_name: University of Texas Southwestern Medical Center
+  short_name: UTSW
+  country_code: US
+- full_name: University of Washington, Seattle, WA, USA
+  short_name: UW
   country_code: US
 - full_name: VIB
   short_name: VIB
@@ -305,6 +341,9 @@ affiliations:
 - full_name: eXact lab
   short_name: eXact lab
   country_code: company
+- full_name: i3S - Institute for Research and Innovation in Health, Porto, Portugal
+  short_name: i3S
+  country_code: PT
 - full_name: scalable minds GmbH, Potsdam, Germany
   short_name: scalable minds
   country_code: company
