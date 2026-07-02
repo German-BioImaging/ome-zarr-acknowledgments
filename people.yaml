@@ -660,8 +660,10 @@ people:
   - Miltenyi Biotec
 - name: Matthieu Chourrout
   github: chourroutm
+  orcid: https://orcid.org/0000-0002-2282-6976
   affiliations:
   - Athinoula A. Martinos Center for Biomedical Imaging
+  - University College London
 - name: Maximilian Schulz
   orcid: null
   affiliations:
