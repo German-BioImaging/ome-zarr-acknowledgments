@@ -31,6 +31,7 @@ affiliations:
 - full_name: Institute of Cell Biology University of Bern
   short_name: Bern
   country_code: CH
+  homepage: https://www.unibe.ch/
 - full_name: Bern
   short_name: Bern
   country_code: CH
@@ -82,6 +83,7 @@ affiliations:
 - full_name: University of Debrecen
   short_name: Debrecen
   country_code: HU
+  homepage: https://www.unideb.hu/en
 - full_name: University of Dundee
   short_name: Dundee
   country_code: UK
@@ -216,6 +218,7 @@ affiliations:
 - full_name: Imaging Core Facility Biozentrum Basel
   short_name: IMCF
   country_code: CH
+  homepage: https://www.biozentrum.unibas.ch/facilities
 - full_name: IST, Austria
   short_name: IST
   country_code: AT
@@ -288,6 +291,7 @@ affiliations:
 - full_name: Athinoula A. Martinos Center for Biomedical Imaging
   short_name: Martinos
   country_code: US
+  homepage: https://www.martinos.org/
 - full_name: Miltenyi Biotec
   short_name: Miltenyi Biotec
   country_code: company
@@ -328,6 +332,7 @@ affiliations:
 - full_name: University of Pennsylvania
   short_name: Penn
   country_code: US
+  homepage: https://www.upenn.edu/
 - full_name: University of Pittsburgh, Pittsburgh, PA, USA
   short_name: Pittsburgh
   country_code: US
@@ -339,6 +344,7 @@ affiliations:
 - full_name: Robarts Research Institute, University of Western Ontario
   short_name: Robarts
   country_code: CA
+  homepage: https://www.robarts.ca/
 - full_name: Roche
   short_name: Roche
   country_code: company
@@ -367,6 +373,7 @@ affiliations:
 - full_name: Université de Strasbourg
   short_name: Strasbourg
   country_code: FR
+  homepage: https://www.unistra.fr/
 - full_name: TU Dresden
   short_name: TU Dresden
   country_code: DE
@@ -390,6 +397,7 @@ affiliations:
 - full_name: UConn Health
   short_name: UConn
   country_code: US
+  homepage: https://health.uconn.edu/
 - full_name: UMN
   short_name: UMN
   country_code: US
@@ -401,12 +409,15 @@ affiliations:
 - full_name: Universidad Nacional Autónoma de México
   short_name: UNAM
   country_code: MX
+  homepage: https://www.unam.mx/
 - full_name: University of Texas Southwestern Medical Center
   short_name: UTSW
   country_code: US
+  homepage: https://www.utsouthwestern.edu/
 - full_name: University of Washington, Seattle, WA, USA
   short_name: UW
   country_code: US
+  homepage: https://www.washington.edu/
 - full_name: VIB
   short_name: VIB
   country_code: BE
@@ -437,6 +448,7 @@ affiliations:
 - full_name: i3S - Institute for Research and Innovation in Health, Porto, Portugal
   short_name: i3S
   country_code: PT
+  homepage: https://www.i3s.up.pt/
 - full_name: scalable minds GmbH, Potsdam, Germany
   short_name: scalable minds
   country_code: company
