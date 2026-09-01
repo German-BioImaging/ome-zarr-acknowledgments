@@ -795,6 +795,11 @@ people:
   orcid: https://orcid.org/0000-0002-8255-1724
   affiliations:
   - RIKEN Center for Biosystems Dynamics Research, Kobe, Japan
+- name: Siddharth Jayaraman
+  github: siddharthjayaraman
+  orcid: https://orcid.org/0000-0003-1524-2232
+  affiliations:
+  - Cancer Research UK Scotland Institute
 - name: Simão Seixas
   github: simaopseixas
   affiliations:
