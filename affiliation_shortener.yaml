@@ -57,6 +57,10 @@ affiliations:
   short_name: CNRS
   country_code: FR
   homepage: https://www.cnrs.fr/en
+- full_name: Cancer Research UK Scotland Institute
+  short_name: CRUK Scotland
+  country_code: UK
+  homepage: https://www.beatson.scot/
 - full_name: Chan Zuckerberg Biohub, San Francisco, CA, USA
   short_name: CZ Biohub
   country_code: US
