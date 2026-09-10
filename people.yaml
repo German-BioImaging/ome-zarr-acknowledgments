@@ -488,6 +488,11 @@ people:
   orcid: https://orcid.org/0000-0002-8652-8812
   affiliations:
   - Leibniz Institute of Photonic Technology (Leibniz IPHT), Jena, Germany
+- name: Kabilar Gunalan
+  github: kabilar
+  orcid: https://orcid.org/0000-0001-6964-4865
+  affiliations:
+  - Massachusetts Institute of Technology, Cambridge, MA, USA
 - name: Kedar Narayan
   orcid: null
   affiliations:
