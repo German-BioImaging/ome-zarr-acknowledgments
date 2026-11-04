@@ -31,6 +31,11 @@ people:
   github: alandolt
   affiliations:
   - Institute of Cell Biology University of Bern
+- name: Alex Surtees
+  github: AlexSurtees
+  affiliations:
+  - Newcastle University
+  - Haniffa Lab, Wellcome Sanger Institute
 - name: Ali R. Khan
   github: akhanf
   orcid: https://orcid.org/0000-0002-0760-8647
