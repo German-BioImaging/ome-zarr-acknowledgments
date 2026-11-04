@@ -322,7 +322,10 @@ affiliations:
   country_code: US
   homepage: https://www.nih.gov/
 - full_name: Biosciences Institute, Newcastle University, Newcastle upon Tyne, UK
-  short_name: Newcastle University Biosciences
+  short_name: Newcastle
+  country_code: UK
+- full_name: Newcastle University
+  short_name: Newcastle
   country_code: UK
   homepage: https://www.ncl.ac.uk/
 - full_name: Institut Pasteur, Paris, France
@@ -358,6 +361,10 @@ affiliations:
   country_code: UK
   homepage: https://www.sanger.ac.uk/
 - full_name: Sanger
+  short_name: Sanger
+  country_code: UK
+  homepage: https://www.sanger.ac.uk/
+- full_name: Haniffa Lab, Wellcome Sanger Institute
   short_name: Sanger
   country_code: UK
   homepage: https://www.sanger.ac.uk/
