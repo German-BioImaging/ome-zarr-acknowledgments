@@ -16,6 +16,9 @@ people:
     orcid: null
     affiliations:
       - Chan Zuckerberg Biohub, San Francisco, CA, USA
+  - name: Kevin Liu
+    affiliations:
+      - Chan Zuckerberg Biohub, San Francisco, CA, USA
   - name: Alan M. Watson
     alt_names:
       - Alan Watson
@@ -152,9 +155,11 @@ people:
     affiliations:
       - Allen Institute for Cell Science, Seattle, WA, USA
   - name: Daniel Krentzel
-    orcid: null
+    orcid: https://orcid.org/0000-0002-6234-7259
+    github: krentzd
     affiliations:
       - Pasteur
+      - University of Zürich
   - name: Daniela Basurto-Lozada
     orcid: https://orcid.org/0000-0003-3943-8424
     affiliations:
@@ -163,8 +168,16 @@ people:
     orcid: https://orcid.org/0000-0002-8086-812X
     affiliations:
       - Sanger
+      - Newcastle University
+    alt_names:
+      - David Horsfall
   - name: David Ackerman
     github: davidackerman
+    affiliations:
+      - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
+  - name: Caroline Malin-Mayor
+    github: cmalinmayor
+    orcid: https://orcid.org/0000-0002-9627-6030
     affiliations:
       - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
   - name: David Feng
@@ -288,6 +301,7 @@ people:
       - Université de Bordeaux
   - name: Flurin Sturzenegger
     orcid: null
+    github: fstur
     affiliations:
       - Zürich
   - name: Forrest Collman
@@ -295,6 +309,10 @@ people:
     orcid: https://orcid.org/0000-0002-0280-7022
     affiliations:
       - Allen Institute for Brain Science
+  - name: Sharmishtaa Seshamani
+    orcid: https://orcid.org/0000-0001-7289-3184
+    affiliations:
+      - Allen Institute
   - name: Frances Wong
     orcid: https://orcid.org/0000-0001-7397-8251
     affiliations:
@@ -342,6 +360,11 @@ people:
     orcid: https://orcid.org/0000-0001-5877-3012
     affiliations:
       - Friedrich Miescher Institute for Biomedical Imaging, Basel, Switzerland
+  - name: Max Hess
+    github: MaksHess
+    affiliations:
+      - Friedrich Miescher Institute for Biomedical Imaging, Basel, Switzerland
+
   - name: Hannes Spitz
     orcid: https://orcid.org/0009-0003-0010-1995
     affiliations:
@@ -363,6 +386,14 @@ people:
     affiliations:
       - NIH
   - name: Igor Tatarnikov
+    orcid: null
+    affiliations:
+      - UCL
+  - name: Suraj Pathak
+    orcid: null
+    affiliations:
+      - UCL
+  - name: Andrew Keenlyside
     orcid: null
     affiliations:
       - UCL
@@ -436,6 +467,11 @@ people:
     orcid: https://orcid.org/0000-0003-3023-170X
     affiliations:
       - Friedrich Miescher Institute for Biomedical Imaging, Basel, Switzerland
+      - BioVisionCenter of the University of Zurich
+  - name: Davide Bottone
+    github: dv-bt
+    orcid: https://orcid.org/0000-0002-6133-5088
+    affiliations:
       - BioVisionCenter of the University of Zurich
   - name: Johannes Elferich
     orcid: null
@@ -524,6 +560,11 @@ people:
     affiliations:
       - Department of Biosystems Science and Engineering, ETH Zürich, Zürich, Switzerland
       - Image Cooperative
+  - name: Alexis Villars
+    github: alvillars
+    orcid: https://orcid.org/0000-0002-2201-8602
+    affiliations:
+      - ETH Zürich
   - name: Khaled Mohamed
     orcid: https://orcid.org/0000-0003-1480-8695
     affiliations:
@@ -532,6 +573,7 @@ people:
       - Dundee
   - name: Kimberly Meechan
     orcid: null
+    github: K-Meech
     affiliations:
       - UCL
   - name: Kiya Govek
@@ -609,8 +651,18 @@ people:
     affiliations:
       - Genome Biology Unit, European Molecular Biology Laboratory (EMBL), Heidelberg,
         Germany
+  - name: Tomaz Fogaça Vieira
+    github: Tomaz-Vieira
+    orcid: https://orcid.org/0000-0001-8821-2216
+    affiliations:
+      - EMBL
+      - DKFZ
   - name: Lucas Pelkmans
     orcid: https://orcid.org/0000-0002-6754-9730
+    affiliations:
+      - University of Zürich, Zürich, Switzerland
+  - name: Genevieve Laprade
+    orcid: https://orcid.org/0009-0007-4516-6978
     affiliations:
       - University of Zürich, Zürich, Switzerland
   - name: Lucien Hinderling
@@ -685,6 +737,14 @@ people:
       - Glencoe Software Inc., Seattle, WA, USA
   - name: Merlin Lange
     orcid: https://orcid.org/0000-0003-0534-4374
+    affiliations:
+      - Chan Zuckerberg Biohub, San Francisco, CA, USA
+  - name: Mikala Caton
+    orcid: https://orcid.org/0009-0007-3777-8915
+    github: mtcaton
+    affiliations:
+      - Chan Zuckerberg Biohub, San Francisco, CA, USA
+  - name: Chi-Li Chiu
     affiliations:
       - Chan Zuckerberg Biohub, San Francisco, CA, USA
   - name: Michael Innerberger
@@ -835,6 +895,11 @@ people:
     orcid: https://orcid.org/0000-0002-4106-1761
     affiliations:
       - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
+  - name: Morgan Schwartz
+    github: msschwartz21
+    orcid: https://orcid.org/0000-0001-8131-9125
+    affiliations:
+      - Janelia Research Campus, Howard Hughes Medical Institute, Ashburn, VA, USA
   - name: Stephan Wagner-Conrad
     orcid: null
     affiliations:
@@ -951,3 +1016,26 @@ people:
     orcid: https://orcid.org/0000-0001-7482-1299
     affiliations:
       - University College London
+  - name: Sean Martin
+    affiliations:
+      - MetaCell
+  - name: Nora Vivanco
+    github: nvivanco
+    orcid: https://orcid.org/0000-0002-2805-4006
+    affiliations:
+      - EMBL Barcelona
+  - name: Christopher Bäumer
+    affiliations:
+      - Evident
+  - name: Matthias Mang
+    affiliations:
+      - Evident
+  - name: Frank Hugenroth
+    affiliations:
+      - Evident
+  - name: Madhura
+    affiliations:
+      - Evident
+  - name: Nathan Clack
+    affiliations:
+      - Biohub

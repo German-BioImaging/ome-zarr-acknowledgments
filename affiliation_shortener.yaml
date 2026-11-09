@@ -12,6 +12,10 @@ affiliations:
   short_name: Allen
   country_code: US
   homepage: https://alleninstitute.org/
+- full_name: Allen Institute
+  short_name: Allen
+  country_code: US
+  homepage: https://alleninstitute.org/
 - full_name: Allen Institute for Cell Science
   short_name: Allen
   country_code: US
@@ -65,6 +69,10 @@ affiliations:
   short_name: CZ Biohub
   country_code: US
   homepage: https://www.czbiohub.org/sf/
+- full_name: Biohub
+  short_name: CZ Biohub
+  country_code: US
+  homepage: https://www.czbiohub.org/sf/
 - full_name: Calico Life Sciences
   short_name: Calico
   country_code: company
@@ -114,10 +122,18 @@ affiliations:
   short_name: EMBL
   country_code: DE
   homepage: https://www.embl.org/
+- full_name: EMBL Barcelona
+  short_name: EMBL
+  country_code: ES
+  homepage: https://www.embl.org/
 - full_name: EMBL
   short_name: EMBL
   country_code: DE
   homepage: https://www.embl.org/
+- full_name: DKFZ
+  short_name: DKFZ
+  country_code: DE
+  homepage: https://www.dkfz.de/en
 - full_name: Genome Biology Unit, European Molecular Biology Laboratory (EMBL), Heidelberg,
     Germany
   short_name: EMBL
@@ -134,6 +150,10 @@ affiliations:
   homepage: https://www.epfl.ch/
 - full_name: Department of Biosystems Science and Engineering, ETH Zürich, Zürich,
     Switzerland
+  short_name: ETH
+  country_code: CH
+  homepage: https://ethz.ch/en.html
+- full_name: ETH Zürich
   short_name: ETH
   country_code: CH
   homepage: https://ethz.ch/en.html
@@ -444,6 +464,9 @@ affiliations:
   short_name: Zeiss
   country_code: company
   homepage: https://www.zeiss.com/
+- full_name: University of Zürich
+  short_name: Zürich
+  country_code: CH
 - full_name: University of Zürich, Zürich, Switzerland
   short_name: Zürich
   country_code: CH
@@ -464,3 +487,11 @@ affiliations:
   short_name: scalable minds
   country_code: company
   homepage: https://scalableminds.com/
+- full_name: Evident
+  short_name: Evident
+  country_code: company
+  homepage: https://evidentscientific.com/en/
+- full_name: MetaCell
+  short_name: MetaCell
+  country_code: company
+  homepage: https://www.metacell.us/
