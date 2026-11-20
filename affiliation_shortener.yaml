@@ -467,6 +467,7 @@ affiliations:
 - full_name: University of Zürich
   short_name: Zürich
   country_code: CH
+  homepage: https://www.uzh.ch/en.html
 - full_name: University of Zürich, Zürich, Switzerland
   short_name: Zürich
   country_code: CH
